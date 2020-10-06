@@ -1,3 +1,5 @@
+/* cascading stylesheets for styling elements on rav3ndust.xyz */  
+
     .heading1 {
         background-color: black;
         color: white;
@@ -5,7 +7,7 @@
         font-size: 42px;
     }
 
-       .navBar {
+       .navBar {		/* navigation bar on main site pages */
         background-color: black;
         text-align: center;
         font-size: 32px;
@@ -19,7 +21,7 @@
 	color: black;
     }
 
-    footer {
+    footer {		/* footer for main site pages */
         background-color: black;
         color: white;
         text-align: center;
@@ -35,3 +37,21 @@
         color: black;
         text-align: center;
     }
+
+    .headers { 		/* red on black headers */
+	    text-align: left;
+	    background-color: black;
+	    color: red;
+    }
+
+   .blogheader {	/* header for blog articles */
+	   text-align: center;
+	   color: red;
+	   background-color: black;
+   }
+
+   .blogfooter {	/* footer for blog articles */
+	   text-align: center;
+	   color: white; 
+	   background-color: black;
+   } 
