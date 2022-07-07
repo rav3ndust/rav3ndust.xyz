@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--July 7, 2022 blog article-->
+<html>
+<link href="stylesheets.css" rel="stylesheet" type="text/css">
+<style>
+	ul {
+		text-align: left; 
+		color: black;
+	} 
+	.centered {
+		text-align: center; 
+		background-color: grey; 
+		color: white; 
+	} 
+</style>
+<head>
+    	<!--add in support for coil web monetization-->
+	<meta name="monetization" content="$ilp.uphold.com/3yHq7FiyJJMX">
+<link rel="shortcut icon" type="image/jpg" href="img/rav3n.jpeg">
+<title>July 7, 2022</title>
+	<div class="heading1">blog</div>
+	<div class="br2">~ ~ ~ ~ ~ ~ ~ ~ ~</div>
+</head>
+<body>
+    <!--make the navbar-->
+        <div class="navBar"><a href="blog.html">blog</a> | <a href="gnulin.html">GNU/linux</a> | <a href="software.html">software</a> | <a href="crypto.html">crypto</a> | <a href="contribute.html">donate!</a> | <a href="contact.html">contact</a> | <a href="videos.html">videos</a></div>
+    <!--move onto the content-->
+        <div class="br2">
+            <button type="button">
+                <a href="index.html">take me back home</a>
+            </button>
+    <h1>July 7, 2022</h1>
+    <h2>Chromium vs. Firefox - Why the Flamewars?</h2>
+    <p>If you are interested at all in the web and the development of the web as time goes on, you are probably acutely aware of the occasional wars you will see on development and computer-focused websites, such as Hacker News, about Chromium vs. Firefox.</p>
+    <p>There is a good reason for this, and keep in mind as you read this post, that I use and enjoy both of these web platforms - and if you aren't aware of this issue, we're not talking about the individual browsers here (though this can factor in) - instead, we're talking about the base engines that <i>power</i> those browsers.</p> 
+    <p>This isn't about Chrome vs. Firefox - but about <i>Blink</i> vs. <i>Gecko</i>, their underlying rendering engines. Without these, your browser wouldn't be able to understand and parse the webpages that are sent to it.</p> 
+    <p>I'm generally of the opinion that everyone should use what works for them, and ignore what others' opinions of their software choices might be. However, there is some interesting nuance to this conversation that certainly shouldn't be ignored.</p>
+    <p>I have been seeing this conversation popping up more and more on development sites and the fediverse, so I thought I'd write up a little piece about it.</p>
+    <h3>Who Cares About Rendering Engines?</h3>
+    <p>It really comes down to a simple concept that comes back around to the choice around browsers. The main thing you should understand about this concept is that while there are a healthy selection of browsers out there right now, a good majority of them are powered by Chromium and the Blink engine. The argument is that this gives Google a large amount of power in the future of the web and how things develop around web standards.</p>
+    <p>Think about it - what browser do you use? I'm willing to bet it's Chrome, as <i>3.2 billion</i> people currently use Chrome as their main, everyday browser. If you use several other browsers, though, you are - in a way - also using Chrome, but with some customizations.</p>
+    <p>You see, Google Chrome - the browser - is built on top of Chromium, Google's open-source web browser project. The Chromium browser itself is free and open-source software, and is one of the browsers I use in my day-to-day life. Google takes the Chromium code and adds in their "Googley" bits, such as Sync and their other Google-centric components, and this becomes Chrome.</p>
+    <p>Anyone else in the world is free to take the Chromium code and build their own browser on top of it, and plenty have. Here are just a few popular browsers that are built on top of Chromium, aside from Chrome:</p> 
+<ul>
+    <li>Microsoft Edge</li>
+    <li>Brave</li>
+    <li>Opera</li>
+    <li>Vivaldi</li>
+</ul>
+<p>Those are just a few of the biggest - there have been plenty of other projects from smaller companies and developers that have risen and fallen over the years. Even the <i>Electron</i> application framework is also built on top of Chromium, allowing anyone to build cross-platform applications with web technologies, and many have, including the VS Code and Atom code editors, Slack and Discord desktop applications, and more, to name a few of the most popular offerings.</p>
+<p>This sounds all well and good, right? Why not celebrate these platforms that allow anyone to have a framework to build on top of? Does Firefox not offer a similar option? Let's look into each of these questions a little more in-depth.</p>
+<h3>What About Firefox?</h3>
+<p>Firefox is an excellent project, and has been a free and open-source web browser since its inception all way back in 2004. I have used Firefox ever since I was first aware of what it was. While it is not the only browser I use, I always love the time I spend in Firefox, and it usually ends up being the main browser I reach for. </p>
+<p>The thing is, Firefox usage has declined by quite a bit, and this is not a great sign for the project, because its engine - Gecko - is arguably the last remaning independent engine around. While the internet would continue to chug along if something happened to Gecko, it would mean that there was pretty much only one choice for rendering engines and web platforms - and that would be Blink/Chromium.</p>
+<p>Keeping Firefox alive means that there more chairs available at the table for helping shape web standards, and also keeps other players in check. One notable example here is the big Manifest v3 issue, which is Google's new browser extensions standard, and at present, it severely handicaps ad-blocking extensions and other privacy and security-focused extensions.</p>
+<p>While the older Manifest v2 standard is about to be going away on Chrome (and likely most other Chromium-based browsers), Mozilla plans to support Manifest v2 (notably the `blocking webRequest` portion needed for ad-blockers and other extensions), along with v3, on Firefox - giving developers more choice on how they code and users more choice on what they can use. </p>
+<blockquote style="color:red"> A short aside, with all of the Manifest v3 stuff going on, I will be ceasing supporting my ad and tracker blocking extension, Nightshade Barriers, on Chromium-based browsers, but I will still be supporting it going forward on Firefox. </blockquote>
+<blockquote style="color:red">It's not fun having to kill the extension on Chromium-based browsers, but I'm only one person with a ton of  other side-projects and projects I'm building in concert with my company, and I don't feel like I will have the time to maintain trying to hack around v3's new extensions. </blockquote>
+<p>This is one example of how having more than one engine and platform around is a good thing. There are a few notable forks of Firefox that you can check out as well, if you'd like - though there haven't been as many notable ones as those which have been built around Chromium.</p>
+<ul>
+    <li>Tor Browser</li>
+    <li>Librewolf</li>
+    <li>Waterfox</li>
+    <li>GNU Icecat</li>
+    <li>Ghostery Dawn</li>
+</ul>
+<p>These are just a few options, and other, smaller ones exist out there as well. It is always cool to see another browser choose to base off of Firefox instead of Chromium.</p>
+<p>It is important to note that Safari, Apple's browser, is also a separate engine from Blink or Gecko, and it is called WebKit. However, Blink itself is a fork of WebKit, which is itself a fork of KHTML, so the difference is rather neglible.</p>
+<h3>Who Cares if Your Browser is Powered by Blink?</h3>
+<p>Well, your everyday user who has never known anything but Chrome and doesn't use many extensions or follow the web very closely might not, but a ton of web advocates, users, and developers care about this issue.</p>
+<p>While Chromium itself is an open-source project that anyone else can fork or contribute code to, there are a few problems:</p>
+<ul>
+    <li>Forking Chromium is different than maintaining Chromium. The codebase is orders of magnitude bigger than something that one dev can handle alone when it comes to making their own changes, as well as staying on top of incorporating those from upstream - and then picking out and writing replacements for the the upstream components you don't want to keep in.</li>
+    <li>You can contribute any piece of code you'd like to the Chromium project, and participate in the community, but your contributions being merged into the codebase are up to a team of people who are the principal keyholders to that codebase, and the code being included is, at the end of the day, at their discretion. This is, of course, also true of Firefox and any other open-source project that accepts code from outside contributors. </li>
+</ul>
+<p>The ending sentence on the second point is a crucial one to keep in mind - and this is coming from someone who supports and tries to only use free and open-source software where possible: While the spirit of free and open-source software is the ethical and proper way to go, it is still important to remember that someone else still ultimately makes a decision on what code goes into codebases that we don't own, and we have to be okay with that, and use or contribute to alternative projects if we don't agree with the direction a certain one is going.</p>
+<h3>Closing Thoughts</h3>
+<p>I am not one of these people that hates Chromium, and many people don't like it just because it's Chromium. I like the Chromium project and I use the browser every day, as well as a few browsers based on it, such as Brave. I say these things only to relay folks' very valid concerns, as there was once a monopoly held on the web by another player at one point - Microsoft, with Internet Explorer. Nowadays, however, Microsoft has killed IE and joined the Chromium platform with their Edge browser, and Google's platform has instead become the dominating browser platform on the internet.</p>
+<p>I use all sorts of browsers and champion a free and diverse web - so next time you see someone online talking about the Chromium and Firefox issue, you now have a little more clarity if you didn't before, and hopefully you can see why this is something that is worth having a conversation about.</p>
+</body>
+<!--separate footer-->
+<footer>
+    <h3 style="color:red"><u>rav3ndust.xyz</u></h3>
+    <p>Connect with me on the <b style="color:red">fediverse</b>:</p>
+    <p><a href="https://neighborli.xyz">neighborli</a> | <a href="https://distrotoot.com/web/accounts/5786">Mastodon</a> | <a href="https://diasp.org/people/7c9d72a02011013919a67085c2fdcc0b">diaspora*</a> | <a href="https://pixelfed.social/rav3ndust">pixelfed</a></p>
+    <p>Watch my <b style="color:red">video content</b>:</p>
+    <p><a href="videos.html">rav3nTube</a> | <a href="https://odysee.com/@rav3ndust:1">Odysee</a> | <a href="https://youtube.com/user/avalon665">YouTube</a> | <a href="https://twitch.tv/rav3ndust">Twitch</a></p>
+    <p>Check out my software projects on <a href="https://github.com/rav3ndust">my GitHub</a>.</p>
+    <p>Send me <b style="color:red">cryptocurrencies</b>:</p>
+    <p><b style="color:red">BTC</b>: 1K76vKnBp7ptd2viX5gp6gWE5knSrSjHjL</p>
+    <p><b style="color:red">ETH</b>: 0xc51F36C9f939b721890c7df922D197cE068E4D4e</p>
+    <p><b style="color:red">XMR</b>: 4ANpq4fxmb6N9ekXNvuJ4rLCG1A3bxyA2386X9xV3JsjZWJCbnKrVACdPD8rnpENtdAbMkmmMDrBNcrQZzVADeMMMTTWdXm</p>
+    <p>
+    <!--add a button for LiberaPay-->
+    <script src="https://liberapay.com/rav3ndust/widgets/button.js"></script>
+    <noscript><a href="https://liberapay.com/rav3ndust/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+    </br></br>
+    <!--add the 512kb club image-->
+    <img src="img/green-team.svg" alt="512kb club, green team" title="512kb club, green team">
+    <p>I'm in the <a href="https://512kb.club">512kb Club</a>, <b style="color:green">Green Team</b>!</p>
+    </footer>
+</html>
