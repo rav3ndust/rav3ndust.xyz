@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html>
+
+	<head>
+		<meta name="monetization" content="$ilp.uphold.com/3yHq7FiyJJMX">
+		<title>notes on nostr</title>
+		<p><a href="blog.html">back to blog</a></p>
+		<h1>notes on nostr?</h1>
+	</head>
+	<body>
+		<p>As you know, I enjoy decentralized technologies, and I especially enjoy seeing awesome things built on top of free and open-source software.</p>
+		<p>Recently, I began getting more into <a href="https://nostr.com">nostr</a>, which stands for <i>Notes and Other Stuff Transmitted by Relays</i>. Now, before you get the wrong idea, if you're out of the loop with it so far, you should be aware that nostr itself is not a social network, but an open protocol that anyone can build on top of. As such, there have been some interesting new nostr clients popping up for web, Android, and iOS alike.</p>
+		<p>Nostr is not based on any centralized service, or even necessarily dependent on any centralized servers. Instead, nostr uses relays that anyone in the world can run if they choose. These relays do nothing but accept and forward posts. Instead of signing up for an account on a website, you use cryptographic keypairs to manage your nostr identity. Much like GPG, you are identified by your public key, and you manage that identity with your private key. If you have ever done anything with GPG or bitcoin, you should be comfortable here.</p>
+		<p>As someone who has been running a Pleroma instance, <a href="https://neighborli.xyz">neighborli</a>, on the Fediverse for several years now, I keep a close eye on some of the emerging technologies that are happening in the space, and I will certainly say that nostr is one of the few things I have seen that actually gives me hope about the future of decentralized social media, right along with things like ActivityPub that we are so used to on the Fediverse.</p>
+		<p>You can easily verify your identity through your domain on nostr, as well. Using NIP-05 identifiers, you place a .json file on your domain at <code>https://yourdomain.com/.well-known/nostr.json</code>. It should look something like this:</p>
+		<code>{
+			"names": {
+				"yourName": "key"
+				}
+			}</code>
+		<p>In the example above, the <code>yourName</code> area should be your name on nostr, and the <code>key</code> field should be your nostr public key, which begins with <i>npub</i>, converted to HEX. There is a handy tool by Damus for converting your key <a href="https://damus.io/key/">right here</a>.</p>
+		<p>Once you have your JSON file filled out, SSH to your domain server (or however you handle file access to your domain), and create a folder called <code>.well-known</code>. You can then head to your chosen nostr client and verify your NIP-05 identifier with <i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4930263c3b0728242c0930263c3b0d2624282027">[email&#160;protected]</a></i>. For example, mine is <i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="05776473366b6170767145776473366b617076712b7d7c7f">[email&#160;protected]</a></i>.</p>
+		<h3>is nostr the next big thing?</h3>
+		<p>I have no idea, and I'm not in the business of making predictions. What I do know, however, is that it is exciting to see so much hype around it and the fediverse lately. I am vehemently against the centralized social networks due to their massive data collection and privacy issues, their security issues, their potential to censor those who would say things that go against the current political norms, and more. Nostr is getting a lot of attention right now in particular because it has gotten a shout-out from Jack, the former CEO of Twitter. There was a lot of hope that the Twitter platform itself was going to improve in the censorship side of things when Elon Musk took ownership, but it has proven to be a shift only in the people who are censored, not a true win for free speech itself.</p>
+		<p>Right now, so many of the things I am excited about are still in their early days, and this is both a good thing and a bad thing. It is a good thing because I enjoy being on the edge of things and being able to test them out and contribute to them, and build things on top of them. On the other hand, while nostr and the fediverse is easy for people like me to traverse, the average Joes of the world have no idea what a public and private keypair are, or what relays do, or why account portability is such an important thing on something like the fediverse. This is why some folks, while they might hear about alternative options, stay on the big, popular platforms.</p>
+		<p>This is something that can and will be fixed with time, of course. Privacy has become something that many folks have been thinking about more and more the last few years, and the Twitter shakeup over the last few months has had people thinking about alternative platforms for the first time. With Mastodon introducing people to the concept of the fediverse, and people like Jack and Edward Snowden touting Nostr, it is a good time to be checking out decentralized social platforms and seeing if it is something that you might enjoy using over the bigger platforms so you can truly own your online identity. I will be doing a more in-depth entry soon on how you can easily set up your nostr and fediverse accounts, and some of the deeper details.</p>
+		<p>I'm excited to be participating in this new emergence of some of these various open technologies for social networking. The fediverse has been a ton of fun in participate in the last few years while running Neighborli, and I am going to continue to be there as well as on Nostr, watching it grow and contributing to some projects in that area. I'm planning on setting up a nostr relay this week as well, and continuing to enjoy hanging out and watching these things grow, and spreading the word and bringing new people in as I can. If you haven't already checked out the fediverse or nostr (or both, if you have no life like me), I highly recommend checking it out and seeing what life is like on the other side.</p>
+		<div style="background-color:black">
+			<br>
+		</div>
+		<h4>raven's ridge book club</h4>
+		<p>This week I am reading <i>Pendragon: The Merchant of Death</i> by DJ MacHale.</p>
+		<div style="background-color:black">
+			<br>
+		</div>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
