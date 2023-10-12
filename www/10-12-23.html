@@ -1,0 +1,39 @@
+
+<!doctype html>
+<!--october 12, 2023 blog post-->
+<html>
+	<head>
+		<title>bluesky domain verification</title>
+		<p><a href="blog.html">back to blog</a></p>
+		<h1>bluesky domain verification</h1>
+		<h2><i>...or, more DNS shenanigans</i></h2>
+		<h3 style="color:blue">October 12, 2023</h3>
+	</head>
+	<body>
+		<p>As you know if you have interacted with me or my @FOSSphones account over on <a href="https://neighborli.xyz">Neighborli</a>, my Fediverse instance, I like to play with and build upon new and open social media platforms and protocols we have coming around. Nowadays, we have <a href="https://activitypub.rocks/">ActivityPub</a>, <a href="https://usenostr.org/">Nostr</a>, and <a href="https://atproto.com/">AT Protocol</a> to interact with people over and build new applications on top of to empower everyone who wants to get away from the big tech platforms like Facebook, Instagram, Twitter, and the like.</p>
+		<p>Thankfully, with all of these new protocols and platforms springing up over the last few years and really starting to see some maturity, there is no shortage of alternative platforms you can look into and join, some even based on your interests (which is something we used to do back in the day when it came to joining a new forum dedicated to computers or another topic).</p>
+		<p>One of these new platforms is <a href="https://blueskyweb.xyz/">Bluesky</a>, which was originally being developed as an initiative within Twitter as an exercise in building a new, decentralized social media protocol (that being the AT Protocol linked above). It is still currently in a sort of 'private beta', bringing people in through invite codes.</p>
+		<p>I got one awhile back and have been using the platform off and on a few times a week. I noticed you could verify yourself through your domain, and I checked out the process, which I thought I could share here if anyone finds the information helpful.</p>
+		<h3>the process of domain verification</h3>
+		<p>If you are loaded into the Bluesky web application, you will see the Settings icon. Click on that, and go down to <b>Change handle</b> that has a <i>@</i> icon beside it. You will see some <code style="color:blue">I have my own domain</code> text that you can click. This will bring you a new snippet of text with some instructions. Do the following here:</p>
+		<ul>
+		  <li>Enter the domain you want to use where it says <code style="color:blue">Enter the domain you want to use</code> which is denoted by a <b><i>@</i></b> symbol. For example, my entry here was <code style="color:blue">rav3ndust.xyz</code>.</li>
+		  <li>It's time to work some DNS magic. Go to whatever platform you use to manage your DNS records (for example, I use <a href="https://cloudflare.com">Cloudflare</a>, and be ready to create a new <b>TXT</b> record on the domain you entered above.</li>
+		  <li>Once you're able to edit DNS records, <b>add a new record</b>. It will be of type <b>TXT</b>.</li>
+		  <li>In <b>Name</b>, add <code style="color:blue">_atproto</code> in the text field.</li>
+		  <li>You can set the <b>TTL option</b> to <b><i>Auto</i></b>.</li>
+		  <li>In the <b>Content</b> field, you will want to look back at the text you have in your Bluesky settings. There should be a field showing you the <b>Value</b> that begins with <code style="color:blue">did=</code>. Copy this and paste it into the <b>Content</b> section of your DNS record.</li>
+		</ul>
+		<p>When you're done with all of this, save your DNS record and wait a few seconds. Click <b>Verify DNS Record</b> on your Bluesky settings. If it worked successfully, you should now be able to see your domain as your handle on Bluesky!</p>
+<blockquote style="color:white;background-color:black">If it didn't work right away, wait a few minutes and then try again. DNS changes can take a few minutes to resolve at times.</blockquote>
+<p>I always enjoy doing these kinds of integrations with my domain, and I've done a few more as well, including Nostr and Keybase. You should check out each of these open projects if you want to learn more about them. If you are on Bluesky, feel free to <a href="https://bsky.app/profile/rav3ndust.xyz">connect with me</a> there!</p>
+  <div style="background-color:black">
+			<br>
+		</div>
+		<h4>ravens ridge book club</h4>
+		<p>This week I am reading <i>The Metamorphosis of Prime Intellect</i> by Roger Williams.</p>
+		<div style="background-color:black">
+			<br>
+		</div>
+	</body>
+</html>
