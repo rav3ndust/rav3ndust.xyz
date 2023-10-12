@@ -135,6 +135,12 @@
       <description>don't fall into the cynical trap</description>
       <link>https://rav3ndust.xyz/cynical-trap.html</link>
     </item>
+    <item>
+      <title>bluesky domain verification</title>
+      <date>October 12, 2023</date>
+      <description>adventures in DNS records</description>
+      <link>https://rav3ndust.xyz/10-12-23.html</link>
+    </item>
     <!--bring in newer items after this comment-->
   </channel>
 </rss>
