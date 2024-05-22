@@ -130,16 +130,23 @@
       <link>https://rav3ndust.xyz/02-06-23.html</link>
     </item>
     <item>
-      <title>the cynical trap</title>
-      <date>April 17, 2023</date>
-      <description>don't fall into the cynical trap</description>
-      <link>https://rav3ndust.xyz/cynical-trap.html</link>
+	    <title>the cynical trap</title>
+	    <date>April 17, 2023</date>
+	    <description>don't fall into the cynical trap</description>
+	    <link>https://rav3ndust.xyz/cynical-trap.html</link>
     </item>
     <item>
-      <title>bluesky domain verification</title>
-      <date>October 12, 2023</date>
-      <description>adventures in DNS records</description>
-      <link>https://rav3ndust.xyz/10-12-23.html</link>
+	    <title>bluesky domain verification</title>
+	    <date>October 12, 2023</date>
+	    <description>adventures in DNS records</description>
+	    <link>https://rav3ndust.xyz/10-12-23.html</link>
+    </item>
+    <!--2024 entries-->
+    <item>
+	    <title>healthier habits</title>
+	    <date>May 8, 2024</date>
+	    <description>making healthier adjustments</description>
+	    <link>https://rav3ndust.xyz/05-08-24.html</link>
     </item>
     <!--bring in newer items after this comment-->
   </channel>
