@@ -1,0 +1,166 @@
+<rss version="2.0">
+<!-- RSS feed for FOSSphones News -->
+<channel>
+<title>rav3ndust.xyz</title>
+<description>the latest musings from rav3ndust</description>
+<link>https://rav3ndust.xyz/blog.html</link>
+<!-- begin separating the news items -->
+<item>
+    <title>Welcome to rav3n's blog!</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-09-20.html</link>
+    <pubDate>2020-09-20</pubDate>
+</item>
+<item>
+    <title>Why I think GNU/Linux is important for mobile devices.</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-09-27.html</link>
+    <pubDate>2020-09-27.html</pubDate>
+</item>
+<item>
+    <title>if you need android, run privacy-respecting aosp distros</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-10-04.html</link>
+    <pubDate>2020-10-04</pubDate>
+</item>
+<item>
+    <title>some of the best terminal apps I use every day</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-10-11.html</link>
+    <pubDate>2020-10-11</pubDate>
+</item>
+<item>
+    <title>why you should delete facebook from your life</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-10-18.html</link>
+    <pubDate>2020-10-18</pubDate>
+</item>
+<item>
+    <title>politics and family gatherings</title>
+    <description>The latest from rav3ndust!</title>
+    <link>https://rav3ndust.xyz/blog/2020-10-25.html</link>
+    <pubDate>2020-10-25</pubDate>
+</item>
+<item>
+    <title>my solar panel setup</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-11-01.html</link>
+    <pubDate>2020-11-01</pubDate>
+</item>
+<item>
+    <title>why you should build your own website</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-11-08.html</link>
+    <pubDate>2020-11-08</pubDate>
+</item>
+<item>
+    <title>terminal browsers: they're still kinda cool</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-12-06.html</link>
+    <pubDate>2020-12-06</pubDate>
+</item>
+<item>
+    <title>ringing in the new year with free software</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2020-12-27.html</link>
+    <pubDate>2020-12-27</pubDate>
+</item>
+<item>
+    <title>what do I have planned for this year</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2021-01-31.html</link>
+    <pubDate>2021-01-31</pubDate>
+</item>
+<item>
+    <title>what have I been up to</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2021-05-13.html</link>
+    <pubDate>2021-05-13</pubDate>
+</item>
+<item>
+    <title>on politics and religion</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2021-06-29.html</link>
+    <pubDate>2021-06-29</pubDate>
+</item>
+<item>
+    <title>adblocking is not unethical</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2021-08-03.html</link>
+    <pubDate>2021-08-03</pubDate>
+</item>
+<item>
+    <title>vim over vscode? ok, boomer!</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2022-05-10.html</link>
+    <pubDate>2022-05-10</pubDate>
+</item>
+<item>
+    <title>chromium vs firefox - why the flamewars?</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2022-07-07.html</link>
+    <pubDate>2022-07-07</pubDate>
+</item>
+<item>
+    <title>ring doorbells send cops user data without consent</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2022-07-25.html</link>
+    <pubDate>2022-07-05</pubDate>
+</item>
+<item>
+    <title>status update</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2022-10-26.html</link>
+    <pubDate>2022-10-26</pubDate>
+</item>
+<item>
+    <title>chatGPT - all hype?</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2023-01-19.html</link>
+    <pubDate>2023-01-19</pubDate>
+</item>
+<item>
+    <title>notes on nostr</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2023-02-06.html</link>
+    <pubDate>2023-02-06</pubDate>
+</item>
+<item>
+    <title>the cynical trap</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2023-04-17.html</link>
+    <pubDate>2023-04-17</pubDate>
+</item>
+<item>
+    <title>bluesky domain verification</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2023-10-12.html</link>
+    <pubDate>2023-10-12</pubDate>
+</item>
+<item>
+    <title>healthier habits</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2024-05-08.html</link>
+    <pubDate>2024-05-08</pubDate>
+</item>
+<item>
+    <title>liberate your android</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2024-09-19.html</link>
+    <pubDate>2024-09-19</pubDate>
+</item>
+<item>
+    <title>from sudo to doas</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2024-09-20.html</link>
+    <pubDate>2024-09-20</pubDate>
+</item>
+<item>
+    <title>social stuff</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2024-10-30.html</link>
+    <pubDate>2024-10-30</pubDate>
+</item>
+<!-- ################################################################## -->
+</channel>
+</rss>
