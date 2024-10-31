@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		} 
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>2024-10-30</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>social stuff</h2>
+		<p><i>a dual approach</i></p>
+		<p><b style="color:#FF10F0">2024-10-30</b></p>
+		<img src="../img/neighborli-mastodon.png" title="neighborli's about page" width="700px">
+		<p>This week, we have been working on moving our fediverse instance over from pleroma to mastodon. We eneded up having to re-create the instance, and thought it would be fun to switch it up, so we now have <code>neighborli.xyz</code> on mastodon!</p>
+		<p>Setup was a breeze on Debian 12, and we have things setup about how we want them now.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">how it works</h3>
+        <p>We run a pretty vanilla version of Mastodon for wide compability with all Mastodon clients. On some other points, we are connected to the <a href="https://relay.toot.io/">toot.io</a> relay in order to bring in more content and allow users more people to follow. Many Neighborli (and fediverse users in general) are into things like free software and technology, so you are likely to see quite a bit of things like that! :)</p>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">future plans - dual-wielding with nostr</h3>
+        <p>I've been on the fediverse for quite awhile now, think I joined my first server back in late 2018 or early 2019. I have enjoyed being on and building on the fediverse. The decentralized nature of the fediverse is its biggest strengths, but also one of its biggest flaws.</p>
+        <p>Right now, you're very dependent on whatever instance you join. If it's a hobby project ran by someone who isn't serious about keeping it up and letting their users know and come up with an way to migrate to preserve their data, they might shut down an instance and leave their users without their stuff, disgruntled and having to either find a new instance and start anew, or throw up their hands and go back to instagram and twitter.</p>
+        <p>When it comes to account portability, there has been one thing that has been great lately, and it's called <a href="../wiki/nostr.html">nostr</a>, or Notes and Other Stuff Transmitted by Relays. Like the fediverse, there are a ton of clients available, and anyone can create their own stuff and build on top of nostr, much like anyone can build on top of activitypub (the protocol that the fediverse is built on).</p>
+        <p>When it comes to identity on nostr, moving between different clients couldn't be easier. It follows the Bitcoin approach in a few ways: Instead of signing in and out of clients with different account credentials on different domains, like we do on the fediverse right now, nostr uses public and private keypairs.</p>
+        <p>On your first visit to most nostr clients, you will have the ability to generate a keypair. Save this keypair somewhere safe, and find a nostr identity handler app or extension you like. I use <a href="https://chromewebstore.google.com/detail/nos2x/kpgefcfmnafjgpblomihpgmejjdanjjp">nos2x</a> on Brave and <a href="https://addons.mozilla.org/en-US/firefox/addon/nos2x-fox/">nos2x-fox</a> on Firefox. For mobile, I recommend <a href="https://f-droid.org/en/packages/com.greenart7c3.nostrsigner/">Amber</a>, a nostr identity app. With your keypair and your new extension or app, you can now sign into nostr client with the click of a button.</p>
+        <p>I am planning on picking up a domain for hosting a nostr client soon enough, when I can come up with a cool name for it! I'd like to host a client and a relay, and build some cool things on top of them. I like Nostr, and have been using it since not long after the first few clients came out. The nostr protocol is easy to understand and to implement, and I'm looking forward to building some things with it.</p>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">the best of both worlds</h3>
+        <p>The fediverse and nostr are definitely my two favorite open and decentralized social platforms to build on and use. While they both have their issues, they are both more promising to me than any social platform owned by a single company or person that could be shut down at any time. This is the more impressive thing about nostr - if your favorite client goes down, your identity is safe - while I love the fediverse and will continue using and building on it right along with nostr, its biggest issue is account portability. Maybe in the future, this is something we will solve, and it won't be an issue in either space.</p>
+        <p>I'll update on here when I've got some repos open for some things to test on nostr. I look forward to continue building on the open social stack, and invite you to join us if you want to participate as well, whether you want to write some code or just join the conversation.</p>
+        <p><a href="https://neighborli.xyz">join neighborli!</a></p>
+        <div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#FF10F0">raven's ridge book club</h3>
+		<p>This week, I have been reading <i>Sabriel</i> by Garth Nix.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+        <p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	

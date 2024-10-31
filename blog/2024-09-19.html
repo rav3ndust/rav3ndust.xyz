@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		} 
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>2024-09-19</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>liberate your android</h2>
+		<p><i>want a free software phone? try this!</i>
+		<p><b style="color:#FF10F0">2024-09-19</b></p>
+		<p>I've been running Android devices without Google services since back in the CynanogenMod days, which is now defunct, and replaced by <a href="https://lineageos.org">LineageOS</a>. I also enjoy helping people who want to "liberate their phone". I have never done a writeup on this process before, however, and I think now is as good a time as any. If you're interested in running a free software AOSP distribution on your phone, I highly recommend LineageOS. It is kept up-to-date by the community and supports a range of devices from different manufacturers.</p>
+		<img src="../img/lineage-beckham.jpg" title="lineageOS 21 on beckham" height="750px">
+		<p style="font-size:12px;color:#FF10F0"><b>my moto z3 play running lineageOS</b></p>
+		<p>Before we go any further, let's make sure your device is supported by LineageOS. You can take a look at all currently supported devices at the <a href="https://wiki.lineageos.org/devices/">devices page</a>.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h2 style="color:#FF10F0">Installing LineageOS</h2>
+		<p>Okay, going forward in this post, we're going to assume that you have a device that is supported by LineageOS. I currently use a <a href="../wiki/beckham.html">Moto z3 Play (beckham)</a>, so for the examples in this post, it will be the reference device. We're also going to assume that you have already backed up any important data from your current Android installation, and unlocked your device's bootloader.</p>
+		<p>When preparing to install LineageOS, you're going to need two very important files before getting started. Make a folder on your machine (name it 'Lineage' or something similar to make it easy to remember). In this folder, we will download the current LineageOS build for your device, as well as the recovery image. Links to both of these will be given on your device's LineageOS page.</p>
+		<blockquote><a href="https://wiki.lineageos.org/devices/beckham/">Here</a>, as an example, is the LineageOS device page for <b>beckham</b>.</blockquote>
+		<p>We'll grab the current build for <b>beckham</b> first (it's the .zip file):</p>
+		<code>wget https://mirrorbits.lineageos.org/full/beckham/20240828/lineage-21.0-20240828-nightly-beckham-signed.zip -nv --show-progress</code>
+		<p>Besides the .zip file, you will also see a file named <b>boot.img</b>. This is the recovery image, and it is important to ensure you have this during the flashing process, so grab it, too (while still in your LineageOS folder, or whatever you named it):</p>
+		<code>wget https://mirrorbits.lineageos.org/full/beckham/20240828/boot.img -nv --show-progress</code>
+		<p>Now that we have the needed files, we also need to make sure we have two important packages for installation of LineageOS onto our device. I'm going to assume you're running a Debian or Ubuntu-based GNU/Linux distro throughout the course of this post, like I am (Debian 12). We need <b>adb</b> and <b>fastboot</b> to carry on properly. Let's ensure we have them:</p>
+		<code>doas apt update; doas apt install -y adb fastboot</code>
+		<p>With these installed, we're ready to move on!</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h2 style="color:#FF10F0">flashing the build to the device</h2>
+		<p>Now, we're ready to begin the main steps - flashing the build to your device.</p>
+		<blockquote>Before we carry on, make sure to boot into your current Android OS and ensure <b>USB debugging</b> is turned on!</blockquote>
+		<p>The next thing we need to do is get the device into <code>fastboot</code> mode. With it on, connect it to the computer and enter the following in your terminal:</p> 
+		<code>adb -d reboot bootloader</code>
+		<p>You should see it boot into something looking like <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaIgwH-nkBWCtv_Q2xHP8MXwdFUZJXbz9AYw&s">this</a>. With your device now in <b>fastboot mode</b>, it's time to flash some files!</p>
+		<blockquote><b>quick tip</b>: You can also get to fastboot mode without connecting it to a machine first, if you need to. Just hold down your device's <b>volume-down</b> and <b>power</b> buttons at the same time for a few seconds.</blockquote>
+		<p>Now, let's make sure our device is being recognized by the computer. The following command should output a string of numbers if it detects the device.</p>
+		<code>fastboot devices</code>
+		<p>If you see a message containing something along the lines of <code>no permissions fastboot</code>, try running it with elevated privileges:</p>
+		<code>doas fastboot devices</code>
+		<p>Now that we've confirmed our computer can see our phone, let's get going on the installation of LineageOS. First, we're going to install the recovery image, where we will be doing a lot of this process from:</p>
+		<code>fastboot flash boot boot.img</code>
+		<p>Up next, we're going to do something that will not have to be done on every device, but it depends on your specific device. On my Moto z3 Play, we have an a/b partitioning scheme. When installing alternate versions of Android, the inactive slot might end up containing older firmware than the currently active slot. Not fixed, this could result in a bricked device. As such, we will run <a href="https://mirrorbits.lineageos.org/tools/copy-partitions-20220613-signed.zip">this</a> <code>copy-partitions</code> program that copies the contents of the currently active slot into the inactive one.</p> 
+		<code>adb -d sideload copy-partitions-20220613-signed.zip</code>
+		<p>Now, we can reboot the device into recovery mode.</p>
+		<p>Within recovery mode, it's now time for the main event - finally flashing LineageOS files.</p>
+		<p>First, we're going to tap the <b>Factory Reset</b> button, and then we will select the <b>format data/factory reset</b> option. When this is done, go back to the main menu. We will now select <b>Apply Update</b>, then selecting the <b>Apply From ADB</b> option. Back on our machine, we will issue the following command:</p>
+		<code>adb -d sideload lineage-21.0-20240828-nightly-beckham-signed.zip</code>
+		<p>This part might take a few minutes. When it is finished, however, we are ready to reboot the device using <b>Reboot System Now</b> and move onto enjoying our new installation of LineageOS!</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<blockquote>Please note that this post is not a replacement for reading the LineageOS guide for your specific device! This post aims to be an exploration into one specific device for people curious about diving into alternate versions of Android. There are all kinds of different devices supported by Lineage, however, so always make sure you follow your specific installation guide, found on the <a href="https://wiki.lineageos.org/devices/">lineageOS devices page</a>.</blockquote>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#FF10F0">post-installation of LineageOS</h3>
+		<p>Once the device is rebooted and LineageOS setup including adding our fingerprints and setting our PIN code, it's time to add some sources for apps! I recommend doing the following for your new installation (I'm assuming you're running without <a href="https://wiki.lineageos.org/gapps/">gapps</a>, like I am):</p>
+		<ul>
+			<li>Install <a href="https://f-droid.org">F-Droid</a> on your device to use as your main appstore. F-Droid is a FOSS-only appstore, enabling you to load your phone up with only free software! Like any other appstore, you can search for, install, and update all your apps through F-Droid.</li>
+			<li>If there are those apps you can only get from the Play Store, however, I recommend checking out <a href="https://f-droid.org/packages/com.aurora.store/">Aurora Store</a> for grabbing those apps. Aurora is a FOSS frontend to the Play Store that acts as a middleman to grab apps from you. It can use anonymous Google accounts, so you don't have to sign in with your own.</li>
+			<li>Grab <a href="https://f-droid.org/packages/de.marmaro.krt.ffupdater/">ffupdater</a>, an app that helps you download a breadth of FOSS web browsers, such as Firefox, Brave, vanilla Chromium, and different forks of each, such as Fennec, Mull, and Iceraven. ffupdater can also automatically update these apps for you.</li>
+			<li>Everyone wants a good weather app on their phone, and my favorite one is this FOSS weather app called <a href="https://f-droid.org/packages/org.breezyweather/">Breezy</a>.</li>
+		</ul>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#FF10F0">raven's ridge book club</h3>
+		<p>This week, I have been reading <i>The Ballad of Songbirds and Snakes</i> by Suzanne Collins.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	

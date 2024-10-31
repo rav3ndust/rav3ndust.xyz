@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		} 
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>2024-09-20</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>from <b>sudo</b> to <b>doas</b></h2>
+		<p><i>doas is a small replacement for sudo</i></p>
+		<p><b style="color:#FF10F0">2024-09-20</b></p>
+		<p>Over the last few years, I have transitioned a lot of my stuff over to using <code>doas</code> instead of <code>sudo</code> on my GNU/Linux machines and servers. <code>doas</code> is a utility from the <a href="https://www.openbsd.org/">OpenBSD</a> world.</p>
+		<p><code>doas</code> is super easy to setup. I'm running on Debian 12, and installed it like so:</p>
+		<code>sudo apt update; sudo apt install -y opendoas</code>
+		<p>When it is installed, you can get up and running by getting your <code>doas.conf</code> file setup. Here's a few lines we can use to get it done:</p>
+		<code><pre>
+#!/usr/bin/env bash
+# create /etc/doas.conf file
+sudo touch /etc/doas.conf
+# allow $USER to run root commands
+echo "permit persist "${USER}" as root" | sudo tee /etc/doas.conf
+		</pre></code>
+		<p>Now, you should be good to go! Test <code>doas</code> by running a quick command with it:</p>
+		<code>doas echo "Hello from doas!"</code>
+		<p>If you were prompted for your password and saw the line printed, then <code>doas</code> is setup and good to go. You can now use it anywhere you would normally use <code>sudo</code>.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#FF10F0">raven's ridge book club</h3>
+		<p>This week, I have been reading <i>The Ballad of Songbirds and Snakes</i> by Suzanne Collins.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	
