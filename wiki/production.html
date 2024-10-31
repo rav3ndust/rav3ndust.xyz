@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>production</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">production</h2>
+		<p><i>a quick look at my audio production setup</i></p>
+		<p>If you have taken a look at my <a href="equipment.html">equipment page</a>, you saw a bit of the audio gear and instruments I use, but what about the software side of my setup? That's what this page is for!</p>
+		<p>I have a fun little audio production workflow, and I'm happy to talk about it here. Maybe you are someone who is looking to get setup with audio production on GNU/Linux, and if so, I probably have something useful for you to read about here, as I've been producting music on GNU/Linux systems since I quit Windows over a decade ago.</p>
+		<p>When I used Windows and Mac to make music, I mostly used a mixture of FL Studio and Audacity, and I also experimented a bit with <a href="https://milkytracker.org/">MilkyTracker</a>, which is, incidentally, a piece of free software. FL Studio was what I used the most at the time, and eventually, I found Sunvox. When I was getting ready to make the switch to GNU/Linux, I was happy to discover that Sunvox also ran natively on it. I still use it today, and I also still use Audacity in conjunction with it. Those are two of the main tools in my audio workflow, along with some others I'm going to show you (and all of these tools run natively on GNU/Linux - no Wine hackery required).</p>
+		<p>So, let's take a look at some of the audio software I use, how I use it, and some tips and tricks for you to use these tools as well without a big learning curve.</p>
+		<div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">sunvox</h3>
+        <img src="../img/sunvox.png" title="sunvox running on debian" width="750px">
+        <p><b>Sunvox</b> is the centerpoint of my audio production workflow.</p>
+        <p>Sunvox looks like an interesting blast from the past when you first open it up, like a mix of a retro tracker software mixed in with some DAW components. I know this was my initial reaction when I first opened it up back in the day. However, I've found it to have a wealth of options that other, more "full-featured" (as funny as that feels to say) DAW software can't compare with.</p>
+        <p>There are all kinds of great plugins built in, and the ones I seem to use the most are <b>generators</b> and <b>Spectravoice</b>. You can easily use these to create your own rich sounds, and further augment them with Effects, a few of which are things like Reverb, Echo, LFOs, pitch shifters, filters, and more.</p>
+        <p>As you can see in the above screenshot, it also has a graphical piano where you can test out notes of the current sounds you are using, and if the tracker section at the top is unlocked, you can use the graphical keyboard to input notes, or you can simply use your computer keyboard (or, of course, a connected MIDI keyboard).</p>
+        <p>Back in 2016, I started a more new audio project called <a href="x3nyth.html">x3nyth</a>. It is mostly electronic-focused, with a lot of ambient, experimental type of music than what I normally made under my original name (<a href="arkane.html">arkane</a>). When I shed the original project name, I was tiring of writing dubstep and house music, and wanted to explore other genres that I didn't feel like fit the theme of that name. So, I retired and moved onto the x3nyth name, which I am still using now, and 100% of the music I've written under this name has been produced with Sunvox.</p>
+		<p>On the latest x3nyth record, I have been doing generative music with Sunvox. It has been a very fun experiment so far, and I'll be linking it when it is done and ready to go.</p>
+        <p>One thing I really want to do sometime is play a live show with Sunvox. With a lot of the experimentation in generative music I've been doing within Sunvox, I can see an interesting little live show put together with it, mixed in with some live synthesizers and drum machines. I've thought about doing a little livestream online of building music live from within Sunvox during the stream.</p>
+        <p><a href="https://warmplace.ru/soft/sunvox/">Download Sunvox here!</a></p>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">audacity</h3>
+        <img src="../img/audacity.png" title="audacity running on debian" width="750px">
+        <p><b>Audacity</b> is used in post-production - mixing a song up after it is done being written, adding in any audio effects we might want, and things like that.</p>
+        <p>Usually, I'll open Audacity when I'm done with production in Sunvox. I'll export the Sunvox project as a <code>.wav</code> file, and then I will import that into Audacity. I will do things like add fade-ins and studio fade-outs. I can also easily add noise reduction, EQ, reverb, echo, and a lot more from within Audacity. I'll get all the editing and mixing done until it sounds the way I want it to, and then I export the Audacity file as a <code>.mp3</code> file. When exporting a project in Audacity, you can also edit the tags (metadata) of the track, which I am always sure to do before closing out of the project.</p>
+        <p>I also use Audacity to record instruments and vocals. I have a Behringer USB interface that I can plug things like guitars and synthesizers into, and then I can record instruments into Audacity, export those recordings, and import them into Sunvox if I want for further manipulation. I can do the same thing with vocals, on one of those rare occasions where I record something with a vocalist (I am not a singer).</p>
+        <p>A little cherry on top, Audacity is free software (licensed under the GPL).</p>
+        <p><a href="https://www.audacityteam.org/download/">Download Audacity here!</a></p>
+        <div class="breakHelper">
+            <br>
+        </div>
+		<h3 style="color:#ff10f0">cool stuff</h3>
+		<p>One thing I have been learning quite a bit about lately is <a href="https://100r.co/site/orca.html">orca</a>, which is a very cool tool developed by <a href="https://100r.co">Hundred Rabbits</a>.</p>
+		<p>It is a livecoding environment capable of sending MIDI, OSC, and UDP signals to audio interfaces. One cool thing I have been wanting to do is experiments in manipulating Sunvox through Orca. It sounds like it would be quite a bit of fun to play with, and to even incorporate into a live environment sometime.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+        <h3 style="color:#ff10f0">what tunes will you write?</h3>
+        <p>Well, that's a bit of my audio production workflow. Hopefully, it helped you out some in your journey to find great audio tools on GNU/Linux, so you can quit Windows and Mac and use free software platforms to write your tunes on.</p>
+        <p>Once you've gotten them installed and played around with them enough, you will learn the ins and outs, and be making tunes in no time. If you've used audio production tools in the past, you should be able to adapt to new stuff pretty quickly if you keep your mind open and be wililng to learn some of the tools. For example, Sunvox looked like a slightly more advanced tracker when I first found it a long time ago, and I quickly learned that is a powerful tool that with time and learning, became the center of my workflow. Audacity was something I used on Mac already, so picking it up on GNU/Linux when I moved over was a no-brainer, as well.</p>
+        <p>Enjoy learning and producing! If you write any cool songs, please feel free to <a href="../contact.html">contact me</a> and let me know about it! I always like finding cool new things to listen to, so if you have an audio project you want to share, feel free to reach out. I might even highlight some of my favorite independent and underground acts here on another page in the wiki sometime.</p>
+        <p>You can also read about, and listen to, my audio projects, which are linked under <a href="audio.html">audio</a> in the wiki.</p>
+        <div class="breakHelper">
+            <br>
+        </div>
+        </div>
+	</body>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+        <p style="color: #FF10F0">Please consider helping people in censored countries <a href="../snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>

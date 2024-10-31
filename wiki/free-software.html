@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>free software</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">free software</h2>
+		<p><i>free software is software that's for everyone!</i></p>
+		<p>Hang out in our online spaces long enough, especially this wiki, and you are going to hear the term "free sofware" quite a bit. If you're new to the world of free software, you might be thinking that it means "free" as in <b>price</b>, but it's actually "free" as in <b>freedom</b>.</p>
+		<p>"<i>What does that mean, anyway?</i>", you might be wondering. It can be a bit confusing at first, but once you get the core tenets of free software, you will understand it much better, and hopefully, able to appreciate everything it can do for you, and that you can do for it.</p>
+		<p>To help you really understand the concept of free software, let's dive into some of the core concepts behind it.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h2 style="color:#FF10F0">The Free Software Definition</h2>
+		<p>Software is considered <b>free as in freedom</b> if it aligns with the <a href="https://en.wikipedia.org/wiki/The_Free_Software_Definition">Free Software Definition</a>, as defined by <a href="https://stallman.org">Richard Stallman</a> and the <a href="https://fsf.org">Free Software Foundation</a>.</p>
+		<p>Software meets the Free Software Definition if it allows the user the <b>Four Essential Freedoms</b>.</p>
+		<p><b style="color:#FF10F0">The Four Essential Freedoms</b>:</p>
+		<ul>
+			<li><b>Freedom 0</b>: The freedom to run the program as you wish, for any purpose.</li>
+			<li><b>Freedom 1</b>: The freedom to study how the program works, and change it so it does your computing as you wish. Access to the Source Code is a precondition for this.</li>
+			<li><b>Freedom 2</b>: The freedom to redistribute copies so you can help others.</li>
+			<li><b>Freedom 3</b>: The freedom to distribute copies of your modified versions to others. By doing this, you can give the whole community a chance to benefit from your changes. Access to the Source Code is a precondition for this.</li>
+		</ul> 
+		<p>Having access to the <a href="https://en.wikipedia.org/wiki/Source_code">source code</a> of the program is essential to whether or not it can be considered free software. If there is a piece of software you use that doesn't publish its source code to be made available to users, it is nonfree software. Some software might publish the source code in whole or in part, but the license might not allow the software to be modified or redistributed by users. This also makes it nonfree software, as it violates Freedoms 2 and 3.</p>
+		<p>You might hear the term "open-source" on the internet quite a bit. It's important to remember that while "open-source" is a good idea, it often misses the point of the free software movement. Merely having your code "open" is not enough - it needs to align with the users' Four Essential Freedoms! Keep in mind that while all free software is open-source, not all open-source software is necessarily free software (depending on the license it uses and any restrictions in place). This can get confusing if you're new to this world - but we are going to go deeper into this concept in a second.</p>
+		<p><a href="ravens-ridge.html">Raven's Ridge</a> only builds free software as defined by the Four Essential Freedoms, because we want everyone to be able to benefit from, modify, and contribute back to our work, and use our software for any reason they wish.</p>
+		<div class="breakHelper">
+            <br>
+        </div>
+        <h2 style="color:#FF10F0">Software Licensing</h2>
+        <p>In this section, we're going to take a look at software licensing, and how it relates to free software. There are all kinds of different kinds of software licenses out there, and knowing the licenses that are free software-friendly will help you know whether or not the software respects your freedoms or not.</p>
+        <p>There are a bunch of different software licenses out there, so we aren't going to go through every example. Instead, we will touch on software licensing models, and provide examples of a few licenses from each.</p>
+        <ul>
+        	<li><b>Proprietary Software</b> is software which is entirely closed-source and restricted. This means the source code is hidden from the user. The license is often full of rules about what you can do with the software and restrictions on how it can be used, and under which conditions it can be used. This kind of software model is <i>always</i> nonfree. Examples of proprietary software include Microsoft Windows, macOS, iOS, Discord, Skype, Spotify, and many, many more.</li>
+        	<li><b>Source-available Software</b> is software that often has its source code available to the public in whole or in part, but also often doesn't allow any modifications or redistribution to the end user. This is often nonfree software. Often, the licenses in these projects will allow you to use the source code noncommercially (making it nonfree software), as an "evaluation trial", etc. Licenses in this "source-available" family you might see the Business Source License, the Elastic License, Polyform License, etc. Remember that each of these come with heavy restrictions on how you may use the source code, even though it is available in whole or in part to you - making them nonfree software.</li>
+		<li><b>Permissive Software</b> is software which aligns perfectly with the free software ethos. It allows you to use the software for any purpose, including for commercial purposes. Unlike copyleft, which we describe in the next list-item, you aren't required to distribute derivative works under the same license if you don't wish to. The only thing you need to do when using these licenses is to make sure to include attribution - that is, include the original copyright notice in your modified versions, ensuring the original authors receive credit. Some popular licenses in the permissive license family include the <a href="https://en.wikipedia.org/wiki/MIT_license">MIT License</a>, the <a href="https://en.wikipedia.org/wiki/BSD_licenses">BSD Licenses</a>, and the <a href="https://en.wikipedia.org/wiki/Apache_License">Apache License</a>.</li>
+		<li><b>Copyleft Software</b> exists to ensure that the Four Essential Freedoms are always upheld. <a href="https://writefreesoftware.org/learn/copyleft">Copyleft</a> (a play on words, as opposed to "copyright"), licenses ensure that anyone who makes derivative works of a copyleft software project also publish their modified versions under the same license, ensuring the code remains free software. You'll find many free software projects using these sort of licenses, which include the <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License">GNU General Public License (GPL)</a>, the <a href="https://en.wikipedia.org/wiki/Mozilla_Public_License">Mozilla Public License (MPL)</a>, and others. You will find many projects under the GNU umbrella and the Linux kernel, for example, fall under the GPL family of licenses, while Firefox, for example, falls under the MPL. These licenses are the strongest to choose if you are writing a free software project and want to ensure that any modified versions of your software also guarantee users the Four Essential Freedoms.</li>
+        </ul>
+        <div class="breakHelper">
+        	<br>
+        </div>
+        <h2 style="color:#FF10F0">FAQs about free software</h2>
+        <p>Here are some of the common questions you might have about free software, and how it works.</p>
+        <p><b style="color:#39FF14">~</b> <b style="color:#FF10F0">Can you sell free software?</b></p>
+        <p>Indeed! Free software can be sold commercially. Remember, when we say "free software", we don't refer to its price, or lack thereof. We tend to say "gratis" instead of "free" when it comes to the price. "Free" in free software <i>always</i> means <b>freedom</b>, as defined by the Four Essential Freedoms, outlined above.</p>
+        <p>In fact, if a software license restricts you from selling copies, it is considered nonfree software, as it doesn't align with the Four Essential Freedoms.</p>
+        <p><b style="color:#39FF14">~</b> <b style="color:#FF10F0">Is "open-source" a bad ethos?</b></p>
+        <p>Not inherently, as a good majority of software deemed "open-source" is free software. However, the term "open-source" is mostly used in a commercial sense, and often misses the point of the free software ethos. We want software to follow the Four Essential Freedoms to ensure the user has the freedom to use the software as they wish. The two movements, however, are very closely aligned, and we have a term for them collectively - <b>Free and Open Source Software</b>, often abbreviated as "FOSS".</p>
+        <p><b style="color:#39FF14">~</b> <b style="color:#FF10F0">How can I get started using free software?</b></p>
+        <p>If you're just now getting into the world of free software, there's a good chance you're still on proprietary systems, such as Microsoft Windows or Apple macOS. The easiest way to begin using free software is to begin using a free operating system, such as those in the GNU/Linux family (I use <a href="https://debian.org">Debian</a>, for example, or those in the BSD family, such as <a href="https://freebsd.org">FreeBSD</a>. You can also use free software on your mobile device, if you'd like, as long as it is one that allows you to install a liberated operating system on it, such as <a href="https://lineageos.org">LineageOS</a> (Android devices only, you're out of luck on iOS devices).</p> 
+        <p>If you are still on proprietary operating systems for whatever reason, begin using free software piecemeal. For example, switch your web browser from a nonfree one such as Chrome or Safari to something like <a href="https://https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="https://brave.com">Brave</a>, or switching from proprietary communication software like Discord to a free one, like <a href="https://element.io">Element</a> or <a href="https://jami.net/">GNU Jami</a>. You can also begin taking lists of any other nonfree software you use, and finding free alternatives for them.</p>
+         <p><b style="color:#39FF14">~</b> <b style="color:#FF10F0">I want to write a free software project. Which license should I choose?</b></p>
+	 <p>That's great that you want to begin writing free software - thanks for doing your part to protect users' freedoms! When you're just taking your first steps in the world of free software development, it can be hard to decide which license to choose - but that's okay! Think about what you want to do with your project, and work from there.</p>
+	 <p>If you want to make sure your software and any modified versions of your software also remain free and respect the Four Essential Freedoms, the easiest thing to do is choose the "strong copyleft" GPL, which covers the entire program. You can also choose the "weaker copyleft" MPL, which covers individual files in the project. There are also some other licenses in the copyleft family you can consider under different circumstances. For example, if you're writing software libraries, you might want to consider using the <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">GNU Lesser General Public License (LGPL)</a>, while if you're writing a networked service, you should consider using the <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU Affero General Public License (AGPL)</a>.</p>
+	 <p>If you want to write free software and let it be permissive, which permits very easy re-use of your code with almost no requirements (usually aside from copyright attribution), one of the mentioned permissive licenses might be the one you want. Keep in mind with these licenses that your code will be able to be integrated into nonfree software if the person modifying or using the code so chooses, so if your main priority is upholding the Four Essential Freedoms, you will probably want to stay within the copyleft family of licenses. However, if you just want to release the code out there in the world with the least restrictions possible, this might be the way to go for you. For permissive licenses, I'd recommend going with the MIT License or BSD 3-Clause License.</p>
+	<div class="breakHelper">
+        	<br>
+        </div>
+        <h2 style="color:#FF10F0">relevant links</h2>
+        <p><a href="https://www.gnu.org/philosophy/free-sw.html">What is Free Software?</a> - a helpful dive into free software from the GNU Project.</p>
+        <p><a href="https://www.gnu.org/philosophy/open-source-misses-the-point.html">Why Open Source Misses the Point of Free Software</a> - an explainer on the differences between free software and open-source.</p>
+        <p><a href="https://writefreesoftware.org">Write Free Software</a> - a helpful website showing how you can begin writing and contributing to free software projects.</p>
+        <p><a href="https://www.fsf.org/history/">FSF History</a> - the history of the Free Software Foundation.</p>
+        <div class="breakHelper">
+        	<br>
+        </div>
+	</body>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>fediverse</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">fediverse</h2>
+		<p><i>a decentralized and federated network of social platforms</i></p>
+		<p>The <b>Fediverse</b> is a lot of things, so on this wiki page, we're going to break it down quite a bit. Essentially, though, the Fediverse is a network of servers (the "decentralized" aspect) that are each their own little social platforms, but talk to other servers in the network (the "federation" aspect).</p>
+		<p>To get you used to the idea of how it works at a high level, think about Twitter. You have an account name, for example "rav3ndust". Now, think about your email address, for example, "rav3ndust@tutanota.com". Now, Combine your username on Twitter with your email account. What if there was "rav3ndust@twitter.com"? What if rav3ndust@twitter.com could talk to accounts on other social media sites, like share a post with ryokoumbra@instagram.com?</p>
+		<p>That's kind of how the fediverse works! Email is a federated system. Maybe you have a ProtonMail account, but you can still send emails to your best buddy who uses a Gmail account. To put it all together, I run my own fediverse "instance" called <a href="https://neighborli.xyz">neighborli</a>. On neighborli, my name is "@rav3ndust@neighborli.xyz". While my account can talk to other people on <code>neighborli.xyz</code>, it can also talk to people on other fediverse sites - for example, <code>fosstodon.org</code>.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#FF10F0">how does it work?</h3>
+		<p>The fediverse is based around a protocol called <a href="https://en.wikipedia.org/wiki/ActivityPub">ActivityPub</a>. The fediverse also has many different little platforms it's built on top of, which we'll list below. You can access these little platforms through their websites, or through fediverse applications (which we call "clients").</p>
+		<p>There are several different little fediverse "platforms", each trying to do its own thing. We'll go over a few below, and then show you some applications you can use to access them on the go.</p>
+		<p style="color:#FF10F0"><b style="color:#B9FF13">~</b>Fediverse platforms</p>
+		<ul>
+			<li><a href="https://en.wikipedia.org/wiki/Mastodon_(social_network)">Mastodon</a>: A Twitter-like platform that allows users to create accounts, create and share posts, media, messaging, all the usual suspects are here. A great choice if you're looking for something close to the Twitter experience.</li>
+			<li><a href="https://en.wikipedia.org/wiki/Pleroma_(software)">Pleroma</a>: A lightweight microblogging platform. This is the platform we use for our fediverse instance on neighborli. There are all kinds of different frontends it can support, and it is lightweight and easy to run on almost anything. Like Mastodon, it supports writing and reading posts, sharing posts and media, messaging, and customization are all things you can expect to see in the Pleroma feature-set.</li>
+			<li><a href="https://en.wikipedia.org/wiki/Pixelfed">Pixelfed</a>: An image-hosting platform for the fediverse. Think about it as an open version of Instagram. It is very similar to Instagram when it comes to UI and concept. You upload your favorite pictures, create stories, you have a home feed where you can see and react to other users' pictures, and so on.</li>
+			<li><a href="https://en.wikipedia.org/wiki/PeerTube">PeerTube</a>: A decentralized YouTube, in essence. On PeerTube instances, one can upload videos, do livestreams, watch and share videos, download videos, comment on videos, and more.</li>
+			<li><a href="https://en.wikipedia.org/wiki/Lemmy_(social_network)">Lemmy</a>: A federated link-aggregation and conversational platform. Similar in style to Reddit. You can read posts, create posts, subscribe to groups, upvote/downvote, all the usual suspects are here.</li>
+		</ul>
+		<p>There are other fediverse platforms as well, including Friendica and Misskey, but I haven't used them before, so cannot yet comment on them.</p>
+		<p style="color:#FF10F0"><b style="color:#B9FF13">~</b>Fediverse clients</p>
+		<ul>
+			<li><a href="https://f-droid.org/packages/fr.gouv.etalab.mastodon/">Fedilab</a>: A great application to connect to Pleroma, Mastodon, Pixelfed, and Friendica instances. </li>
+			<li><a href="https://f-droid.org/packages/org.joinmastodon.android/">Mastodon</a>: The official Mastodon app for connecting to your favorite Mastodon instances.</li>
+			<li><a href="https://f-droid.org/packages/su.xash.husky/">Husky</a>: An app for connecting to your favorite Pleroma instances.</li>
+			<li><a href="https://f-droid.org/packages/org.pixeldroid.app/">Pixeldroid</a>: An app for accessing Pixelfed instances.</li>
+			<li><a href="https://f-droid.org/en/packages/app.fedilab.tubelab/">TubeLab</a>: An app for accessing PeerTube instance.</li>
+			<li><a href="https://f-droid.org/packages/app.vger.voyager/">Voyager</a>: An app for accessing Lemmy instances.</li>
+		</ul>
+		<p>These are some of the best ones I've used - if I find anymore good ones, I will update this list!</p>
+		<div class="breakHelper">
+            		<br>
+        	</div>
+	</body>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>

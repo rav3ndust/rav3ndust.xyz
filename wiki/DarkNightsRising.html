@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{
+			color: #39ff14;
+			font-size: 14px; 
+		}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>Dark Nights Rising</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">Dark Nights Rising</h2>
+		<p><i>a text-based game about isolation and temptations</i></p>
+		<img src="../img/dnr-title.png" title="Dark Nights Rising intro screen on Debian" width="850px">
+		<p><b>Dark Nights Rising</b> is a text-based game I have been working with with my wife, <a href="ryoko.html">RyokoUmbra</a>, under the <a href="ravens-ridge.html">Raven's Ridge</a> name.</p>
+		<p>It is a game that aims to explore isolation and loneliness, and the feelings that pervade one's mind. The story revolves around the character going through a series of events in their mind in order to confront the darker parts of themselves.</p>
+		<p>In the game, decisions made by the player can change how things go. For example, some decisions will move the player forward in the story, while some decisions may end up getting the character killed.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">how Dark Nights Rising works</h3>
+		<p>Dark Nights Rising works through a family of shell scripts. Each script is its own <b>Scene</b> that is tied to a <b>Story</b>, located in the <code>/stories</code> folder. Every script is driven by functions sourced from <code>libdnr.sh</code>, located in the <code>/library</code> folder.</p>
+		<p>Variables that need to be called throughout the game are set by the user during the <b>Introduction</b>, and are stored for later reference in the automatically-generated <code>playerconfig.txt</code> file.</p>
+		<p>We want Dark Nights Rising to be easy to run on any GNU/Linux system, so we are trying to stay as light on dependencies as possible. As such, the game only relies on two programs being installed on the user's system:</p>
+		<ul>
+			<li><code>flite</code>: We use this for voice synthesis.</li>
+			<li><code>mpg123</code>: We use this to control the game's soundtrack while the game is in progress.</li>
+		</ul>
+		<p>There is a handy installer that you can run to install dependencies and give the necessary Dark Nights Rising scripts executable privileges.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#FF10F0">soundtrack</h3>
+		<p>Dark Nights Rising has an original soundtrack written by me, under the <a href="x3nyth.html">x3nyth</a> name. The soundtrack will also have its own album, called <i>Dark Nights Rising</i>, and I'll upload that here for anyone that wants to give it a download.</p>
+		<p>The music in this soundtrack is mostly ambient and experimental, to add to the game's isolated and lonely atmosphere.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">installation</h3>
+		<p>If you want to give Dark Nights Rising a shot, follow these simple directions to get it up and running on your system.</p>
+		<blockquote>Please note that Dark Nights Rising is currently still incomplete, so you will run into either bugs or a stopping point while playing. When the game reaches completion, this page will be updated to reflect the change.</blockquote>
+		<p>Since Dark Nights Rising is still in an incomplete state, it isn't currently packaged. However, there are handy installer scripts to help you get it up and running.</p>
+		<p>Here's the process - we're going to assume you're running Debian in this example:</p>
+		<code>
+		<pre>
+#!/usr/bin/env bash
+# grab dark nights rising from the repo
+git clone https://github.com/rav3ndust/DarkNightsRising
+cd DarkNightsRising
+# make the appropriate installation script executable and run it
+chmod +x /installers/debian-installer/deb-dnr-install.sh
+bash /installers/debian-installer/deb-dnr-install.sh
+		</pre>
+		</code>
+		<p>After the installer script runs, Dark Nights Rising should be installed on your system. You can launch into it by running <code>darknightsrising</code>.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">licenses and source code</h3>
+		<p>Dark Nights Rising is free software, and the code for the game is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>.</p>
+		<p>The pictures and music for the game (everything in the <code>/soundtrack</code> and <code>/graphics</code> folders) are licensed under the <a href="https://artlibre.org/licence/lal/en/">Free Art License</a>.</p>
+		<p>Here's where you can find <a href="https://github.com">Dark Nights Rising's source code</a>.</p>
+		<div class="breakHelper">
+            		<br>
+        	</div>
+		<h3 style="color:#ff10f0">credits</h3>
+		<p><a href="ryoko.html">RyokoUmbra</a> handles most of the story writing, and most of the art that accompanies the game.</p>
+		<p><a href="rav3ndust.html">rav3ndust</a> <i style="font-size:12px">(hey, that's me!)</i> handles the programming and soundtrack.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>

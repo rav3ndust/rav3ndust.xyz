@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>blockpi</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">blockpi</h2>
+		<p><i>a line of open ARM computers for everyone</i></p>
+        <img src="../img/blockpi-logo.png" title="blockpi promo designed by @RyokoUmbra" width="700px">
+        <blockquote><b style="color:#39ff14">></b> The BlockPi gets its name because the casing style we use looks like Lego bricks put together!</blockquote>
+		<p>The <b>BlockPi</b> is a line of small computers built by myself and my wife, <a href="ryoko.html">RyokoUmbra</a>.</p>
+		<p>They are built on top of Raspberry Pi single-board computers, and feature custom casings, operating system preinstalled, and a range of software either curated or written by us.</p>
+		<p>We envision BlockPi being used in all manner of places:</p>
+		<ul>
+			<li><b>In the office.</b> BlockPi is a capable little machine, and can be used to do things such as light development work, word processing, web browsing, creating spreadsheets, and plenty more.</li>
+			<li><b>In the living room.</b> BlockPi can play a good amount of games, including a huge range of open-source games that you can select from on GNU/Linux distributions. It can also, of course, run emulators if you wish, opening you up to a world of ROMs you can play (please note that for legal reasons, we don't provide ROMs - this is up to you).</li>
+			<li><b>In the cabinet.</b> BlockPi can be used without a display, if you wish, and you can connect it to your network and SSH into it from other machines. Handy for if you want to use it as a home server of some kind, run ARM development tasks on it from your main computer, run headless tasks over a terminal, or simply learn more about GNU/Linux environments safely from your Windows or macOS machine, if you've been thinking about making the switch and want to test it out consistently first.</li>
+		</ul>
+        <p>One of the machines I use regularly is a BlockPi hooked up to a small display. I use it headless sometimes as well, over SSH. I like the idea of using small computers that don't use a ton of energy when I can, especially when I'm not doing something that requires a lot of compute. Using these kinds of machines over the long-term can be a good way to practice <a href="permacomputing.html">permacomputing</a>.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">software on a BlockPi</h3>
+		<p>We give users a selection of operating systems to select from when building a BlockPi. We give a choice of Debian, Ubuntu, Raspberry Pi OS. In the future, when we have some scripts ready to support our configs, we also aim to offer Arch ARM.</p>
+		<p>If a user doesn't select an OS choice, we default to Ubuntu.</p>
+		<p>We pre-include a good bit of software through some scripts and utilities we have written. We provide some of the following tools that we have either written ourselves, or forked and modified:</p>
+		<ul>
+			<li><code>nightshade</code> - <b>nightshade</b> is a family of scripts which sets up installations and custom configurations of the software we include, configures custom desktop environments and our <a href="wiredWM.html">wiredWM</a> tiling window manager, and more.</li>
+			<li><code>blockpi_command_center</code> - <b>BlockPi Command Center</b> is a TUI program that helps users get common tasks done on their BlockPi installation. It shows a central menu where the user can perform tasks such as package installation/removal, update management, check the local weather, talk to an LLM assistant, handle network configuration, search the web, and more. Since it's TUI-based, it's easy to use the Command Center from other machines over SSH to manage your BlockPi (We're also slowly working on a port of this software to the <code>curses</code> library in Python, which we will transition over to when it's done).</li>
+			<li><code>wiredWM</code> - <b>wiredWM</b> is a pre-configured fork of <a href="https://i3wm.org/">i3</a>/<a href="https://swaywm.org/">sway</a>, which draws heavy influences from <a href="https://en.wikipedia.org/wiki/Serial_Experiments_Lain">Serial Experiments Lain</a> and uses several <a href="https://suckless.org/">suckless</a> tools. It is an extremely lightweight environment, and therefore runs great on any device, including the BlockPi, where it is our preferred desktop.</li>
+		</ul>
+		<p>We also include other software, such as the <a href="https://mozilla.org/firefox">Firefox</a> and <a href="https://chromium.org">Chromium</a> web browsers, <a href="https://www.luanti.org/">Luanti</a> for doing some gaming, <a href="https://www.thunderbird.net/en-US/">Thunderbird</a> for managing emails, <a href="https://en.wikipedia.org/wiki/Rhythmbox">Rhythmbox</a> for music playback, <a href="https://www.videolan.org/vlc/">VLC</a> for video playback, <a href="https://www.libreoffice.org/">LibreOffice</a> for your office suite, and more.</p>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">who can use BlockPi?</h3>
+	<img src="../img/blockpi.jpg" title="A BlockPi on the table" width="650px">
+        <p>Honestly, everyone can use BlockPi, and I'm not saying that only because we make them - if I think they're not a good solution for something, I will certainly let you know (in fact, I am letting you know with a subsectio below). The latest Raspberry Pi SBCs have been getting more and more impressive for use as desktop machines, and I have successfully used one in the office for awhile (at the time, a Pi 4 8GB).</p>
+        <p>BlockPi can be used fine for common desktop tasks. Things like browsing the web, watching videos, listening to music, playing some games, word processing, using communication apps - all of this will work just fine. BlockPi has 8GB of RAM, and the storage size is dictated by the size of the SD card in use. We offer 256GB and up to 1TB SD cards with our BlockPis (SD card inclusions are required with BlockPis since we pre-install the OS, though we will provide an option for people who want to 'bring their own' and avoid the setup. We'll provide scripts for them instead, to use if they want, so they can have the same set of software as other users).</p>
+        <p>BlockPi is also great for anyone who wants to explore GNU/Linux operating systems without first removing Windows or macOS from their main machines. They can use a desktop or headless BlockPi and explore different kinds of free software, desktop options, OS options, and learn how package management and general usage differs than on what they're currently used to. Or, it can be great for kids or people who want to get into programming for the first time!</p>
+        <p>If you want a simple, open computer that respects your privacy, doesn't use much power when plugged in, runs free software first, if you want to run a home server, if you want to build some kind of hardware project, make a small living-room gaming or TV video-watching setup, or if you just want to see what the ARM architecture is all about, there are all kinds of different things you can do with a BlockPi, as long as you keep your expectations in check.</p>
+        <p>Pi hardware, and SBCs in general, have really seen a lot of improvement since the release of the original Pi back in the day. You can now comfortably use them for a ton of common computing tasks, and it is a lot of fun. A BlockPi without a bunch of things running in the background (ideally, a headless installation), can even run local AI inference using smaller LLMs (we ship software that supports this functionality).</p>
+        <p style="color:#ff10f0"><b style="color:#39ff14">~</b> who shouldn't use BlockPi?</p>
+        <p>As we mentioned above, it's important to keep your expectations in check. This hardware has really improved and with the right software that utilizes the hardware it's on, it can make for a solid desktop or headless computing experience. However, as promised, I want to go over when it's not going to be the best choice to reach for a BlockPi.</p>
+        <p>Don't expect a BlockPi to run super-powerful tasks. You aren't going to be playing the latest AAA game, compiling Chromium, or rendering crazy projects in Blender. While the hardware has gotten very good and can provide a comfortable, lightweight computing environment, keep its limitations in mind, and remember that it's still an SBC, not that crazy machine you spec'd out on PC Parts Picker and built for $3000 with huge amounts of RAM.</p>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">future plans for BlockPi</h3>
+        <p>We have several plans for future things for BlockPi. Some of these things are still just ideas and no real work has been done on them yet, so I won't go too deep into them, but here are a few of the plans we're thinking about with the hardware:</p>
+        <ul>
+            <li><b>Homestead automation</b> - We plan on writing some custom software in order to facilitate homestead automation to use with BlockPi machines, which goes hand-in-hand with some of our <a href="ravens-ridge.html">raven's ridge</a> projects.</li>
+            <li><b>On the road</b> - I think it would be cool to build a BlockPi that interfaces with a car and has an Android Auto display. It would allow you to do things like safely control your music while driving.</li>
+            <li><b>Open-source smart home</b> - I've thought about BlockPi being a central area to run <a href="https://www.home-assistant.io/">Home Assistant</a>, an open-source smart home project.</li>
+        </ul>
+        <p>There are no guarantees that any of these ideas will ever happen (besides the homestead automation thing, we are planning on working on that one), but it is a peek on some of the ideas that we might experiment with. If we think of anything else interesting we might work on in the future, we will update it here.</p>
+        <p>Soon, I'm going to upload videos <a href="https://youtube.com/@rav3ndust">on my YouTube channel</a> of BlockPi tours and general usage so you can get an idea of how it works.</p>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">how are BlockPis made?</h3>
+        <p>BlockPis are put together by us getting the latest Raspberry Pi SBCs (we favor the 8GB boards so that everyone can get the most amount of power possible), we source good-looking casings for them (in the future, we will be 3D-printing our own casings), we pre-install an OS and a suite of custom software for the users, a custom tiling desktop, provide an SD card with the image and software on it with a good amount of storage (256GB up to 1TB). We list them on our website, and then people click the <b>buy it</b> button, and we trade computer for money.</p>
+        <p>All of the BlockPis we build are stored in our temperature-controlled office building. We test each unit after an SD card with an OS image has been installed. We test each device to ensure it boots, all hardware ports work as expected, and the usual.</p>
+        <p>When someone buys a BlockPi, they have the option to choose an OS for it. They select from Debian, Ubuntu, Raspberry Pi OS, and Arch ARM, and we include the appropriate pre-flashed SD card with it (we keep all of our OS images up-to-date). They can choose the default setup, or they can choose no pre-configuration, in which case they provide their own SD card and OS and receive only the BlockPi hardware.</p>
+        <blockquote><b style="color:#39FF14">></b> If you go the "DIY" route with your BlockPi purchase, you're not locked out of the <b>nightshade</b> suite! As mentioned elsewhere on this page, we provide all our our scripts, configs, and software that is found on our pre-installed SD cards in <a href="https://github.com/IbaraSoftware">our GitHub</a>, so you can use it whether you have a pre-configured BlockPi or not, if you wish.</blockquote>
+        <p>We also want to create eco-friendly packaging for the BlockPis for when we ship them out to users.</p>
+        <p>If you want to trade money for computer, please visit the <a href="https://blockpi.xyz">BlockPi website</a>.</p>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <blockquote><b style="color:#39ff14">></b> We're currently working on putting more BlockPis together, but when they're ready, we'll post a link to the BlockPi website here where anyone can purchase one if they'd like one!</blockquote>
+        <blockquote><b style="color:#39ff14">></b> If you would like to contribute some code to the BlockPi software suite, where we're aiming to build great, minimal FOSS apps for ARM on GNU/Linux, please see our <a href="https://github.com/IbaraSoftware">code repos</a> to learn how to get involved.</blockquote>
+        <div class="breakHelper">
+            <br>
+        </div>
+    </div>
+	</body>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+        <p style="color: #FF10F0">Please consider helping people in censored countries <a href="../snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>
