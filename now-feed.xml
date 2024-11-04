@@ -15,6 +15,12 @@
         <updated>2024-10-31T00:00:00+00:00</updated>
         <content type="html">
             <![CDATA[
+            <h2>2024-11-04</h2>
+			<p><b>16:09</b></p>
+			<p>It's been a rainy one in my neck of the woods the last few days. I have been mostly inside on the computer, and working on finishing up some more things for the wiki. I also finished up <code>nightshadeNeon-webgen</code>, a small web-page generation script that follows our <a href="nightshadeNeon.html">nightshadeNeon</a> color scheme. We have been using this in the background for awhile to convert markdown files to HTML files ready to make their way to the wiki.</p>
+			<p>Thanks to all this rain, I found a small leak in one of our buildings yesterday. Once all the rain calms down, I'm going to have to get up on the roof and see if I can seal the leak off. We had to do this same process on our motorhome last year, so this is becoming something we're pretty good at. :-)</p>
+			<p>While I'm ready for these storms to finally die off, I have been enjoying the little cool front it has brought with it. It has felt very nice outside, at the very least. Hopefully after tonight we're done with the heavy rainstorms for awhile, and I can get up on the roof and seal the leak.</p>
+			<p>Other than the rainstorms, I've been working on adding some more things to the wiki, working on our little FOSS health application, and getting ready to setup a Gitea instance on a new domain I picked up last night. Taking some notes on other things that need to get done this week. Should be a productive one, from the looks of it.</p>
             <h2>2024-10-31</h2>
             <p><b>14:58</b></p>
             <p>Sounds like my wife and I might be going out into town today to visit the haunted house in town. Sounds like it might be a good time, as long as it isn't as lame as some of the ones our school tries to come up with back in the day with cheap tricks and little smoke machines. :)</p>
