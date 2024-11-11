@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<title>software I use</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">software I use</h2>
+		<p><i>software tools on GNU/linux that enhance my workflow</i></p>
+		<p>I am on my computer for most of the day almost every day. I work online and often hang out on my computer when done working as well, doing things like catching up with friends, hanging out online, playing games, watching videos, making music, creating and editing videos, recreational programming, or whatever else I feel like doing.</p>
+		<p>I get everything done on my computer using only <a href="free-software.html">free software</a> operating systems and applications, and I don't own a Windows machine or macOS machine, so please don't ask me about software for those platforms. I wanted to use this page in the wiki to talk not about software that I have written, but about software tools I use every day that enhance my workflow, or just fun software that brings joy to my life in some way.</p>
+        <p>You will not only see me mention my favorites that I use all the time, but I will also mention some software that is written with specific desktops/frameworks in mind, so if you want something tailored to a specific environment, you can find some options for that as well (although you should note most of the tools I will mention are typically cross-desktop, as I'm not 'married' to a particular desktop, being mostly a user of minimal, tiling-based desktops).</p>
+        <p>As discussed in <a href="desktop-environments.html">the desktop environment page</a>, I mostly use <a href="wiredWM.html">wiredWM</a>, our tiling window manager, but I also keep GNOME, Cinnamon, XFCE, and Plasma on my machine for when I want to switch it up, so I routinely use software designed for specific environments.</p>
+        <blockquote>Please note that I'm always discovering and trying out new software tools, so this list is bound to be updated in the future!</blockquote>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">web browsers</h3>
+        <p>Web browsers might be one of the most important pieces of software on our systems, because it is one of the apps we use the most, and it is also one of the ones that knows the most about us. We tell our browsers things we wouldn't tell our best friends!</p>
+        <p>I've already went through web browsers in detail on the wiki on <a href="browsers.html">this page</a>, but I still wanted to highlight the ones I use the most here, since they are such a critical tool in almost everyone's workflow:</p>
+        <ul>
+            <li><b>Brave</b> is a free and open-source browser that takes privacy seriously. Based on Chromium, it blocks ads and trackers, resists fingerprinting, has its own independent, private search engine, and has a wealth of tools built-in, like an AI assistant, private Tor windows, crypto wallets, and more.</li>
+            <li><b>Chromium</b> is the open-source foundation on which many other browsers are built. I keep the <code>chromium</code> package from Debian around when I need a vanilla instance of Chromium for testing stuff out.</li>
+            <li><b>Firefox</b> is an open-source browser from the Mozilla non-profit. It is one of the few browsers around that isn't based on Chromium, and aims to promote a free, independent, and open internet for everyone. Like Chromium, there are a number of browsers built on top of Firefox, including Librewolf and the Tor Browser.</li>
+            <li><b>Librewolf</b> is an open-source browser built on top of the Firefox codebase. It follows the latest release of stable Firefox, while bringing in some privacy enhancements, such as <code>resist.fingerprinting</code> turned on by default, uBlock Origin included in the installation, zero telemetry, DuckDuckGo as default search, and more.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">music apps</h3>
+        <p>Everyone wants to be able to manage their local music collection, create playlists whenever they want, and listen to it at their leisure. Thankfully, GNU/Linux has no shortage of music apps, and while this is by no means all of them, I thought I'd highlight a few of the ones I use:</p>
+        <ul>
+            <li><b>cmus</b> is a CLI-based music player. I use it a ton when I am in my tiling window manager environment. It is easy to add music to cmus, find the songs you want to listen to, queue them up, sort through your tracks, artists, and albums, and everything else, using keybaord shortcuts without leaving your terminal. Definitely one I recommend if you want a minimal music player for your terminal.</li>
+            <li><b>rhythmbox</b> is a GTK-based music player, and it is an amazing one. Rhythmbox is definitely my favorite GUI-based music player not just on Linux, but on any operating system. It is an insanely good application, with support for organizing, searching, and playing your local music collection of course, but also streaming online radio stations and podcasts. It looks great in GNOME, Cinnamon, XFCE, or other GTK-based desktops, as it will follow your GTK theme nicely. This is always the music tool I use whenever I'm in GNOME or another GTK-based environment.</li>
+            <li><b>elisa</b> is a Qt-based music player, and one I'd recommend most if you are running on a Qt-based desktop, such as KDE Plasma or LXQt. It's the one I open up whenever I'm using my Plasma installation, and it has great support for all the usual things like searching through your local music, creating playlists, and it just looks nice.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">video software</h3>
+        <p>If you like to collect videos such as TV show episodes, anime, or movies, you're going to want to make sure you have a great video player to watch them with. Thankfully, just like music applications, there is no software of great video software on Linux distributions for you to enjoy your video collections with.</p>
+        <p>Here are some of the ones I use and recommend, and keep in mind, these are not the only options, just the ones I'm most familiar with:</p>
+        <ul>
+            <li><b>VLC</b> is the gold standard of video-playing applications, and it is free-software and cross-platform. Not only can you use it on Linux distros, but it also runs on Windows, Mac, and even Android. I've never found a video format that VLC couldn't handle, and it also has a bunch of other great functionality as well, that is beyond the scope of this introduction as a video player. I definitely recommend you to check it out, however, as it is often seen as the swiss-army knife of multimedia software. VLC also runs on everything, including GNU/Linux, freeBSD, macOS, Windows, and even Android.</li>
+            <li><b>mpv</b> is probably the one I use the most, and is a great, minimal video player. It plays video and audio files, and it doesn't try to do much else. It doesn't have a fancy frontend or a bunch of features, but it has never failed me when I am using it to simply do what it's supposed to do - play multimedia. mpv even has an Android port!</li>
+            <li><b>Celluloid</b> is a GTK-based frontend to mpv, and it does its job well. It looks most at home in GTK-based desktops, obviously, and will do a fine job of playing your videos. It has all the functionalities you'd expect from mpv, but with some buttons and further GUI elements to interact with it much easier.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">terminal emulators</h3>
+        <p>Terminal emulators (or 'terminals' for short) are important in GNU/Linux if you plan on getting things done deep in the system, doing scripting, or doing development work. Like Terminal on MacOS and the Command Prompt in Windows, your terminal in your Linux distro is your way of directly interacting with your computer without any GUI abstractions.</p>
+        <p>There are all kinds of terminal emulators on Linux. Some are designed specifically for use in certain environments (such as GNOME Terminal for GNOME and other GTK environments, or Konsole for KDE and other Qt environments), while others are cross-platform and right at home in any desktop.</p>
+        <p>The terminals I mainly use aren't chained to a particular desktop since I normally use my tiling environment anyway, so here are a few you might think about looking into to supercharge your experience on the command-line:</p>
+        <ul>
+            <li><b>alacritty</b> is the main terminal I use. It is quick, and easy to configure. Being GPU-accelerated, complex terminal output is rendered smoothly, allowing you to see things like big logs or code reviews with ease. It's important to note that Alacritty focuses on speed and efficiency, so it doesn't have things like tabbing and splits. Alacritty runs on everything, from GNU/Linux, to BSD, to Windows and macOS.</li>
+            <li><b>kitty</b> is another terminal I use quite frequently. It uses OpenGL to render everything. Kitty is meant to be easy to configure and extend. It is capable of running different programs organized into tabs and windows, nad other niceties. For example, clicking on a link within the terminal will open it up in you default browser. It also has some configurable keyboard shortcuts, which you can program to your heart's content to make kitty work the way you want it.</li>
+            <li><b>st</b> is short for "simple terminal", and it means it. This is a terminal without any bullshit. Originally built by the suckless community as a highly minimal terminal that you are meant to fork and patch manually for further functionalities, st is simple as it gets. It launches in milliseconds, it lacks scrollback and some other "cozy" things you're used to in other terminals, but this minmalism allows you to patch in the functionalities you want while ignoring the bloat found in other terminals you might not want.</li>
+        </ul>
+        <p>Here are the terminals to consider using if you want to use one optimized for your specific desktop setup:</p>
+        <ul>
+            <li><b>GNOME Terminal</b> is a great option on GNOME and other GTK-based desktops. It has tabbing, handy "find" functionality so you can easily search through long command outputs, the ability to set the terminal as read-only with a click, and more.</li>
+            <li><b>XFCE Terminal</b> is a lightning-fast terminal to consider using on any GTK-based desktop, not just XFCE. It has a lot of the same features as GNOME terminal, while being speedy and quick, and looking at home on just about any desktop you install it on.</li>
+            <li><b>Konsole</b> is the one to use if you are on KDE Plasma or another Qt-based desktop. The terminal follows your Plasma theme, can be set to blur if that's your thing, has tabbing and split-views, and more.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">text editors</h3>
+        <p>I spend a ton of my time on my machines writing code, so text editors are naturally something else I want to cover here.</p>
+        <p>Like with the other software shown here, I will show you my personal favorites, and then some options you can also consider using depending on your desktop environment, since many desktops on Linux have their own homegrown text editing software custom-built for the desktop.</p>
+        <ul>
+            <li><b>vim</b> likely needs no introduction, as it is one of the oldest text editors around, and keeps on going. It is a CLI-based editor (which also has GUI frontends available), and it runs on everything. I have been using Vim for a long time, even since before switching to Linux over a decade ago. Vim is very minimal and easy to extend. I use Vim the most in my tiling environment, and tend to use the environment itself as an "IDE" of sorts - vim open in one terminal, and another terminal or two opened beside it to run scripts, execute commands, and take notes. Getting into Vim does take a bit of a learning curve and a willingness to try new things, but once you do, your workflow is changed for good.</li>
+            <li><b>VSCodium</b> is the truly open-source variant of VSCode, the wildly popular GUI text editor built by Microsoft. VSCodium is the GUI text editor I tend to reach for the most, as it has a ton of useful extensions and it sort of "just works" without any additional configuration. It has a built-in terminal so that you can execute scripts and commands without leaving the editor. I use the "GitHub Dark" theme, which I think looks nice, a few language extensions to support syntax highlighting for a few langs not built-in to the editor (like gemtext and Nix), install the vim extension so vim motions work as expected, and it's off to the races. I tend to work on things as full projects at a time, and Codium's project view is great. Please note that I have no idea how well Codium stacks up to its proprietary sibling, VSCode, as I've never used that version.</li>
+            <li><b>Zed</b> is a newer open-source text editor I have been getting into. It has a nice GUI, a built-in terminal, a good amount of languages it currently supports, and it is blazing fast thanks to its Rust-based roots. There are updates to the editor quite frequently and more features coming down the pipeline all the time, so I look forward to seeing how Zed continues to evolve. Please note that Zed also has some collaboration and AI features built in, but I have not used those, so I can't comment on them.</li>
+            <li><b>Pulsar</b> is a community fork of Atom, the well-known text editor originally built by the GitHub team before it was sunset a few years ago. Like Atom before it, it is a simple-to-use GUI text editor with a good amount of features. It is cross-platform, running on not only Linux, but also Mac and Windows. It has split-pane views for easily viewing and editing multiple files at the same time. It supports most of the major languages that you'd expect, has features such as autocomplete, find-and-replace, easy-to-edit settings, and themes to make it your own. If you were a fan of Atom back when it was a big editor (as I was at the time), you will find a lot to love about Pulsar.</li>
+        </ul>
+        <p>Here are the text editors to consider using if you want one custom-built for your desktop:</p>
+        <ul>
+            <li><b>GNOME Text Editor</b> is a very handy text editor built for the GNOME desktop environment. It is using GTK4 right now, and looks right at home on the desktop. It supersedes the old text editor for GNOME and other GTK-based desktops, Gedit, which is also a great text editor I still use to this day. It has support for a bunch of different languages, sports some very elegant themes, and is a joy to use.</li>
+            <li><b>Pluma</b> is another GTK-based text editor that looks right at home on desktops such as Cinnamon, XFCE, and MATE. A fork of Pluma called "Xed" is the default text editor on Linux Mint.</li>
+            <li><b>Kate</b> is a fantastic text editor from the KDE project. It looks right at home on Plasma, and of course will follow your Plasma theme. It has support for a bunch of languages, and like VSCode, has built-in terminal functionality so you can execute commands and test scripts and programs out without needing to leave the editor window if you don't want to.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">video editor software</h3>
+        <p>I only have experience using two video editors, so they will be the only two I mention here for now. I am aware that there are others, though, that are available for Linux, so please let me know how well they hold up if you have tested them out and found them useful. I might try them out as well, and add them to the list if they stack up well.</p>
+        <ul>
+            <li><b>Pitivi</b> is a GTK-based video-editing software, and it is probably the one I use the most. It has all the video editing features you'd expect, including the ability to snap, trim, split, and cut clips, scrubbing through media, support for a huge range of formats, animated effects, filters, and transitions, realtime asset management and search, and more. Pitivi can be used on any desktop, of course, but feels most at home on GNOME or other GTK-based desktops.</li>
+            <li><b>Kdenlive</b> is a Qt-based video-editing software. It has multi-track editing capabilities, has a timeline, and unlimited audio and video tracks can be added. Custom effects and transitions can also be added, and rendering is done using a non-blocking process, allowing it to easily be stopped, restarted, or paused. It has a wealth of tools for creating, moving, cropping, and deleting image, audio, and text clips. Kdenlive can be used anywhere, of course, but feels most at home on Plasma or other Qt-based desktops.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">image editing software</h3>
+        <p>Here are some of the image editors I use. Please note that just like with video editors, I only use a few of these, so there won't be much here. If you are aware of other great image editing software on GNU/linux, please let me know and I will check it out and include it here.</p>
+        <ul>
+            <li><b>Inkscape</b> is a GTK-based graphics editor. It is cross-platform, and runs on just about everything. This includes not only GNU/Linux, but the BSDs, Illumos, and of course, macOS and Windows.</li>
+            <li><b>GIMP</b> is your raster image graphics editor on GNU/Linux. You can use it to touch up photos, edit and manipulate images, transcode between various file formats, use different plugins and scripts to extend it, and more. GIMP has been around since 1995, and remains as the standard 'photoshop replacement' on GNU/Linux. GIMP also runs not only on Linux, but also on the BSDs, Solaris, macOS, and Windows. Fun fact: GIMP is also mentioned in the name of GTK (the GIMP Toolkit).</li>
+            <li><b>Krita</b> is a Qt-based graphics editor. Like Inkscape, it runs almost everywhere, including not only GNU/Linux distros, but also Haiku, chromeOS, macOS, Windows, and even Android.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">document viewer software</h3>
+        <p>We all need some way to view our documents, such as our PDF files, e-books, and more. There are no shortage of these kinds of applications on Linux, either, so let's take a look at a few of the ones I use.</p>
+        <ul>
+            <li><b>zathura</b> is a simple, minimal document viewer. I use it in my tiling environment, and it's easy to use. Simply run <code>zathura filename.pdf</code> and your document will be displayed. It's not full of features like some of the others on this list, but it is fast, loads documents up quickly, and does what it says it does on the tin.</li>
+            <li><b>Atril Document Viewer</b> is a well-known document viewer on Linux, and the one that I have probably used the most over the years. It's a GTK-based document viewer, and can display documents, show their contents in a nice sidebar for easy scrolling through, print the document for you, allow you to edit it, bookmark sections of the document to come back to later, and more.</li>
+            <li><b>Evince</b> is another GTK-based document viewer that has been used in the GNOME-world for awhile now. It has some nice features, allowing you to view your documents, annotate them, view them in 'night mode', browse through them in a handy sidebar, and more.</li>
+            <li><b>Okular</b> is a fantastic document viewer based in Qt, naturally making it most at home on Plasma and other Qt-based desktops. It is fully-featured, allowing you to display your documents, visualize Markdown documents, browse images, and more.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">office software</h3>
+        <p>One of the things keeping people on Windows is their reliance on the Microsoft Office suite, and you will be happy to know that if you are thinking about checking out free software, you're covered with office suite software.</p>
+        <p>I have only used one office suite software since I began using Linux, and so I will only recommend one. Thankfully, it is the one used the most in the free software world, and comes installed in a ton of popular Linux distributions.</p>
+        <p><b>LibreOffice</b> is a fantastic suite of free and open-source office applications. With it, you get:</p>
+        <ul>
+            <li><b>LibreOffice Writer</b>, your Microsoft Word alternative. Create, edit, save, open documents just like you would in Word, and save them in free formats such as ODT, or in proprietary ones such as DOCX.</li>
+            <li><b>LibreOffice Calc</b>, your Microsoft Excel alternative. Create, edit, save, and open spreadsheets.</li>
+            <li><b>LibreOffice Impress</b>, your Microsoft PowerPoint alternative. Create, edit, save, and open slideshow presentations.</li>
+            <li><b>LibreOffice Draw</b>, an alternative to Microsoft Visio/Lucidcharts/Miro, etc. Create, edit, save, and open flowcharts, diagrams, mind-maps, and more.</li>
+            <li><b>LibreOffice Base</b> is a database-management interface allowing you to create, edit, and maintain various types of databases. Consider it an alternative to something like Airtable or Microsoft Access.</li>
+            <li><b>LibreOffice Math</b> is a formula editor, allowing users to create and edit mathematical equations within LibreOffice documents.</li>
+        </ul>
+        <p>If office software is what's holding you back from switching to linux, check out Libreoffice on your Windows or Mac machine before making the switch and see how you like it comparison to your current office software - LibreOffice is cross-platform and runs on everything, so there is no reason not to at least check it out and give it a chance!</p>
+        <blockquote>Also, LibreOffice is not only "free as in freedom", but also "free as in cost"! You get a fully featured, open-source office suite, without having to worry about that annoying Microsoft 365 subscription. What a bargain!</blockquote>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <h3 style="color:#ff10f0">shells</h3>
+        <p><b>Shells</b> are the terminal 'languages' you use to interact with your machine, and there are several of them available on Linux and UNIX systems. Here are some of the main few you can expect to find, along with one or two I like to use:</p>
+        <ul>
+            <li><b>Bash</b> is the predominant shell on Linux systems. You will find most scripts these days are written with Bash in mind, and will assume it is installed on your system. Bash has some helpful features built into it. For example, there is your Bash history, where you can see a list of commands you have issues recently. You can also use the <b>tab</b> key while typing a command out to autocomplete it. For example, when <code>cd</code>'ing around in the filesystem, hitting the Tab key after you have typed out a letter or two of a directory you want to switch into will automatically finish the output of that directory, so you can simply press "Enter" to finish issuing the command. Handy stuff!</li>
+            <li><b>Fish</b> is a more modern shell I like to use. It has most of the same features you'd expect to find in Bash, along with a few of its own. Some of these handy features include the ability to configure the shell through a web UI, command-autocomplete based on what you are typing, its own scripting language, and more.</li>
+            <li><b>zsh</b> is another shell commonly found on modern Linux systems, as well as some BSD systems, as far as I'm aware (doesn't macOS even ship zsh as default now?). zsh takes some of the features found in Bash and other shells and cranks them up to 11. zsh has expanded tab autocompletion over what Bash can do, allowing you to do even more with that particular superpower. zsh also has a huge plugin community, allowing you to further extend what it can do. And of course, it will work fine with most things you are used to doing in Bash or other shells already.</li>
+        </ul>
+        <div class="breakHelper">
+            <br>
+        </div>
+        <p>As you can see, there are all kinds of great free software applications for all kinds of different categories of software. I've tried to make this little guide as easy as possible to follow, whether you have been using free software for a long time or are just now making the switch over from Mac/Windows. This is just some of the main software I use on GNU/Linux, and as usual, if there is anything I should check out, feel free to <a href="../contact.html">reach out</a> and let me know about it, and I will test it out and feature it here.</p>
+        <p>I hope you found this little free software guide useful, especially if you are someone who is switching over from macOS or Windows. Checking out free software alternatives to some of the proprietary apps you use, especially if they already run on Mac and Windows, are a great way to get an idea of the some of the software you can use when you make the transition to GNU/Linux or another free operating system.</p>
+        <div class="breakHelper">
+            <br>
+        </div>
+    </body>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>
