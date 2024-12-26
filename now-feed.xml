@@ -3,57 +3,65 @@
     <title>rav3ndust&#39;s journal</title>
     <id>https://rav3ndust.xyz/now.html</id>
     <link rel="alternate" href="https://rav3ndust.xyz/now.html"></link>
-    <updated>2024-10-31T00:00:00+00:00</updated>
+    <updated>2024-12-26T00:00:00+00:00</updated>
     <author>
         <name>rav3ndust&#39;s journal</name>
         <uri>https://rav3ndust.xyz/now.html</uri>
     </author>
     <entry>
-        <title>2024-10-31 Inktober II</title>
-        <id>https://rav3ndust.xyz/now.html#2024-10-31</id>
-        <published>2024-10-31T00:00:00+00:00</published>
-        <updated>2024-10-31T00:00:00+00:00</updated>
+        <title>rav3ndust's updates</title>
+        <id>https://rav3ndust.xyz/now.html#2024-12-26</id>
+        <published>2024-12-26T00:00:00+00:00</published>
+        <updated>2024-12-26T00:00:00+00:00</updated>
         <content type="html">
             <![CDATA[
+            <h2>2024-12-26</h2>
+	    <p><b>04:41</b></p>
+		<p>Well, Christmas has come and gone, and we're coming up on another New Year already.</p>
+		<p>It doesn't seem quite right to think about how 2024 is already almost over. Its been quite the year, with some highs, some lows, a lot of fun, and some sad moments, as well. In short, another year around the sun.</p>
+		<p>We got quite a good bit of stuff done this year as far as some of our software and other work goes. We have begun building up a small indie game vision that I'm going to be mentioning in a future post pretty soon. My wife and I are getting the concepts for this game together, and then I'll be writing up a little 'announcement' of sorts about it. It's going to be a lot of fun.</p>
+		<p>We've been working on some graphical assets and plans for the story of this game that we're going to be working on, and I've been thinking about how some music for it might sound, and coming up with some ideas there, too. Speaking of music, I've been doing some writing in some spare time over the last few weeks, and have a few new tracks that are nearing completion. They'll be posted up for download, as usual, when they're finished up.</p>
+		<p>Other than all of this, I have just been playing a few new games, keeping warm, and getting ready for the New Year to arrive. In January, I have an appointment to get some teeth that will most likely need pulled looked at, and I'm looking forward to that. Will certainly be nice not to have to worry about that so much anymore.</p>
+		<p>Thanks for stopping by, and hope you have had a good holiday and a great upcoming New Year, as well. 2024 was crazy in a lot of ways, but all in all, it was a good year for me, and I'm looking forward to seeing what 2025 has in store, as well.</p>
             <h2>2024-11-14</h2>
-			<p><b>00:24</b></p>
-			<p>Been feeling a lot better the last few days. For the first few days after that seizure, my legs were hurting pretty good, but they have since improved a ton after a couple of days of rest, and I'm feeling mostly back to normal.</p>
-			<p>I'm glad that I seem to be feeling back to normal, because I need to finally get up on the roof of our other building and try to patch a small leak we found. I believe I mentioned it in an earlier update. It isn't that big of a deal, but I prefer to fix these things early before they have a chance to get worse.</p>
-			<p>Other than resting up after that seizure the other night, I have been thinking about some new videos to make, working on our "FOSSfit" health app, and getting some more done on this site, of course. I am also setting up a small mining area in one of our buildings for mining Monero, and it has been going well so far. I'm making a simple setup to where I can SSH into the mining machines anytime I need to check on them, or their connection status to the mining pools.</p>
-			<p>That's about all I've been up to this week, aside from also getting a new <a href="https://fossphones.com/11-13-24/html">FOSSphones news roundup</a> finished up yesterday. I'm hoping I continue to feel better and get some more things wrapped up before this weekend rolls around.</p>
+	    <p><b>00:24</b></p>
+		<p>Been feeling a lot better the last few days. For the first few days after that seizure, my legs were hurting pretty good, but they have since improved a ton after a couple of days of rest, and I'm feeling mostly back to normal.</p>
+		<p>I'm glad that I seem to be feeling back to normal, because I need to finally get up on the roof of our other building and try to patch a small leak we found. I believe I mentioned it in an earlier update. It isn't that big of a deal, but I prefer to fix these things early before they have a chance to get worse.</p>
+		<p>Other than resting up after that seizure the other night, I have been thinking about some new videos to make, working on our "FOSSfit" health app, and getting some more done on this site, of course. I am also setting up a small mining area in one of our buildings for mining Monero, and it has been going well so far. I'm making a simple setup to where I can SSH into the mining machines anytime I need to check on them, or their connection status to the mining pools.</p>
+		<p>That's about all I've been up to this week, aside from also getting a new <a href="https://fossphones.com/11-13-24/html">FOSSphones news roundup</a> finished up yesterday. I'm hoping I continue to feel better and get some more things wrapped up before this weekend rolls around.</p>
             <h2>2024-11-11</h2>
-			<p><b>18:46</b></p>
-			<p>Well, today has taken one nice turn. We were going to make something for dinner, but it sadly wasn't thawed out, so we're doing a bit of a simple night and having pizza instead. It sounds pretty good to me, since I've been having a craving for pizza the last few days.</p>
-			<p>Bits of me still feel a little <i>al-dente</i> from having the seizure the other night, so I have been sitting in my chair, taking it easy and trying to rest, and working on the site a good bit more today. I've also been doing some experimenting about with Ollama to use as the background for the <b>Shellbie</b> project - more to come on that when it is finished up and ready for testing. :-)</p>
-			<p>Going to spend the rest of the night eating some pizza, watching something good on TV (hopefully), maybe playing some <i>Celeste</i> later, and finishing up a bit more work on here I still have planned this evening.</p>
+	    <p><b>18:46</b></p>
+		<p>Well, today has taken one nice turn. We were going to make something for dinner, but it sadly wasn't thawed out, so we're doing a bit of a simple night and having pizza instead. It sounds pretty good to me, since I've been having a craving for pizza the last few days.</p>
+		<p>Bits of me still feel a little <i>al-dente</i> from having the seizure the other night, so I have been sitting in my chair, taking it easy and trying to rest, and working on the site a good bit more today. I've also been doing some experimenting about with Ollama to use as the background for the <b>Shellbie</b> project - more to come on that when it is finished up and ready for testing. :-)</p>
+		<p>Going to spend the rest of the night eating some pizza, watching something good on TV (hopefully), maybe playing some <i>Celeste</i> later, and finishing up a bit more work on here I still have planned this evening.</p>
             <h2>2024-11-11</h2>
-			<p><b>14:59</b></p>
-			<p>Well, the last few days have been a bit of a blur, and I've barely been able to do much of anything, so I haven't got to update this page in a few days, or get some other things done I wanted to get done on the site.</p>
-			<p>As you might have seen if you follow me on the fediverse, Saturday night, I had a seizure again, for the first time in awhile. We had just finished up filming a video for Youtube and Odysee where we were playing Luanti/Minetest, and I had come back inside and was getting ready for bed. After we crashed, I guess at some point, I had my episode. My wife was thankfully home and was able to keep me held down so I didn't seriously harm myself.</p>
-			<p>I did hurt my legs pretty good though, apparently, and have been walking with my cane again. Not the biggest fan of having to get around like this, but right now it's the only way I can stand upright without feeling like I'm going to lose my balance. Usually takes a few days after a seizure for me to go back to feeling 'normal'. Otherwise, I'm back in my computer chair today, working on some things for the site, our project we're building on top of ollama, and some other stuff I plan on touching on further soon.</p>
-			<p>Hope everyone is having a good start to their week. Hopefully mine continues to improve and I can get back to getting more things done over the next few days.</p>
+	    <p><b>14:59</b></p>
+		<p>Well, the last few days have been a bit of a blur, and I've barely been able to do much of anything, so I haven't got to update this page in a few days, or get some other things done I wanted to get done on the site.</p>
+		<p>As you might have seen if you follow me on the fediverse, Saturday night, I had a seizure again, for the first time in awhile. We had just finished up filming a video for Youtube and Odysee where we were playing Luanti/Minetest, and I had come back inside and was getting ready for bed. After we crashed, I guess at some point, I had my episode. My wife was thankfully home and was able to keep me held down so I didn't seriously harm myself.</p>
+		<p>I did hurt my legs pretty good though, apparently, and have been walking with my cane again. Not the biggest fan of having to get around like this, but right now it's the only way I can stand upright without feeling like I'm going to lose my balance. Usually takes a few days after a seizure for me to go back to feeling 'normal'. Otherwise, I'm back in my computer chair today, working on some things for the site, our project we're building on top of ollama, and some other stuff I plan on touching on further soon.</p>
+		<p>Hope everyone is having a good start to their week. Hopefully mine continues to improve and I can get back to getting more things done over the next few days.</p>
             <h2>2024-11-04</h2>
-			<p><b>16:09</b></p>
-			<p>It's been a rainy one in my neck of the woods the last few days. I have been mostly inside on the computer, and working on finishing up some more things for the wiki. I also finished up <code>nightshadeNeon-webgen</code>, a small web-page generation script that follows our <a href="nightshadeNeon.html">nightshadeNeon</a> color scheme. We have been using this in the background for awhile to convert markdown files to HTML files ready to make their way to the wiki.</p>
-			<p>Thanks to all this rain, I found a small leak in one of our buildings yesterday. Once all the rain calms down, I'm going to have to get up on the roof and see if I can seal the leak off. We had to do this same process on our motorhome last year, so this is becoming something we're pretty good at. :-)</p>
-			<p>While I'm ready for these storms to finally die off, I have been enjoying the little cool front it has brought with it. It has felt very nice outside, at the very least. Hopefully after tonight we're done with the heavy rainstorms for awhile, and I can get up on the roof and seal the leak.</p>
-			<p>Other than the rainstorms, I've been working on adding some more things to the wiki, working on our little FOSS health application, and getting ready to setup a Gitea instance on a new domain I picked up last night. Taking some notes on other things that need to get done this week. Should be a productive one, from the looks of it.</p>
+	    <p><b>16:09</b></p>
+		<p>It's been a rainy one in my neck of the woods the last few days. I have been mostly inside on the computer, and working on finishing up some more things for the wiki. I also finished up <code>nightshadeNeon-webgen</code>, a small web-page generation script that follows our <a href="nightshadeNeon.html">nightshadeNeon</a> color scheme. We have been using this in the background for awhile to convert markdown files to HTML files ready to make their way to the wiki.</p>
+		<p>Thanks to all this rain, I found a small leak in one of our buildings yesterday. Once all the rain calms down, I'm going to have to get up on the roof and see if I can seal the leak off. We had to do this same process on our motorhome last year, so this is becoming something we're pretty good at. :-)</p>
+		<p>While I'm ready for these storms to finally die off, I have been enjoying the little cool front it has brought with it. It has felt very nice outside, at the very least. Hopefully after tonight we're done with the heavy rainstorms for awhile, and I can get up on the roof and seal the leak.</p>
+		<p>Other than the rainstorms, I've been working on adding some more things to the wiki, working on our little FOSS health application, and getting ready to setup a Gitea instance on a new domain I picked up last night. Taking some notes on other things that need to get done this week. Should be a productive one, from the looks of it.</p>
             <h2>2024-10-31</h2>
             <p><b>14:58</b></p>
-            <p>Sounds like my wife and I might be going out into town today to visit the haunted house in town. Sounds like it might be a good time, as long as it isn't as lame as some of the ones our school tries to come up with back in the day with cheap tricks and little smoke machines. :)</p>
-            <p>Been playing some Celeste in between moving more things around in the repos. Everything is settled on the site, other than some dead links that need filled in where we have some missing spots in the wiki. All in good time!</p>
-            <p>We watched <i>The Exorcist: Believer</i> the other night. It was about what I thought it was going to be. The story held up fine, but the "scares" just weren't scary, but it seems like not many modern horror flicks are anymore. Still, with that in mind, the source material is in a class of its own.</p>
-            <p>If anyone else is reading this, hope you have a happy halloween.</p>
+            	<p>Sounds like my wife and I might be going out into town today to visit the haunted house in town. Sounds like it might be a good time, as long as it isn't as lame as some of the ones our school tries to come up with back in the day with cheap tricks and little smoke machines. :)</p>
+        	<p>Been playing some Celeste in between moving more things around in the repos. Everything is settled on the site, other than some dead links that need filled in where we have some missing spots in the wiki. All in good time!</p>
+            	<p>We watched <i>The Exorcist: Believer</i> the other night. It was about what I thought it was going to be. The story held up fine, but the "scares" just weren't scary, but it seems like not many modern horror flicks are anymore. Still, with that in mind, the source material is in a class of its own.</p>
+            	<p>If anyone else is reading this, hope you have a happy halloween.</p>
             <h2>2024-10-30</h2>
             <p><b>13:24</b></p>
-            <p>Happy Halloween! I finally got my new site redesign live on my server, and have had a busy last few months while slowly building it up. Keep in mind that if you're reading the site now, you might find that there are a few dead links - this is being worked on, so you don't need to worry about opening up an issue in the repo :)</p>
-            <p>We have also been working on moving our fediverse instance, <a href="https://neighborli.xyz">neighborli</a>, over to mastodon. The transition is complete, and anyone who wants is welcome to join in the conversation - registration is open and ready!</p>
-            <p>We're thinking about having dinner tonight after work and maybe hitting a haunted house in town. I don't look forward to the traffic, but I'm sure it will be a fun time.</p>
+            	<p>Happy Halloween! I finally got my new site redesign live on my server, and have had a busy last few months while slowly building it up. Keep in mind that if you're reading the site now, you might find that there are a few dead links - this is being worked on, so you don't need to worry about opening up an issue in the repo :)</p>
+            	<p>We have also been working on moving our fediverse instance, <a href="https://neighborli.xyz">neighborli</a>, over to mastodon. The transition is complete, and anyone who wants is welcome to join in the conversation - registration is open and ready!</p>
+            	<p>We're thinking about having dinner tonight after work and maybe hitting a haunted house in town. I don't look forward to the traffic, but I'm sure it will be a fun time.</p>
             <h2>2024-07-09</h2>
             <p><b>16:37</b></p>
-            <p>Decided it was time to revamp my personal site. Been working on the <b>wiki</b> (aka digital garden), writing down some of the recipes we use around here to include on this site, and finishing up the redesign overall. It's looked the same for several years now, so thought it was time to switch it up.</p>
-            <p>Other than that, been trying to beat the summer heat here in Arkansas (finally got some rain (and some crazy wind) lately thanks to the remnants of Beryl, which cooled it down a bit), working on our <b>Dark Nights Rising</b> game, doing some music, and getting back into building little raspberrypi-powered computers to use around here for homestead automation.</p>
-            <blockquote>Fun fact - I adapted the stylesheet for the site revamp from my custom <a href="https://midnight.pub">Midnight Pub</a> theme! :-)</blockquote>
+            	<p>Decided it was time to revamp my personal site. Been working on the <b>wiki</b> (aka digital garden), writing down some of the recipes we use around here to include on this site, and finishing up the redesign overall. It's looked the same for several years now, so thought it was time to switch it up.</p>
+            	<p>Other than that, been trying to beat the summer heat here in Arkansas (finally got some rain (and some crazy wind) lately thanks to the remnants of Beryl, which cooled it down a bit), working on our <b>Dark Nights Rising</b> game, doing some music, and getting back into building little raspberrypi-powered computers to use around here for homestead automation.</p>
+            	<blockquote>Fun fact - I adapted the stylesheet for the site revamp from my custom <a href="https://midnight.pub">Midnight Pub</a> theme! :-)</blockquote>
             ]]>
         </content>
     </entry>
