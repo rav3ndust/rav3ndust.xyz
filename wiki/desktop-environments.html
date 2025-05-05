@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		} 
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<meta name="description" content="A look at some popular desktop environments on GNU/Linux.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>desktop environments</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">desktop environments</h2>
+		<p>On any computer operating system, you have a 'desktop environment' - the GUI you're presented and use to move around and do things, like open programs, manage windows, read notifications, and other common things like that.</p>
+		<p>Most people are used to the 'traditional' desktop paradigm: that is, something that resembles your standard Windows setup, a panel on the bottom of the screen where app launchers can be pinned, a menu system (aka "Start menu") for searching for things and launching programs, a systray area for clocks, calendar, notifications, and applets to live.</p>
+		<p>Maybe you're more used to the Mac-style way of doing things, with a dock at the bottom and a panel with menus and other information at the top. No matter what kind of desktop paradigm you're used to, you will find a desktop option you can enjoy on GNU/Linux systems.</p>
+		<p>Let's take a look at some of the popular options and some of my favorite desktop environments you can find on Linux systems, and you can get a good idea of which one might suit you! I'll be including screenshots of my setup on each desktop so you can get an idea of my workflow on each one, as well.</p>
+		<blockquote>Please note that this page is going to be going over the 'full desktop environments' on GNU/Linux - if you are interested in tiling window managers, I have a <a href="twm.html">separate page</a> in the wiki dedicated to them!</blockquote>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">GNOME</h3>
+		<img src="de-images/gnome.png" width="700px">
+		<h6 style="color:#ff10f0">my GNOME desktop on Debian</h6>
+		<p><a href="https://gnome.org">GNOME</a> is one of the most-used desktop environments on GNU/Linux. It comes installed as the default desktop experience out of the box on a host of popular Linux distros, including Ubuntu, Debian, Fedora, and more.</p>
+		<p>GNOME aims to be a modern, elegant, and simple way to use your computer. It is quite minimal in its vanilla state - you get a top panel with a navigation/activities widget, a clock/calendar/notififcations widget, and a settings widget. If you click the navigation pill in the top left corner, you are presented with the 'Acitivities Overview', a zoomed-out view of all of your open windows spread across different workspaces.</p>
+		<p>I enjoy using vanilla GNOME, however, for those who want to bring in some more functionality to their GNOME desktop, there are thousands of <a href="https://extensions.gnome.org">GNOME Extensions</a> you can choose from to bring in that functionality. For example, if you want a persistent dock or panel at the bottom of your screen (or anywhere else you'd like to put it), you can use the <b>Dash to Dock</b> or <b>Dash to Panel</b> extensions. If you want the current weather conditions next to your clock/calendar/notifications widget, you can easily do that with the <b>Weather O' Clock</b> extension. These are just a few examples - there are all kinds of extensions you can explore and choose from to personalize your GNOME experience.</p>
+		<p>GNOME also has an software center, simply called <b>Software</b>, that allows new users to get up and running quickly on their GNOME desktop with new software of their choosing without having to open up the terminal.</p>
+		<blockquote>To install GNOME on Debian: <code>doas apt install gnome</code></blockquote>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">Cinnamon</h3>
+		<img src="de-images/cinnamon.png" width="700px">
+		<h6 style="color:#ff10f0">my Cinnamon desktop on Debian</h6>
+		<p><a href="https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)">Cinnamon</a> began life as a fork of GNOME3 on the <a href="https://linuxmint.com">Linux Mint</a> distribution. When the GNOME Shell became the new way to use GNOME, ditching the old look and feel of the much-loved <a href="https://en.wikipedia.org/wiki/GNOME_2">GNOME2</a>, a few new desktops forked from GNOME in order to bring that old functionality back. Cinnamon was one of those desktops, and since the initial fork, has become a completely independent, GTK-based desktop.</p>
+		<p>Cinnamon follows a very traditional, Windows-like paradigm. If you have ever used Windows before, you already know how to get around the Cinnamon desktop. Out of the full desktop environments, Cinnamon is definitely one of my favorites - it has a very <a href="https://en.wikipedia.org/wiki/Windows_7">Windows 7</a>-like feel to it.</p>
+		<p>Cinnamon has some of its own programs as well to complement the desktop, and they aren't meant specifically for Cinnamon - they are meant to look good across any GTK-based desktop. These programs, called <a href="https://linuxmint-developer-guide.readthedocs.io/en/latest/xapps.html">XApps</a>, are intended by the Cinnamon team to be cross-desktop, and include programs such as <a href="https://github.com/linuxmint/nemo">Nemo</a> (Cinnamon's file manager), <a href="https://github.com/linuxmint/timeshift">Timeshift</a> (a very handy system snapshot tool), <a href="https://github.com/linuxmint/xed">Xed</a> (a text editor based on Pluma), <a href="https://github.com/linuxmint/pix">Pix</a> (an image viewer), and more.</p>
+		<blockquote>To install Cinnamon on Debian: <code>doas apt install cinnamon</code></blockquote>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">MATE</h3>
+		<img src="de-images/mate.png" width="700px">
+		<h6 style="color:#ff10f0">my MATE desktop on Debian</h6>
+		<p><a href="https://mate-desktop.org">MATE</a> is the continuation of GNOME2.</p>
+		<p>GNOME2 used to be the default experience on just about every GNU/Linux distribution. It was comfortable, easy to use, and was easy to make your own. MATE aims to continue those old vibes of GNOME2 days long past, while bringing in modern niceties (for example, the MATE community is currently working towards Wayland compatibility for the desktop).</p>
+		<p>A default MATE experience gives you a top panel and a bottom panel. You'll have your programs menu at the top panel, along with your system tray and some applets such as your clock/calendar/notifications/volume control and other settings. Your bottom panel shows you your open windows that you can move between by selecting them, along with your workspace selector, where you can switch back and forth between different workspaces with ease, or drag windows to those workspaces if you want to move them around.</p>
+		<p>MATE continues to be one of my favorite full desktop environments on GNU/Linux. It throws me back to the days when I first began using GNU/Linux, and its lightweight nature, look and feel, and general workflow still feel like 'home' when it comes to full desktops.</p>
+		<blockquote>To install MATE on Debian: <code>doas apt install mate-desktop-environment</code></blockquote>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">KDE Plasma</h3>
+		<img src="de-images/plasma.png" width="700px">
+		<h6 style="color:#ff10f0">My Plasma desktop on Debian</h6>
+		<p><a href="https://kde.org/plasma-desktop/">KDE Plasma</a> is a beautiful desktop environment built around the Qt framework. It can appeal to someone who wants their desktop to stay out of their way and let them get things done, or it can appeal to tinkerers who want to shape their desktop environment into anything they want. Want your panel off to the side? That's easy. Want four panels in different places, for some reason? You can do that too.</p>
+		<p>You can also theme your Plasma up with widgets, like weather, system information, virtual desktops, and more. You can make the accent colors a specific color of your choosing, or you can make the accent colors pull from the dominant color of your wallpaper. With a host of community themes, you can also make Plasma look however you want, though I think the default Breeze Dark theme looks great on its own.</p>
+		<p>Plasma also has its own software center, much like GNOME's, called <b>Discover</b>, allowing new users to jump in and quickly find new applications for their Plasma desktop.</p>
+		<blockquote>To install Plasma on Debian: <code>doas apt install plasma-desktop plasma-workspace-wayland plasma-framework</code></blockquote>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">relevant links</h3>
+		<p><a href="https://gtk.org">GTK+</a>: Learn about the GTK framework used by desktops such as GNOME, Cinnamon, and MATE.</p>
+		<p><a href="https://www.qt.io/download-open-source">Qt</a>: Learn about the Qt framework used by KDE Plasma.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> | <a href="https://x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	
