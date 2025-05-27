@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<!-- meta information -->
+		 <meta name="description" content="Design with minimalism in mind, creating simple interfaces that run everywhere, and load quickly.">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>design minimalism</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">design minimalism</h2>
+		<p><i>create simple interfaces that run anywhere</i></p>		    
+		<blockquote><b style="color:#39ff14;font-size:16px">~</b> "An idiot admires complexity, a genius admires simplicity, a physicist tries to make it simple. For an idiot, anything, the more complicated it is, the more he will admire it. If you make something so clusterfucked he can't understand it, he's gonna think you're a god 'cause you made it so complicated nobody can understand it. That's how they write journals in academics, they try to make it so complicated, people think you're a genius." - <i><a href="https://www.soldierx.com/hdb/Terry-Davis">Terry A. Davis</a></i></blockquote>
+		<p>If you take a look around this website and any other website that I maintain, you'll notice one thing - everything is written in simple, vanilla html/css/js and follows <a href="nightshadeNeon.html">its own theme</a>.</p>
+		<p>I have always tried to build with minimalism and simplicity in mind. Websites that are designed with this idea in mind load quickly and are easy to read and navigate. There are no crazy animations going on, no pop-up modals taking your attention away from the content, and your browser isn't requesting hundreds of megabytes of data from some CDN to serve your browser libraries for the latest <a href="https://dev.to/mattlewandowski93/stop-chasing-new-javascript-frameworks-build-with-fundamentals-instead-1lni">javascript framework fad</a>.</p>
+		<p>It's just you and the content - the way the internet should be!</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">beauty in simplicity</h3>
+		<p>A lot of software and web devs seem to think that the more complex and crazy that they can make something, the better it is. I disagree with this sentiment. Let's take websites, as an example. Most people interact with several websites on a daily basis, so it is a thing that almost anyone can relate to.</p>
+		<p>Even in our current time, the majority of the people in the world don't have access to super-fast internet. The United States lead the way with <a href="https://www.cnet.com/home/internet/gigabit-internet-is-it-worth-splurging-for-a-faster-internet-plan/">47 percent of households</a> having access to gigabit speeds, but those kinds of speeds are only available to <a href="https://www.telecompetitor.com/gigabit-availability-report-1-in-5-people-worldwide-can-get-1-gbps-broadband/#:~:text=The%20Gigabit%20Monitor%20found%20that%20gigabit%20connectivity,the%20second%20most%20people%20with%20gigabit%20availability.">a tiny 5 percent of the global population</a>. There is great value in designing your websites so that they load quickly, and aren't video/image/animation-heavy in order to serve the content you're trying to serve.</p>
+		<p>Accessibility for everyone is important! Remember that not everyone who is going to be viewing your website is going to be doing so using the fastest internet on the latest devices. Heavy websites and software have another cost, as well - users on older devices might not be able to view it, as some of these heavy websites cause spikes in memory usage on the device, which can crash the browser or freeze the loading of the page.</p>
+		<p>I can provide anecdotal evidence of my own for these ideas, as well. I live way out in the sticks in the mountains of western Arkansas, and out here, we have one option: satellite. I've used satellite-only internet for the last decade since I've been back in Arkansas, having had access to gigabit when I lived in the city in Oklahoma. I notice huge differences when loading websites such as this one, or those much heavier, bloated websites I was talking about a few minutes ago. Also, my travel laptop is my old <a href="sakura.html">thinkpad x200</a>, and when loading those heavy websites, I can notice a huge spike in memory usage, and the tab often freezes.</p>
+		<p>Remember - <i>design with your users in mind</i>! Not only do minimal styles work for nice-looking, easily-readable websites, but they're also great for users who don't have access to the fastest internet or the newest devices with better amounts of memory! Consider some of these things before you load up your sites with animations, videos, heavy javascript frameworks, advertisements and tracking programs, and all that kind of junk. Vanilla html/css/js is a great way to go - and you can even use <a href="https://en.wikipedia.org/wiki/Static_site_generator">static site generators</a> if you wish, to do a lot of the heavy lifting for you, if you choose.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">testing a few website speeds</h3>
+		<p>Let's use a little one-liner to test some website connection speeds with <code>curl</code>. We're going to print the time it takes to complete the request (in seconds), and the total size of the download (in bytes). This is a simple test using only a cli tool - we can do more complex testing in the browser itself - but that's beyond the scope of this little experiment.</p>
+		<p>Here's our one-liner so you can test it against other websites. We will run it against a few sites next:</p>
+		<code>curl -s -w '%{time_total} seconds\n%{size_download} bytes: total download size\n' -o /dev/null $URL</code>
+		<p>Let's test it now, where <code>$URL</code> is the site we're testing.</p>
+		<p>First, we'll test against this site itself:</p>
+		<br>
+		<p><b style="color:#00ffff;font-size:13px">rav3ndust@core:~$</b> <code>curl -s -w '%{time_total} seconds\n%{size_download} bytes: total download size\n' -o /dev/null https://rav3ndust.xyz </code><p>
+		<p><code>1.422790 seconds</code></p>
+		<p><code>3019 bytes: total download size</code></p>
+		<br>
+		<p>Not too shabby. Let's try now, with a news website. Modern mainstream news websites are normally quite heavy, so they're a good example:</p>
+		<br>
+		<p><b style="color:#00ffff;font-size:13px">rav3ndust@core:~S</b> <code>curl -s -w '%{time_total} seconds\n%{size_download} bytes: total download size\n' -o /dev/null https://www.nytimes.com</code></p>
+		<p><code>15.807601 seconds</code></p>
+		<p><code>808765 bytes: total download size</code></p>
+		<br>
+		<p>What a difference! As you can see, our request to this site (<code>rav3ndust.xyz</code>) took only a second and a half with a download size of 3,019 bytes. The request to the news site (<code>www.nytimes.com</code>) took almost 16 seconds, with a much bigger download size of 808,765 bytes.</p>
+        	<div class="breakHelper">
+            		<br>
+        	</div>
+		<h3 style="color:#ff10f0">why does any of this matter?</h3>
+		<p>Ideally, you want as many people as possible to be able to reach your webpage. You want it to be visible for people that live next door to you, and people that live on the other side of the world from you. Information wants to be available to everyone, so why make it harder for people to get the information by loading up your site full of things that are going to slow it down? You can see this point illustrated in our simple little test above.</p>
+		<p>Simple sites, like this one, load faster and are much lighter on the resources of the devices loading them. Bloated, heavy sites can slow down browsers and even crash the tab. Design with accessibility in mind, and choose to make things a little more minimal, a little more streamlined, so that everyone can access it!</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">relevant links</h3>
+		<p><a href="https://motherfuckingwebsite.com/">motherfucking website</a></p>
+		<p><a href="https://evenbettermotherfucking.website/">even better fucking website</a></p>
+		<p><a href="https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/">html is all you need to make a website</a></p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> | <a href="x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>
+
