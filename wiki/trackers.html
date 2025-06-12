@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {background-color: #FF10F0;}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		} 
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<meta name="description" content="Tracker software is a great, retro way to compose your music.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>trackers</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>	
+		<h2 style="color:#f110f0">trackers</h2>
+		<p><i>a programmatic method for composing audio productions</i></p>
+		<img src="../img/trackers.jpg" width="700px">
+		<h6 style="color:#ff10f0">the trackers I use, running on Debian</h6>
+		<p><b>Trackers</b> are pieces of audio software that feature a 'tracker-style' interface for programming music and sounds, instead of your typical 'piano roll' style interface you might see in the big-name DAWs (Digital Audio Workstations).</p>
+		<p>If you've only ever used the more well-known DAWs before, it might look a little daunting when you first sit down in front of a tracker. But don't worry, once you learn how to twiddle the knobs the right way, they're quite fun, and even better, dare I say, than those big-name DAWs, as they give you precise control over everything you're doing in your audio.</p>
+		<p>Trackers have been used for years by composers for crafting music for video game soundtracks. They have also been used by electronic and experimental composers to create everything from intricate, space-like ambient soundscapes to chiptunes.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">how trackers work</h3>
+		<p>Let's de-mystify trackers a bit for you if you're brand new to them.</p>
+		<p>One of the first things you're going to see when you open up any tracker software is a grid where you place seemingly random numbers and letters. Don't worry - they're not so random. Everything in your tracker software has a purpose, to allow you to manipulate your sounds at even the most granular of levels.</p>
+		<p>Each <b>vertical column</b> in your tracker represents a <i>track</i> or a <i>channel</i>. Each <b>horizontal row</b> in your tracker represents a <i>moment in time</i> - as if it were a timeline! In your more traditional music sequencing environments found in DAWs, you'd be clicking around in a piano roll with your mouse to form notes and chords. Here, in your tracker, you enter in your musical data in this text-based grid environment, with each character in the grid representing things like <b>note names</b> (C-3, A-5, etc.), <b>octave numbers</b>, <b>effect codes</b> (controlling things such as velocity, slides, vibrato, etc.), and <b>sample/instrument numbers</b> (in order to select the sound you want to manipulate).</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">trackers you can use on GNU/Linux machines</h3>
+		<p>If you run GNU/Linux and want to use tracker software to write some music, you will be glad to know that there is certainly no shortage of it to choose from. My personal favorite, and the one I use is the most is Sunvox, which we will cover in the list below.</p>
+		<p>There's really no "best" tracker software - they all do the same thing, but may have different features. It's all about knowing what you're looking for in your tracker software, and testing out different ones until you find the one you're most comfortable working in.</p>
+		<p>Here are some of the ones you will find that you can install on GNU/Linux. I have each of these installed on my system right now (Debian Trixie):</p>
+		<ul>
+			<li><a href="https://www.warmplace.ru/soft/sunvox/">Sunvox</a>: Sunvox has been the main audio software I have been using since about 2016, when I first started the <a href="x3nyth.html">x3nyth</a> project. It has everything I need, and I don't use much else. It features a modular interface, allowing you to craft intricate sounds by crafting together smaller components into modules. Like any good software of its kind, it also supports MIDI, allowing you to connect external devices to send input if you wish, such as synthesizers. Music is programmed into the tracker interface as patterns, and then you arrange the patterns in the layout that forms your song using the layout editor on the bottom of the screen. Parameter settings for sounds are on the lefthand side of the screen next to your modules, allowing you to craft your sounds by hand in any way you see fit.</li>
+			<li><a href="https://milkytracker.org/">Milkytracker</a>: Milkytracker is an open-source tracker heavily inspired by Fasttracker II. It has been around for a long time, and it was the first tracking software I ever used. It supports ProTracker 2/3 playback modes for <code>.mod</code> files and also offers compatibility with other module formats, such as <code>.xm</code> and <code>.s3m</code>. It gives you a tabbed interface for working with up to 32 modules at the same time, and has a built-in sample/instrument editor for you to generate looped or single/multi-cycle waveforms through Milkytracker's inbuilt synthesizer, known as MilkySynth.</li>
+			<li><a href="https://tildearrow.org/furnace/">Furnace</a>: Another FOSS option on the list, Furnace is a great tracker that has some pretty neat features. Furnace has extensive support for an array of different soundchips, from more well-known ones such as SNES, NES, and Sega Genesis, to more niche ones, such as the ES5506 and the VIC-20. To keep the sound authentic to the hardware it's emulating, Furnace uses high-quality emulation cores such as Nuked, SameBoy, MAME, and others. It has compatibility with Deflemask modules, so you can use modules you created in Deflemask inside of Furnace, if you wish. Sporting quite the flexible windowing system, Furnace also allows you to organize its interface in any way you see fit. To top it all off, it is licensed under the GNU General Public License, keeping it open for everyone.</li>
+			<li><a href="https://www.deflemask.com/">Deflemask</a>: Deflemask is a unique one on this list in that it is the only one that is a paid piece of software, but it is worth it in every sense of the word. It is only $10 on itch.io for a lifetime license for the product, and Deflemask has a nice array of features making it worth the buy. You can use it to compose music for various soundchips and systems, including the NES, Game Boy, Sega Genesis, Commodore64, and more. It has real-time hardware emulation, making sure that the music you create within it sounds true-to-life for the hardware you're writing for. It has a modular interface, allowing you to mix and match how you'd like it to match your preferred workflow, along with themes, so you can make your color scheme as you'd wish. As expected, it also supports MIDI, as well as features a built-in editor for wavetables, FM synthesis, and samples.</li>
+		</ul>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">relevant links</h3>
+		<p><b style="color:#39ff14;font-size:16px">~</b> <a href="https://en.wikipedia.org/wiki/Music_tracker">Music tracker</a> page on Wikipedia is another good place to get the gist of trackers, some good examples of popular ones, and a rundown on the history of trackers.</p>
+		<p><b style="color:#39ff14;font-size:16px">~</b> <a href="https://resources.openmpt.org/tracker_handbook/handbook.htm">The Tracker's Handbook</a> - a handy resource for learning the fundamentals for audio tracking. It doesn't focus on a singular tracker software (but does use a few as examples). Instead, it teaches the basics that will be found in all audio tracker software.</p>
+		<p><b style="color:#39ff14;font-size:16px">~</b> <a href="https://sonicstate.com/news/2022/02/01/the-guide-to-trackers/">Guide to Trackers</a> by Sonic State is a nice write-up on the history of trackers and some highlights on how they work.</p>	
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> | <a href="https://x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	
+				
