@@ -9,7 +9,11 @@
 		h2{color:red;}
 		code{color: #39ff14; font-size: 14px}
 		blockquote{color: #FF10F0;}
-	    .breakHelper {background-color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
 		head {
     		background-color: black;
     		color: white;
@@ -47,12 +51,12 @@
 		<p><b style="color:#FF10F0">wiredWM</b> is our "fork" of <a href="https://i3wm.org">i3</a>, my favorite tiling window manager. I have added a bunch of customizations on top, with a host of custom scripts, a host of keyboard shortcuts, color themes matching our <a href="nightshade.html">nightshade</a> color scheme, and a suite of software both hand-picked and written (and/or forked) by us.</p>
 		<p>We have configs for both <a href="x11.html">X11</a> and <a href="wayland.html">Wayland</a>, so the user can pick and choose. These are handled through custom configurations of <a href="i3wm.html">i3</a> and <a href="sway.html">Sway</a>, respectively. We have forks of each window manager that feature our customizations and are actively synced with upstream versions to keep features up to date.</p>
 		<p>As you can probably tell from the images, wiredWM is heavily inspired by <a href="https://en.wikipedia.org/wiki/Serial_Experiments_Lain">Serial Experiments Lain</a>, one of my favorite anime of all time.</p>
-		<img src="../img/wired2.png" title="firefox and vim open side-by-side" width="700px">
+		<img src="../img/wired2.png" title="chromium and vim open side-by-side" width="700px">
 		<div class="breakHelper">
 			<br>
 		</div>
 		<h2 style="color:#FF10F0">wiredWM keybindings</h2>
-		<img src="../img/wired3.png" title="firefox, file manager, and image viewer in tiled view" width="700px">
+		<img src="../img/wired3.png" title="chromium, file manager, and image viewer in tiled view" width="700px">
 		<p>We have a bunch of handy keybindings that make everyday operations simple for the user. Here's a <b style="color:#FF10F0">handy quickstart guide</b>:</p>
 		<blockquote>Please note that the <b>Meta</b> key is the <b>Windows</b> key on most keyboards, and the <b>command</b> key on Apple keyboards.</blockquote>
 		<ul>
@@ -79,7 +83,7 @@
 			<br>
 		</div>		
 		<h2 style="color:#FF10F0">wiredWM tools</h2>
-		<img src="../img/wired4.png" title="vim open with lo-fi hiphop playing in pop-out window" width="700px">
+		<img src="../img/wired4.png" title="mplayer, noodle, and sunvox open in a workspace" width="700px">
 		<p>Here are some of the tools we utilize on wiredWM.</p>
 		<ul>
 			<li><code>nm-applet</code> allows you to connect to your networks with ease from your system tray.</li>
@@ -99,7 +103,7 @@
 			<li><code>i3lock-fancy</code> lets you lock your screen, blurring it and showing a lock icon when you use the keybinding.</li>
 			<li>A selection of terminals to choose from: <code>alacritty</code>, <code>kitty</code>, <code>st</code>.</li>
 		</ul>
-		<p>Everywhere possible, wiredWM uses the <a href="https://www.fontsquirrel.com/fonts/quicksand">Quicksand</a> system font for an elegant and easy-to-read look.</p>
+		<p>Everywhere possible, wiredWM uses <a href="https://www.fontsquirrel.com/fonts/inter">Inter</a> as the system font for an elegant and easy-to-read look.</p>
 		<div class="breakHelper">
 			<br>
 		</div>

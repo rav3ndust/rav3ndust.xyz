@@ -10,7 +10,11 @@
 		h2{color:red;}
 		code{color: #39ff14; font-size: 14px}
 		blockquote{color: #FF10F0;}
-	    .breakHelper {background-color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
 		head {
     		background-color: black;
     		color: white;
@@ -35,12 +39,14 @@
 	</head>
 	<body>
 		<h1 style="text-align:center">licenses</h1>
-		<!--begin 'navbar' -->
-		<p style="text-align:center"><b><a href="now.html">now</a> | <a href="blog.html">blog</a> | <a href="wiki/wiki.html">wiki</a> | <a href="recipes.html">recipes</a> | <a href="bookmarks.html">bookmarks</a> | <a href="contact.html">contact</a> | <a href="about.html">about</a> | <a href="donate.html">donate</a></b></p>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
 		<!--end 'navbar'-->
 		<div class="breakHelper">
 			<br>
-		</div>	
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>	
 		<p>These are the licenses used on this site - each of them leads to a link with license text.</p>
 		<ul>
 			<li><a href="CC0.html">Creative Commons CC0 License</a>: Used for site content.</li>
