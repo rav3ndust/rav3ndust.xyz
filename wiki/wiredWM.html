@@ -31,7 +31,7 @@
 	<head>
 		<!--link in the favicon (nonindex version)-->
 		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
-		<meta name="description" content="wiredWM is a fork of i3 and sway, with some custom conveniences built in, following the nightshadeNeon color scheme, along with a Serial Experiments Lain vibe.">
+		<meta name="description" content="wiredWM is a fork of sway, with some custom conveniences built in, following the nightshadeNeon color scheme, along with a Serial Experiments Lain vibe.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>wiredWM</title>
 	</head>
@@ -46,70 +46,72 @@
 		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
 		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
 		<h2 style="color:#FF10F0">wiredWM</h2>
+		<p><i>let's all love lain</i></p>
 		<!--<img src="../img/wired1.png" title="wiredWM desktop" height="500px" width="700px">-->
 		<img src="../img/wired.png" title="wired desktop" width="700px">
-		<p><b style="color:#FF10F0">wiredWM</b> is our "fork" of <a href="https://i3wm.org">i3</a>, my favorite tiling window manager. I have added a bunch of customizations on top, with a host of custom scripts, a host of keyboard shortcuts, color themes matching our <a href="nightshade.html">nightshade</a> color scheme, and a suite of software both hand-picked and written (and/or forked) by us.</p>
-		<p>We have configs for both <a href="x11.html">X11</a> and <a href="wayland.html">Wayland</a>, so the user can pick and choose. These are handled through custom configurations of <a href="i3wm.html">i3</a> and <a href="sway.html">Sway</a>, respectively. We have forks of each window manager that feature our customizations and are actively synced with upstream versions to keep features up to date.</p>
-		<p>As you can probably tell from the images, wiredWM is heavily inspired by <a href="https://en.wikipedia.org/wiki/Serial_Experiments_Lain">Serial Experiments Lain</a>, one of my favorite anime of all time.</p>
-		<img src="../img/wired2.png" title="chromium and vim open side-by-side" width="700px">
+		<p><b style="color:#FF10F0">wiredWM</b> is our fork of <a href="https://swaywm.org">sway</a>, my favorite tiling window manager. I have added a bunch of customizations on top with our configs, a host of custom scripts, a myriad of helpful keyboard shortcuts, color themes matching our <a href="nightshadeNeon.html">nightshadeNeon</a> color scheme, and a suite of software both hand-picked and written (and/or forked) by us.</p>
+		<p>As you can probably tell from the images, <b>wiredWM</b> is heavily inspired by <a href="https://en.wikipedia.org/wiki/Serial_Experiments_Lain">Serial Experiments Lain</a>, my favorite anime of all time.</p>
+		<img src="../img/wired2.png" title="firefox and vim open side-by-side" width="700px">
 		<div class="breakHelper">
 			<br>
 		</div>
 		<h2 style="color:#FF10F0">wiredWM keybindings</h2>
-		<img src="../img/wired3.png" title="chromium, file manager, and image viewer in tiled view" width="700px">
+		<img src="../img/wired3.png" title="firefox, file manager, and image viewer in tiled view" width="700px">
 		<p>We have a bunch of handy keybindings that make everyday operations simple for the user. Here's a <b style="color:#FF10F0">handy quickstart guide</b>:</p>
-		<blockquote>Please note that the <b>Meta</b> key is the <b>Windows</b> key on most keyboards, and the <b>command</b> key on Apple keyboards.</blockquote>
+		<blockquote><b style="color:#39ff14">~</b> Please note that the <b>Super</b> key is the <b>Windows</b> key on most keyboards, and the <b>command</b> key on Apple keyboards.</blockquote>
 		<ul>
-			<li><b style="color:#FF10F0">Meta+Enter</b>: Open a terminal.</li>
-			<li><b style="color:#FF10F0">Meta+D</b>: Open <code>dmenu</code> to run commands.</li>
-			<li><b style="color:#FF10F0">Meta+Shift+A</b>: Open <b>Nightshade Applications List</b> to launch an app. Reads from <code>.desktop</code> files.</li>
-			<li><b style="color:#FF10F0">Meta+Shift+D</b>: Open <code>rofi</code> launcher to filter open windows and run commands.</li>
-			<li><b style="color:#FF10F0">Meta+Shift+Q</b>: Close the focused window.</li>
-			<li><b style="color:#FF10F0">Meta+Shift+Space</b>: Float/unfloat the focused window.</li>
-			<li><b style="color:#FF10F0">Meta+Number Keys</b>: Using the <b>Meta</b> key with your numbered keys, <b>1 through 10</b>, allow you to switch between different workspaces. You get 10 workspaces in total.</li>
-			<li><b style="color:#FF10F0">Meta+R</b>: Resize the active window with your arrow keys.</li>
-			<li><b style="color:#FF10F0">Meta+F</b>: Fullscreen the active window. Use this shortcut again to restore the window to normal size.</li>
-			<li><b style="color:#FF10F0">Meta+W</b>: Shift to <b>tabbed</b> windowing.</li>
-			<li><b style="color:#FF10F0">Meta+S</b>: Shift to <b>stacked</b> windowing.</li>
-			<li><b style="color:#FF10F0">Meta+E</b>: Switch to <b>tiled</b> windowing.</li>
-			<li><b style="color:#FF10F0">Meta+Shift+R</b>: Restart the window manager in-place.</li>
-			<li><b style="color:#FF10F0">Meta+Shift+Z</b>: Lock your screen. We use <code>i3lock-fancy</code> for this.</li>
-			<li><b style="color:#FF10F0">Meta+Shift+N</b>: Pop out your recent notifications.</li>
-			<li><b style="color:#FF10F0">Meta+C</b>: Pop out a calendar window. We use <code>gsimplecal</code> for this.</li>
-			<li><b style="color:#FF10F0">Meta+Shift+E</b>: Log out of wiredWM.</li>
+			<li><b style="color:#FF10F0">Super+Enter</b>: Open a terminal.</li>
+			<li><b style="color:#FF10F0">Super+D</b>: Open <code>dmenu</code> to run commands.</li>
+			<li><b style="color:#FF10F0">Super+Shift+A</b>: Open <b>Nightshade Applications List</b> to launch an app. Reads from <code>.desktop</code> files.</li>
+			<li><b style="color:#FF10F0">Super+Tab</b>: Open our modified <code>rofi</code> launcher to filter open windows, launch applications, and run commands.</li>
+			<li><b style="color:#FF10F0">Super+Shift+Q</b>: Close the focused window.</li>
+			<li><b style="color:#FF10F0">Super+Shift+Space</b>: Float/unfloat the focused window.</li>
+			<li><b style="color:#FF10F0">Super+Number Keys</b>: Using the <b>Super</b> key with your numbered keys, <b>1 through 10</b>, allow you to switch between different workspaces. You get 10 workspaces in total.</li>
+			<li><b style="color:#FF10F0">Super+R</b>: Resize the active window with your arrow keys.</li>
+			<li><b style="color:#FF10F0">Super+F</b>: Fullscreen the active window. Use this shortcut again to restore the window to normal size.</li>
+			<li><b style="color:#FF10F0">Super+W</b>: Switch to <b>tabbed</b> windowing.</li>
+			<li><b style="color:#FF10F0">Super+S</b>: Switch to <b>stacked</b> windowing.</li>
+			<li><b style="color:#FF10F0">Super+E</b>: Switch to <b>tiled</b> windowing.</li>
+			<li><b style="color:#FF10F0">Super+Shift+R</b>: Restart the window manager in-place.</li>
+			<li><b style="color:#FF10F0">Super+Shift+Z</b>: Lock your screen. We use <code>wired-lock</code>, our wrapper around <code>swaylock</code> for this.</li>
+			<li><b style="color:#FF10F0">Super+P</b>: Opens <code>grimshot</code> to take a screenshot and copies it to your clipboard.</li>
+			<li><b style="color:#FF10F0">Super+Shift+N</b>: Pop out your recent notifications.</li>
+			<li><b style="color:#FF10F0">Super+Shift+F</b>: Pop out your file manager. The default file manager used in wiredWM is <code>nemo</code>.</li>
+			<li><b style="color:#FF10F0">Super+C</b>: Pop out a calendar window. We use <code>gsimplecal</code> for this.</li>
+			<li><b style="color:#FF10F0">Super+Shift+E</b>: Log out of wiredWM.</li>
 		</ul>
-		<p>You can also hold the <b style="color:#FF10F0">Meta</b> key while (<b>left</b>)click-dragging on a window to re-organize its tiled position, or to drag it around the screen if it is floating. Doing the same while (<b>right</b>)click-dragging will allow you to manually resize it.</p>
+		<p>You can also hold the <b style="color:#FF10F0">Super</b> key while (<b>left</b>)click-dragging on a window to re-organize its tiled position, or to drag it around the screen if it is floating. Doing the same while (<b>right</b>)click-dragging will allow you to manually resize it.</p>
 		<div class="breakHelper">
 			<br>
 		</div>		
 		<h2 style="color:#FF10F0">wiredWM tools</h2>
-		<img src="../img/wired4.png" title="mplayer, noodle, and sunvox open in a workspace" width="700px">
+		<img src="../img/wired4.png" title="sunvox and cmus tiled" width="700px">
 		<p>Here are some of the tools we utilize on wiredWM.</p>
 		<ul>
-			<li><code>nm-applet</code> allows you to connect to your networks with ease from your system tray.</li>
-			<li><code>volumeicon</code> allows you to adjust your volume with your mouse.</li>
+			<li><code>waybar</code>, heavily customized with our theme, shows your time and date, name of currently focused window, lets you adjust your volume, switch workspaces, select networks, see battery life, and interact with your tray icons.</li>
+			<li><code>nmtui</code> allows you to connect to your networks with ease by clicking on the network pill in the top panel.</li>
 			<li><code>flameshot</code> lets you take desktop screenshots and save them, copy them, annotate them, and more.</li>
 			<li><code>blueman</code> for managing your Bluetooth connections from the status bar.</li>
 			<li><code>meteo-qt</code> for viewing your local weather forecast from your status bar.</li>
+			<li><code>nemo</code> is your default file manager for handling your files. It is able to be popped open with a simple keybinding.</li>
 			<li><code>gsimplecal</code> is able to be popped open with a simple keybinding, so you can view the calendar.</li>
-			<li><code>nitrogen</code> for handling desktop wallpaper capabilities.</li>
-			<li><code>arandr</code> allows you to handle your display configuration.</li>
+			<li><code>swaybg</code> for handling desktop wallpaper capabilities.</li>
 			<li><code>cmus</code> allows you to listen to your music collection in your terminal.</li>
-			<li><code>i3status</code> heavily customized statusbar to show you connectivity data, battery status, time and date, and your system tray.</li>
 			<li><code>dmenu</code> heavily customized to allow you to run commands and display your list of apps.</li>
-			<li><code>rofi</code> heavily customized showing you your open windows and allowing you to run commands.</li>
+			<li><code>rofi</code> heavily customized showing you your open windows and allowing you to run commands, see open windows, and launch applications.</li>
+			<li><code>calcurse</code> is an ncurses-based calendar application that can be popped open by clicking the "Day" pill on the top panel.</li>
 			<li><code>conky</code> customized to show you the time and date, with a little <i>let's all love lain</i> message.</li>
 			<li><code>dunst</code> heavily customized to show you your notifications matching the <b>nightshade</b> color scheme.</li>
-			<li><code>i3lock-fancy</code> lets you lock your screen, blurring it and showing a lock icon when you use the keybinding.</li>
-			<li>A selection of terminals to choose from: <code>alacritty</code>, <code>kitty</code>, <code>st</code>.</li>
+			<li><code>wired-lock</code> lets you lock your screen, showing a Lain-themed image when use the keybinding, or when the inactivity timeout has been reached (set to 15 minutes by default).</li>
+			<li>A selection of terminals to choose from: <code>alacritty</code>, <code>foot</code>, <code>kitty</code>, <code>st</code>.</li>
 		</ul>
 		<p>Everywhere possible, wiredWM uses <a href="https://www.fontsquirrel.com/fonts/inter">Inter</a> as the system font for an elegant and easy-to-read look.</p>
 		<div class="breakHelper">
 			<br>
 		</div>
 		<h2 style="color:#FF10F0">close the world, enter the nExt</h2>
-		<img src="../img/wired5.png" title="neofetch and a calendar open" width="700px">
-		<p><b>wiredWM</b> is meant to bring you a simple, sane, and easy-to-use tiling window manager environment. The configs and custom scripts built on top of the respective window managers have been tweaked and perfected for several years, and has become the ideal computing environment for me. A lot of people who run full desktop environments most of the time (such as GNOME, Cinnamon, KDE, Budgie, etc.) might ask "<b style="color:#FF10F0">Who is a tiling window manager for?</b>", and the answer is simple!</p>
+		<img src="../img/wired5.png" title="calcurse and a calendar open" width="700px">
+		<p><b>wired</b> is meant to bring you a simple, sane, and easy-to-use tiling window manager environment. The configs and custom scripts built on top of the respective window managers have been tweaked and perfected for several years, and has become the ideal computing environment for me. A lot of people who run full desktop environments most of the time (such as GNOME, Cinnamon, KDE, Budgie, etc.) might ask "<b style="color:#FF10F0">Who is a tiling window manager for?</b>", and the answer is simple!</p>
 		<p>Tiling window managers use very little system memory, and automate the placement of your windows when you're opening and closing them. In traditional desktop environments, the windows float and you have to manage where they are, snapping or placing them side-by-side manually. Tiling windows ensure they don't overlap, keeping all the information on the screen for you. You can also fling open windows between different workspaces - a lot of people like to have separate workspaces for different tasks (workspace 1 being a terminal and browser, workspace 2 being communication apps, workspace 3 hosting a music player, etc).</p>
 		<p>Once you get the hang of it, a tiling window manager can really speed up your workflow! You also don't have to worry about what changes might be coming to other desktops - once you have your window manager set up just the way you like it, it's your very own desktop, tweaked to perfection and set up just how you want it.</p>
 		<p><b>wiredWM</b> wants to make that last point as easy as can be, with great defaults "out of the box", configured to allow you to sit down with it and get right to work if you don't want to spend any time tweaking things.</p> 
@@ -118,7 +120,7 @@
 		</div>
 		<h3 style="color:#ff10f0">installing wiredWM</h3>
 		<p>If you want to give wiredWM a spin on your own machine, just run the included installation script!</p>
-		<blockquote>Please note that the installation script currently assumes you are running <b>Debian</b> or a derivative, such as <b>Ubuntu</b>.</blockquote>
+		<blockquote><b style="color:#39ff14">~</b> Please note that the installation script currently assumes you are running <b>Debian</b> or a derivative, such as <b>Ubuntu</b>.</blockquote>
 		<code>
 			<pre>
 #!/usr/bin/env bash
