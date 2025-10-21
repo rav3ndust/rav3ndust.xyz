@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		} 
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<!-- meta information -->
+		<meta name="description" content="The big AWS outage today has demonstrated further why decentralization is The Way.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2025-10-20</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>single points of failure</h2>
+		<p><i>aws outage reminds us that decentralization matters most</i></p>
+		<p><b style="color:#FF10F0">2025-10-20</b></p>
+		<p>Last night, I was playing <i>Fortnite</i> online when all of a sudden, matchmaking was down. Thinking it might have been an issue with my internet or console, I killed the app and re-launched it, and was not able to log in at all. I then went to search up the issue online, and was met with all the information breaking at once: AWS had another huge outage.</p>
+		<p>Here is a small smattering of some of the articles that have been coming out about the outage:</p>
+		<ul>
+			<li><a href="https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline">Major AWS outage took down Fortnite, Alexa, Snapchat, and more</a> - <i>The Verge</i></li>
+			<li><a href="https://apnews.com/article/amazon-east-internet-services-outage-654a12ac9aff0bf4b9dc0e22499d92d7">Amazon cloud outage takes down many online services</a> - <i>AP News</i></li>
+			<li><a href="https://www.tomsguide.com/news/live/amazon-outage-october-2025">Major AWS outage breaks most of the internet</a> - <i>Tom's Guide</i></li>
+		</ul>
+		<p>These are but a few of the articles you'll come across at the top of the search results if you look up the AWS outage. Even some of the titles alone betray an issue with how we see and use the internet right now: "AWS outage breaks the internet!" is the quote of the moment, revealing how many major platforms rely on this single point of failure to run their critical infrastructure, as well as the idea that these collective major platforms are "the internet". It is very illuminating that outages are even phrased this way, as if "the internet" itself were indeed down, instead of a handful of companies who have built their castles on rented lands.</p>
+		<p>Fun fact, the only thing I noticed that was down was <i>Fortnite</i>, because I play it with some online friends. If I hadn't noticed the outage online last night while playing, I probably wouldn't have heard about the AWS outage until I saw all the postings about it on the Fediverse. A great illustration that for someone who isn't plugged into all these 'services' all the time, the outage wasn't even that big of a deal. People who were doing things like trying to log into Snapchat, or use Amazon marketplace, watch Prime Video, use Zoom video chatting, Ring cameras, or Roblox certainly noticed, however.</p>
+		<p>Another interesting aside - people were also having issues with Signal, of all things, thanks to this outage. Until now, I had no idea that Signal was reliant on AWS. Signal, the open-source and secure messenger reliant on Big Tech to deliver messages is a little troubling to me. Most of my chats happen through Matrix, though I do use Signal sometimes, so I hope Signal takes this as an opportunity to explore other avenues. When open and privacy-respecting pieces of software are built on centralized foundations, it feels less like a fortress and more like a sandcastle. A simple reminder that our ideals only matter if the infrastructure beneath them aligns with those values.</p>
+		<p>I <a href="2025-10-15.html">talk a lot about the "Small Web"</a> and what that idea means, and why it is so important. People running their own servers, hosting their own services, such as XMPP servers, Matrix servers, nextcloud instances, fediverse instances, email servers, and more. This is why decentralization is so important. Imagine if everyone actually did use AWS to host their infrastructure, then the entire internet really would be brought to its knees by a single outage in the service, and that is not the way the internet is meant to be.</p>
+		<p>The idea of the Small Web itself isn't just about living like it's the 90s online or anticorporatism. It is very much about being resilient and having true ownership over your online space. Running your own Matrix server, personal website, Fediverse instance, whatever it is for you, that's you contributing to a culture of self-ownership. Rebuilding the web one piece at a time as a collection of neighborhoods instead of a few shopping malls, as things have become.</p>
+		<p>There is a phrase thrown around online quite a bit that rings quite true: "The cloud is just somebody else's computer". The cloud is a good idea, often done the wrong way. Not everybody can afford to host their own local, on-prem servers, they might lack the expertise to administer these servers and keep them safe and secure, they don't have internet service capable of handling a lot of bandwidth, whatever the case might be. It is important to remember, however, that there are plenty of other 'cloud' options you can choose to use, which might even save you money in the long haul, if you can't run servers locally. Vultr, Digital Ocean, Linode, all kinds of smaller options you can go with that aren't the standard "Big Tech" cloud providers such as AWS, Azure, Google Cloud, you name it. Just know that if you need to use cloud machines for your websites, business, or online presence, you have options that aren't Amazon Web Services or one of the other huge players.</p>
+		<p>There are some <a href="https://basecamp.com/cloud-exit">interesting articles from the 37signals team</a> about how the cloud wasn't all it was cracked up to be for their needs, how it was costing them more instead of saving them more, and their exit from the cloud altogether. Cloud infrastructure was always billed as something that could save your team time and money, while in a lot of ways, it ended up being another big bill with no noticeable savings in time or work. Well-established companies are seeing the shaky foundations that these single points of failure bring along for the ride, and deciding to opt out. This is because when you don't truly control your infrastructure, you don't truly control your business. The same is true for individuals just as much as companies, and shows the minute that you stop owning your stack, you're renting your existence online.</p>
+		<p>The internet was never meant to be this fragile. It was meant to <i>route around</i> such points of failure, adapt, and persist. If we put all of our trust into centralized, Big Tech cloud providers, we end up trading resilience for convenience. Things like the Small Web, self-hosting, and federated systems aren't just philosophical pursuits, but technical ones. Taking a look back into the days of yore, when people were running their own personal websites, forums, IRC servers, things of that nature: That's the model the internet is built on, not entrusting your entire online presence and infrastructure to the likes of a few huge companies. These are single points of failure, and if they go down, your stuff goes down with it.</p>	
+		<p>The future of the open Web depends on whether or not we learn from these occurrences. Can we build systems that are truly independent, or do we just keep propping stuff up on borrowed scaffolding?</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> | <a href="https://x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	
+
