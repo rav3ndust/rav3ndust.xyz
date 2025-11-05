@@ -33,6 +33,7 @@
 		<!--link in the favicon (nonindex version)-->
 		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
 		<meta name="description" content="wiredWM is a fork of sway, with some custom conveniences built in, following the nightshadeNeon color scheme, along with a Serial Experiments Lain vibe.">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>wiredWM</title>
 	</head>
@@ -123,8 +124,8 @@
 		<h3 style="color:#ff10f0">video preview</h3>
 		<p>Here is a video preview of the Wired environment in action!</p>
 		<!--insert video here-->
-		<video width="1000" height="600" controls>
-			<source src="../videos/navi-preview.mp4">
+		<video width="1000" height="600" controls preload="metadata">
+			<source src="../videos/navi-preview.mp4" type="video/mp4">
 			Oops, your browser does not seem to support the video tag.
 		</video>	
 		<div class="breakHelper">
