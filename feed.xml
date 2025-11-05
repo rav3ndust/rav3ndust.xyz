@@ -1,3 +1,4 @@
+
 <rss version="2.0">
 <!-- RSS feed for FOSSphones News -->
 <channel>
@@ -196,6 +197,12 @@
 	<description>aws outage reminds us that decentralization matters most</description>
 	<link>https://rav3ndust.xyz/blog/2025-10-20.html</link>
 	<pubDate>2025-10-20</pubDate>
+</item>
+<item>
+	<title>bring your "old" computers to the free side</title>
+	<description>The latest from rav3ndust!</description>
+	<link>https://rav3ndust.xyz/blog/2025-11-04.html</link>
+	<pubDate>2025-11-04</pubDate>
 </item>
 <!-- ################################################################## -->
 </channel>
