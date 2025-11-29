@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<meta name="description" content="Gemtext is the document formatting structure for the Gemini protocol.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>gemtext</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">gemtext</h2>
+		<p><i>document formatting structure for the gemini protocol</i></p>
+		<p>On the "regular" internet that you access on your normal browser, such as Firefox or Chromium, everything you do is going to be handled by <code>http</code>. If you have been reading about <a href="gemini.html">gemini</a> in the Wiki or somewhere else online, you probably know there are several Gemini clients (browsers for Gemini) and a "language" of its own.</p>
+		<p>On the "regular internet", webpages are written using <b>HTML</b>. HTML is the document formatting structure that tells your web browser how the page should be rendered. Gemini has its own version of this, a document formatting structure called <b>gemtext</b>. Gemtext is very simple and minimal by design, and you can learn it in just a few short minutes and begin building Gemini capsules all your own with your newfound knowledge. Once you've written up some pages in Gemtext, you can test it out in a Gemini browser and upload it to your capsule if you'd like.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">writing gemtext</h3>
+		<p>Gemtext, stylistically, is akin to a stripped-down type of <a href="https://learnxinyminutes.com/markdown/">Markdown</a>.</p>
+		<p>If you are familiar with Markdown, you will find yourself adept at Gemtext in just a few minutes.</p>
+		<p><b style="color:#ff10f0">~ Text</b></p>
+		<p>Text is written as it would be in Markdown. Paragraphs are done in lines with no breaks.</p>
+		<p><code>We can just write text content without anything special in front of it. Just begin typing!</code><p>
+		<p><code>Every line break is a new paragraph.</code></p>
+		<p><b style="color:#ff10f0">~ Headings</b></p>
+		<p>Gemtext has three header layers. HTML, by comparison has six.</p>
+		<p><b>Top level headings</b> (usually used as titles) are prefixed with a single hashtag ("<b style="color:#39ff14">#</b>").</p>
+		<p><b>Second level headings</b> (I use them as subheadings) are prefixed with two hashtags ("<b style="color:#39ff14">##</b>").</p>
+		<p><b>Third level headings</b> (I use them as separators within page sections) are prefixed with three hashtags ("<b style="color:#39ff14">###</b>").</p>
+		<p><code># Page Title Text</code></p>
+		<p><code>## second-level subheading</code></p>
+		<p><code>### third-level subheading</code></p>
+		<p><b style="color:#ff10f0">~ Links</b></p>
+		<p>Links are written using an equal sign followed by a right arrow ("<b style="color:#39ff14">=></b>"), followed by a URL, and finally followed by your desired link text.</p>
+		<p>Note that in Gemtext, you can't insert links in-line, so you'll have to place them on their own line.</p>
+		<p><code>=> gemini://geminiprotocol.net Gemini Protocol homepage</code></p>
+		<p><code>=> gemini://fossphones.com FOSSphones on Gemini</code></p>
+		<p><b style="color:#ff10f0">~ Lists</b></p>
+		<p>You can make bulleted lists in Gemini, just as you can in HTML.</p>
+		<p>In Gemtext, we make lists using an asterisk ("<b style="color:#39ff14">*</b>"), followed by the list item text.</p>
+		<p><code>* List item 1</code></p>
+		<p><code>* List item 2</code></p>
+		<p><code>* List item 3</code></p>
+		<p><b style="color:#ff10f0">~ Blockquotes</b></p>
+		<p>Blockquotes in Gemtext are handled the same way we do it in Markdown.</p>
+		<p>To create a blockquote, simply prefix your desired quote with a right arrow ("<b style="color:#39ff14">></b>").</p>
+		<p><code>> "You've met with a terrible fate, haven't you?" - Happy Mask Salesman</code></p>
+		<p><b style="color:#ff10f0">~ Code snippets and preformatted text</b></p>
+		<p>Code snippets are able to be done in Gemtext as well. How they are rendered can depend on the Gemini client being used. Amfora, for example, will properly render code snippets and provide supported syntax highlighting.</p>
+		<p>Code snippets are created using three backticks ("<b style="color:#39ff14">```</b>") followed by the file extension you wish to use.</p>
+		<p>For example, displaying a Bash snippet would look like this:</p>
+		<p><code>```sh</code></p>
+		<p><code>#!/usr/bin/env bash</code></p>
+		<p><code>title="Gemini example script"</code></p>
+		<p><code>echo "$title"; sleep 1</code></p>
+		<p><code>exit</code></p>
+		<p><code>```</code></p>
+		<p>You can also use the backticks in order to create standard preformatted text that will show up simply as a monospace font, something that comes in handy for doing things like making ASCII art. Think of it as the Gemtext sibling of the HTML <code>pre</code> tag.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">example gemtext code</h3>
+		<p>If you want to see some example Gemtext code for how I structure my Gemini capsules, please feel free to take a look at the following links - you'll find the source repos for the Gemini port of this website and the Gemini port of FOSSphones! I am also providing some helpful Gemini resources in the "relevant links" section below.</p>
+		<ul>
+			<li><a href="https://github.com/rav3ndust/rav3ndust.xyz-gemini">rav3ndust.xyz gemini source</a></li>
+			<li><a href="https://github.com/rav3ndust/fossphones-gemini">fossphones.com gemini source</a></li>
+		</ul>
+		<p>As you can see, Gemini is very simple and easy to write. Minimal by design and with a focus on getting your ideas across using text only, you might see how creative you can get under these constraints!</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">relevant links</h3>
+		<p>Here are a few helpful links so you can dive even deeper into the Gemini protocol if you want to learn more.</p>
+		<ul>
+			<li><a href="https://geminiprotocol.net/docs/gemtext.gmi">Gemtext quick intro</a></li>
+			<li><a href="https://geminiprotocol.net/docs/cheatsheet.gmi">Gemtext cheat-sheet</a></li>
+		</ul>
+		<div class="breakHelper">
+			<br>
+		</div>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> | <a href="https://x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>
+
