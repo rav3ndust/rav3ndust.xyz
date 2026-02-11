@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		} 
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<!-- meta information -->
+		<meta name="description" content="A look at Discord's awful new policies and the broader landscape.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2026-02-11</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>papers please: age verification online is not the answer</h2>
+		<p><i>a look at discord's awful new policies and the broader landscape</i></p>
+		<p><b style="color:#FF10F0">2026-02-11</b></p>
+		<p>You've probably already heard the news if you spend much time online, especially on youtube, the fediverse, and I'm sure the discussion is happening on other social platforms as well. Discord, a company who is not exactly famous for being privacy-friendly, is rolling out a new "teen-by-default experience" that assumes you're a kid until you prove otherwise (or an "age inference model" "proves" it for you).</p>
+		<p>I have used Discord for quite awhile (since 2016). I have been active in a number of gaming and software-related servers, including a few I run myself with some friends. It's been the one proprietary piece of software I have still used, because of its network effects - everyone has a Discord, and everyone who plays games online typically does so over Discord. I've tried to get people I play with quite a bit to move over to open alternatives, and I am hoping this is the impetus that finally helps that happen.</p>
+		<p>In this blog post, I want to go over two things: The recent happenings at Discord, and also the terrible privacy implications it has on the broader landscape as so many of these corpo-platforms (and governments!) move toward age-gating on the internet.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">discord's "papers, please" moment</h3>
+		<p>Discord has <a href="https://cadence.moe/blog/2020-06-06-why-you-shouldnt-trust-discord">never been private</a> <a href="https://www.welivesecurity.com/2023/05/03/using-discord-privacy-security-risks/">in any sense of the word</a>, but this new age verification stuff is taking it another step further.</p>
+		<p>Discord is rolling a number of changes out in March, next month. It aims to bring a "teen-by-default" experience to all users, from the sound of it, which sounds creepy enough on its own. That's right, no matter how old your account is,  no matter if you're a paying customer of their Nitro program or anything else, you're effectively a teenager in the eyes of the platform until proven otherwise. Here is a look at the changes that are being brought in:</p>
+		<ul>
+			<li>No access to age-restricted channels, app commands, or servers until you verify your age.</li>
+			<li>Content the system thinks is mature will be blurred out, and can't be unblurred until you verify your age.</li>
+			<li>You can no longer receive direct messages from people you don't know, until, you guessed it, you verify your age.</li>
+			<li>Friend requests from people you might not know will be accompanied by a warning.</li>
+			<li>Until you verify your age, you won't be able to speak in Stage channels (their term for streaming).</li>
+		</ul>
+		<p>Discord claims for a lot of people, their experience might not change much as they might not have to manually verify their age (which happens either through an ID check or a face scan). This is because there is going to be an "age inference model" which analyzes things like your behavior on the platform, the times you are most active, the games you play, and other signals to decide whether or not you might be 18 or above. This is similar to some of the <a href="https://techcrunch.com/2025/07/29/youtube-rolls-out-age-estimatation-tech-to-identify-u-s-teens-and-apply-additional-protections/">changes Youtube rolled out</a> last year, using AI to decide if you might be of age depending on the types of content you watch, the age of your account, and other inference signals.</p>
+		<p>So, even though you might not have to verify your age by giving your ID or your biometrics up, there is still some, in my opinion, creepy things going in the background, tracking how you use the platform, and having a machine decide whether or not you aren't a teenager. All of this is discussed in a <a href="https://discord.com/press-releases/discord-launches-teen-by-default-settings-globally">press release</a> the company put out yesterday, if you want to read it from the horse's mouth.</p>
+		<p>As I mentioned a little further up, I have never been under the false assumption that Discord is a private platform, and I don't believe they've even claimed to be. But, to me, this trend is reflective of the things we're seeing happening with these big corpo-platforms across the board, and we're going to discuss those trends in the next section and why they are the wrong way to go about things, how they're detrimental to a free and open Web, and take a look at open-source, transparent alternatives you can use to keep your privacy intact while still being able to communicate with your people.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">why age verification online isn't the answer</h3>
+		<p>Most everyone, with the exception of some sickos that are out there in the world, agree with the notion that kids should be kept safe, both in the real world and on the internet. However, there are huge flaws and major risks that come from the implementation of this age-gating, biometric scans, and ID checks that are happening on so many of these huge platforms.</p>
+		<p>Ideally, parents should be the main ones watching their kids and knowing what they're up to online, but since that doesn't seem to be a big thing anymore, and children are being given unfettered access to the internet at such young ages (the meme about "iPad kids" is so true that it now has its own <a href="https://en.wikipedia.org/wiki/IPad_kid">Wikipedia entry</a>), these huge platforms and governments are taking it upon themselves to implement these systems that bring that "Papers, Please" mentality to sites and apps that people use every day.</p>
+		<p>And here's a simple fact: those laws and policies aren't "for protecting the children". This is a great cover, since, as mentioned earlier, everyone with a kind soul wants to protect children for predators both online and offline. These laws and policies can be a Trojan horse to scoop up the private information of everyone who uses these platforms.</p>
+		<p>Let's take a closer look at some of the implications this age verification stuff can bring with it:</p>
+		<ul>
+			<li><b>Privacy and anonymity are a cornerstone of the internet</b>: For the longest time, people have pretty much been able to sign up to a website or service with something as simple as a username, email, and password. They haven't had to disclose their real name, biometrics, date of birth, and other personally identifiable information (PII) to the platforms they've joined. Privacy and anonymity are huge online, especially on social platforms. What if you are part of a marginalized group that could be targeted if that information got out? What if you're a political dissident, or a whistleblower? What if you're just a regular person with the "wrong opinions"?</li>
+			<li><b>Lots of adults don't have ID to begin with</b>: There are a huge number of adults who are of legal age who simply don't have a driver's license, a passport, or another form of government-issued ID. Should they be excluded from the internet? Should they not have a voice? After all, if they can't verify their age, a good number of these platforms are simply going to give them the boot. There are a number of reasons why someone might not have an ID, but still of legal age. They should have the freedom to participate online, too! As the EFF notes, people of color, disabled people, undocumented immigrants, and people who deal with low income often don't have valid identification. This is a huge number of people who are adults that some of these platforms might be locking out by forcing ID checks.</li>
+			<li><b>Younger people could be locked out of helpful communities</b>: There are a huge number of kids out there who deal with abuse and discrimination in their own households and with other people in their real lives. They find community and a safe space with their peers in some of these places online, and it is a moral wrong to remove those from them. When communication with online peers might be the only form of validation they receive or a way for them to have a support network, cutting them off from these lifelines might provide more power to abuse in their real life, with less safe places to turn to for help.</li>
+			<li><b>Hacks and data breaches happen often, and they can happen to you</b>: Maybe you "have nothing to hide", maybe privacy isn't something that you think about often, but if we make online age verification the norm, with as much as we know we can't trust these big platforms and their vendors to keep the information submitted to them safe, we are going to see more data breaches and more hacks involving the leaking of PII that these platforms have collected during their ID checks and biometric scans. History has shown us <a href="https://www.unilad.com/news/social-media/discord-age-verification-face-scan-data-breach-679079-20260210">time</a> and <a href="https://www.npr.org/2025/08/02/nx-s1-5483886/tea-app-breach-hacked-whisper-networks">time</a> and <a href="https://www.brightdefense.com/news/match-group-data-breach/">time</a> again that these huge platforms cannot be trusted to safely store (and timely delete) this information, so the best thing to do is never give it to them at all.</li>
+		</ul>
+		<p>These are just a few things to think about when it comes to the dangers of collecting this kind of information on a huge scale. Privacy advocates around the world have been sounding the alarm on this kind of thing for ages, and the best thing we can do is tell these huge platforms we are not going to give up our IDs, our biometrics, or other PII in order to use their services. There are open-source and trustworthy alternatives to just about everything you can think of, and if there isn't, then it is certainly something that can be built. We shouldn't lie down and let these corpo-platforms and anti-privacy governments tell us that we're not allowed privacy and anonymity on the internet. Instead, we should vote with our feet and use ethical, open, and respectful platforms, and the more technical among us should be building and hosting such platforms ourselves, so that less-technical people can still use them. This is how we help each other maintain privacy online!</p>
+		<p>Surely we can find more meaningful and helpful ways to get the predators that want to harm children off the platforms that they are present on, but it doesn't need to be at the expense of people's privacy, where regular, law-abiding adults or marginalized people can be affected by a big data breach or feeling like they can't speak their mind anymore without presenting their information. This sets a very dark tone going forward on so many of these huge platforms that millions of people use every day, and actively harms the open Web. It makes open, privacy-respecting platforms that much more important, too.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">relevant links</h3>
+		<p>Here are some helpful links going over some of the things we've discussed above, as well as some alternative platforms you can use to solve the Discord issue.</p>
+		<ul>
+			<li><a href="https://matrix.org">Matrix</a> - Matrix is my main choice here. I have already set up a few Spaces that have the same sort of setup as my old Discord servers. Matrix is a federated communication protocol that has numerous clients that can be used with it (I recommend <a href="https://element.io">Element</a> or <a href="https://schildi.chat/">SchildiChat</a> personally). Not only can it be used for text communications (both in groups, called Spaces, which we'll get into in a moment), but also one-to-one chats, adding anyone and talking to them as you wish. If you want to make a Space, it is very easy, and each Space has Rooms, which you can think of as your "channels" in your Discord server. Matrix supports end-to-end encryption so you can actually trust the privacy of your chats, it has text, voice, and video communication, as well as the ability to screenshare if your client supports it. If you stick to the two I mentioned a minute ago, all of these features work fine! There are other clients I haven't tested out much so not sure how the feature parity is on some of those. These are also free and open-source software and self-hostable, so you can run them on your own infrastructure if you so choose, or join a public one and begin chatting away!</p>
+			<li><a href="https://stoat.chat/">Stoat</a> - formerly known as Revolt, Stoat is a free and open-source Discord alternative that closely matches the look and feel of Discord. You can create servers, channels, voice rooms, and more. It has a very nice theme system, as well, so it is  easy to make it look how you want and personalize your experience. You can even self-host it, should you choose to run it on your own infrastructure.</li>
+		</ul>
+		<p>Here are a few good links exploring why age verification on the internet is not the right way to go:</p>
+		<ul>
+			<li><a href="https://www.eff.org/deeplinks/2025/12/10-not-so-hidden-dangers-age-verification">Electronic Frontier Foundation</a>: <i>10 (Not So) Hidden Dangers of Age Verification</i></li>
+			<li><a href="https://www.cato.org/commentary/online-age-verification-could-create-more-problems-it-solves#">Cato Institute</a>: <i>Online Age Verification Could Create More Problems Than it Solves</i></li>
+		</ul>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">join the ravinia matrix space</h3>
+		<p>Want somewhere to fun hang out on an open-source platform and chat about things like tech, music, the open Web, programming, games, general chit-chat, and more? You're more than welcome to join our <b>Ravinia</b> space and participate in the conversation! I'm trying to build it out more and get more like-minded people in. If you're interested in checking it out, I'm linking to it below!</p>
+		<p><a href="https://matrix.to/#/#rhop:matrix.org">Join the Ravinia Matrix Space</a></p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> | <a href="https://x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	
