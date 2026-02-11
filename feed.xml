@@ -1,4 +1,3 @@
-
 <rss version="2.0">
 <!-- RSS feed for FOSSphones News -->
 <channel>
@@ -209,6 +208,12 @@
 	<description>a look forward into a great new year, and catching up</description>
 	<link>https://rav3ndust.xyz/blog/2026-02-06.html</link>
 	<pubDate>2026-02-06</pubDate>
+</item>
+<item>
+	<title>papers please: age verification online is not the answer</title>
+	<description>a look at discord's awful new policies and the broader landscape</description>
+	<link>https://rav3ndust.xyz/blog/2026-02-11.html</link>
+	<pubDate>2026-02-11</pubDate>
 </item>
 <!-- ################################################################## -->
 </channel>
