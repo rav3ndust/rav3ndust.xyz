@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		} 
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<!-- meta information -->
+		<meta name="description" content="Taking a look at Brave Origin, a stripped-down version of the privacy-friendly Brave browser.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2026-04-10</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>taking a look at brave origin</h2>
+		<p><i>a stripped-down version of the privacy-friendly browser</i></p>
+		<p><b style="color:#FF10F0">2026-04-10</b></p>
+		<img src="../img/brave-origin-2.png" width="80%" title="Brave Origin, the new stripped down version of the Brave browser.">
+		<h6 style="color:#ff10f0">Brave Origin's "About" page</h6>
+		<p>I use the Brave browser quite a bit, and have been using it since I found it online sometime in 2019. If you don't know about <a href="https://brave.com">Brave</a>, it is a privacy-focused fork of Chromium with built-in adblocking, some cryptocurrency tools such as a wallet, a privacy-focused AI called Leo, and its <a href="https://search.brave.com">very own search engine</a> (which has been getting better and better over the last few years).</p>
+		<p>It has been awhile since the initial announcement, but sometime last year, the Brave Team came out and said they were going to be creating a version of the browser which is stripped down and minimal, containing none of the crypto, AI, and other features built into the main Brave browser. This new, minimal version of Brave was going to be called Brave Origin, and was going to be a paid product for people who want to support Brave financially.</p>
+		<p>Well, the time has come, and Brave Origin seems to be here. It is paid on Windows and macOS, but is interestingly free on GNU/Linux distros, so I scooped up the .deb file for it, installed it, and have been poking around. Thought I'd do a writeup here for people who might be interested in this new, stripped down version of Brave.</p>
+		<div class="breakHelper">
+		    <br>
+		</div>
+		<h3 style="color:#ff10f0">initial things we notice</h3>
+		<p>Upon installing and launching Brave Origin, it is made quite plain that this is the stripped down version of the browser. We get a nice popup upon installation explaining what Brave Origin is. Going onto the new tab page, we see just a nice background and the Brave Stats at the bottom. No ads for Brave Rewards, Leo, Brave Talk, or any of that is present here, which will no doubt please the people who claim that the main version of Brave has too much stuff built into it.</p>
+		<p>You will notice there is no wallet icon on this version of the browser, no Brave Rewards icon in the omnibar, none of that. All that's here is Brave Shields and Brave Search. Brave Search, since we're talking about it, has gotten quite good over the last few years. It is now running on its own independent index and doesn't rely on Bing or Google on the backend, an issue which DuckDuckGo still deals with (although I think I have heard they are working on their own index as well).</p>
+		<p>Going right into it, it feels snappy, like the main Brave browser. I do the usual things I do on fresh installations of Brave, go into <code>chrome://flags</code> and turn on <code>#brave-shields-page-info</code> (this flag moves the Brave Shields UI into the page information area), and I also turn on <code>#brave-compact-horizontal-tabs</code> (this flag makes the browser chrome more compact). I also go into appearance settings and turn on the Ultra Dark mode, then finally import my bookmarks, and we're good to go.</p>
+		<p><b>Note</b>: I also like to make the Brave icon on the right-hand side monochrome to match the rest of the black theme. You can enable this in appearance settings as well, if you choose.</p>
+		<div class="breakHelper">
+		    <br>
+		</div>
+		<h3 style="color:#ff10f0">would i prefer this or the original version of Brave?</h3>
+		<p>Honestly, I don't know. I love the original version of the Brave browser and all of its features. However, using Brave Origin right now, I can see why someone might want this over the original version of the browser with all of its features built in. Brave Origin fires right up and is ready to get to browsing. You're not going to be asked about opting into Brave Rewards, you're not going to be setting up any crypto wallets, you're not going to be talking to Leo. You're going to be thrown right onto the new tab page and encouraged to get to browsing.</p>
+		<div class="breakHelper">
+		    <br>
+		</div>
+		<h3 style="color:#ff10f0">wrapping it up</h3>
+		<img src="../img/brave-origin-1.png" width="80%" title="Brave Origin's new tab page, showing the Brave Stats at the bottom.">
+		<h6 style="color:#ff10f0">Brave Origin's new tab page</h6>
+        <p>Overall, I think Brave Origin is a great new addition to the Brave lineup. It is going to be a great option for people who want to use Brave, but want a more minimal version of it, or folks who want to support Brave financially. I plan on "buying" my copy of Brave Origin, even though I am on GNU/Linux, just because I want to support Brave's mission.</p>
+        <p>Chromium is a great browser engine. I go back and forth between Firefox based browsers and Chromium based browsers, and Brave and Helium continue to be at the top of the Chromium-based stack for me. I know there are people out there who like the idea of Brave but feel like it comes with too much "stuff", such as the crypto things built in, the Leo AI, and stuff like that. For them, if they want to try Brave Origin and get a stripped down version of Chromium with a great search engine as the default and no other frills built in, then Brave Origin might be the go-to.</p>
+        <p>Still a great browser with a huge focus on privacy, just without all the features built in. As you can see in the screenshots I've attached, Brave Origin is definitely a great looking browser, and if you are someone who has been put off of Brave because of the features you might not like, you can now try this more minimal version of the browser (for free, if you're on GNU/Linux).</p>
+		<div class="breakHelper">
+		    <br>
+		</div>
+		<h3 style="color:#ff10f0">getting brave origin</h3>
+		<p>I have not seen it officially announced yet, however, you can find the Brave Origin releases on GitHub. Like other Brave releases, the browser is free and open source software, and you can find .deb files on the <a href="https://versions.brave.com/">Brave Versions</a> page - each of these link to a GitHub release page where you can download the files. You can use it for free on GNU/Linux (or purchase it and support the Brave Team). Give it a try, and see what you think about it! Is this the version of the Brave browser you have always wanted to see? What features do you like and not like in the original, main Brave browser? Let me know about it over email, on the fediverse, or in the <a href="../wiki/ravinia.html">Ravinia</a> community!</p>
+		<blockquote style="color:#ff10f0">Please note that this post is in no way sponsored with Brave, nor am I affiliated with the Brave Team. I am just a long-time user of the browser and wanted to cover Brave Origin.</blockquote>
+		<div class="breakHelper">
+		    <br>
+		</div>
+	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"0eae21b6e9cc483fb1cda3cef87ab48d","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<p><a href="https://neighborli.xyz/@rav3ndust">fediverse</a> | <a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> | <a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> | <a href="https://x.com/rav3ndust">X</a></p>
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	
