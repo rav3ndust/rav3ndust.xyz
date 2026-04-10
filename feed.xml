@@ -1,3 +1,4 @@
+
 <rss version="2.0">
 <!-- RSS feed for FOSSphones News -->
 <channel>
@@ -226,6 +227,12 @@
     <description>taking a look at Pokemon Champions!</description>
     <link>https://rav3ndust.xyz/blog/2026-04-09.html</link>
     <pubDate>2026-04-09</pubDate>
+</item>
+<item>
+	<title>taking a look at brave origin</title>
+	<description>a stripped down version of the privacy-friendly browser</description>
+	<link>https://rav3ndust.xyz/blog/2026-04-10.html</link>
+	<pubDate>2026-04-10</pubDate>
 </item>
 <!-- ################################################################## -->
 </channel>
