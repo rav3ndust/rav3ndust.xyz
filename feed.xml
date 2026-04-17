@@ -1,4 +1,3 @@
-
 <rss version="2.0">
 <!-- RSS feed for FOSSphones News -->
 <channel>
@@ -233,6 +232,12 @@
 	<description>a stripped down version of the privacy-friendly browser</description>
 	<link>https://rav3ndust.xyz/blog/2026-04-10.html</link>
 	<pubDate>2026-04-10</pubDate>
+</item>
+<item>
+    <title>sailing on the ship of harkinian</title>
+    <description>aking a peek at the Ship of Harkinian, a native source port of Zelda: Ocarina of Time!</description>
+    <link>https://rav3ndust.xyz/blog/2026-04-17.html</link>
+    <pubDate>2026-04-17</pubDate>
 </item>
 <!-- ################################################################## -->
 </channel>
