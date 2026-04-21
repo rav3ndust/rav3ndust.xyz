@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<!-- meta information -->
+		<meta name="description" content="Taking a look at agentic coding tools.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2026-04-21</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>agentic</h2>
+		<p><i>looking at agentic programming tools</i></p>
+		<p><b style="color:#FF10F0">2026-04-21</b></p>
+		<p>It has been a crazy last few years with the advent of LLMs and their overtaking of everything from entire operating systems (Windows) and their associated stock applications (Edge, Paint, Notepad, Files) to being shoved in different websites everywhere you go (GitHub, search engines, etc).</p>
+		<p>Not even a year ago, I remember testing out using an LLM as a pair programmer. It was still not very good. You could do some basic webpages or scripts or something like that with it, sure, but I wouldn't have used it in a large production codebase.</p>
+		<p>These days, things have been changing. These "agents" as we are calling them have gotten quite good, and so many of them can be run locally. You don't need to be dependent on the cloud and OpenAI or Claude or whatever else anymore. If you have the right hardware, you can run local models and use them in an agentic capacity, and not have to worry about using any of these cloud APIs and big frontier models.</p>
+		<p>I have been messing around with some of the newer open-weights models through <a href="https://opencode.ai/">OpenCode</a>, and I have to say, it has gotten quite good. Especially with me being the only main programmer on our team around here, except for my wife contributing some HTML and CSS to some of our projects, being able to use one of these agents as a pair-programmer is certainly a nice help. I can be working on one file, and tell OpenCode to go work on another file, and it doesn't take a single step without asking my permission to do something to a file. I don't turn it loose on a codebase - it has to ask permission before making any edits, creating or deleting files, all that good stuff.</p>
+		<p>Unlike the "vibe coders" of our current day, I am not trying to "oneshot" apps with agents or something like that. I am using it as something to bounce ideas around with, and to have do code side-by-side with. I am not someone who is in a position to hire more people to join my team and build FOSS. I am in a position, however, to test out some of these local agents, and use them to assist me in my own projects and the things we build out, and I have been quite impressed as of late. I bring up OpenCode quite a bit while working on some of our bigger projects, and it has been a joy to work with. I have certainly been having a good time working alongside it and bouncing ideas around back and forth with it.</p>
+		<p>Yeah, I know there are lots of people who have their issues with LLMs and "AI" in general. Some of them have some good points, some of them are doomers repeating the things they have heard on social media about how AI is going to take over the world and become like the <i>Terminator</i> films. The truth is a lot of grey area in the middle.</p>
+		<p>AI is certainly going to change a lot of things. It already has over the last few years since chatGPT exploded onto the scene. People ask me how I feel about AI sometimes. My answer is always the same. My issue isn't with LLMs as a technology, in fact, I think it is a pretty cool technology with lots of potential use-cases beyond the stupid things people use it for on a day to day basis.</p>
+		<p>No, my issue with most AI is the frontier models. I have high doubts about the privacy around using most of these frontier models in the cloud, such as ChatGPT, Claude, all those from the big providers. What I like to do, instead, is to use local models, and I like to run them through <a href="https://ollama.com/">Ollama</a> on my local machines. In fact, I have one machine in my office that is dedicated to running models, and I can SSH into that machine from other machines if I want to interact with the models.</p>
+		<p>I have been running a customized instance of <a href="https://ollama.com/library/gemma4">Gemma4</a> lately for conversations. For pair programming with the LLM, I like to use <a href="https://ollama.com/library/qwen3-coder-next">qwen3-coder</a>, which has been a good model as well. Both of these are running on my own local hardware, and I can switch between them at any time, or even run them in parallel.</p>
+		<p>LLMs might be the biggest breakthrough technology since the iPhone. I don't say that to be a hypeman - I'm not one. There are many things about AI I don't like. I don't like how we're in the middle of this "AI arms race" and I don't like how we're in the middle of a bubble that is eventually going to have to pop. I don't like that some companies and people are hooking onto "AI" as the new way to make money, just like blockchain and NFTs before it. This just shows you who the companies and people to avoid in the space are. That doesn't mean though, that there aren't real utilities to this technology.</p>
+		<p>Are there some things currently being done with AI right now that shouldn't be? Sure. I think AI in art is pretty silly. AI music is bad, AI art is usually pretty bad, it's all just pretty bad on that front. That is why it is called "slop". When you look past the silly and mundane thing people are using these models for, you can find some pretty interesting use-cases.</p>
+		<p>When it comes to coding, I have finally found some good assistance with these local models. OpenCode has been a lot of fun to have open in one workspace on my window manager, and planning out a build of something with it, or throwing ideas around about a project. I don't have many fellow programmers in my life, so it is nice to be able to have something to be able to "pair program" with, throwing ideas back and forth, and implementing the good ones into the projects we're working on. Certainly helps speed some things up, and if something needs to be done in a language I am not familiar in, I can have it come up with some ideas and I can take a look at it and see if it makes sense or not.</p>
+		<p>I am very in the middle on the AI debate. I am not "AI save everyone" and I am also not "AI kill everyone". I think LLMs have their uses, and I think some of the uses are stupid. I think some of them, however, are quite good, and some of the coding tools like OpenCode have gotten very good, and I enjoy running the local models on my main machine and being able to tunnel into it to interface with them. It has been a lot of fun, and I will certainly continue to try out some new models in the future and customize them as we ave been doing, and seeing how they perform against the "frontier models" that are out there on the internet that everyone else uses. It will be fun to see how they continue to compare.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">agentic tools in 2026</h3>
+		<p>These are some of the big ones, though I only have experience with the first three (OpenCode, Qwen, Gemini). You can test them out if you want, I know I am kinda interested in putting Hermes Agent on its own box sometime and see how it goes.</p>
+		<ul>
+			<li><a href="https://opencode.ai/">OpenCode</a> is a hub for interfacing with either cloud models through an API or your own local models. It can be used in Plan mode and Build mode, where you can converse with the model and share your codebase with it, plan out improvements and fixes or new features, and then begin building in the codebase. You can set it up like I do to where it can't run any commands or edit any files without your permission first on each occasion. Or, you can go the opposite way and let it run loose on the codebase and do whatever it wants. Your choice!</li>
+			<li><a href="https://github.com/QwenLM/qwen-code">Qwen Code</a>, a CLI-based agent that runs Qwen models, which are open models. You can talk to it about your codebase or have it edit files for you. It has built-in skills you can learn about and use in your workflow.</li>
+			<li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a>, an open-source coding agent that allows you to interface with the Gemini family of models, letting you share your codebase with it, converse with it about your codebase, and let it edit files if you'd like. It has built-in skills that you can learn about and use in your workflow, like with Qwen.</li>
+			<li><a href="https://openclaw.ai/">OpenClaw</a>, formerly known as Clawdbot/Moltbot, was one of the first big "agents" that took the internet by storm. Fully open-source, it is able to be interfaced with through telegram so you can talk to it anytime, and it can either be used through frontier models like Claude or through local models if you'd like. A whole ecosystem seemed to pop up around OpenClaw around Christmas of 2025, including things like Moltbook, which was a "social network for AI agents". People were registering their agents using an instruction file in Markdown, and agents would begin posting there.</li>
+			<li><a href="https://hermes-agent.nousresearch.com/">Hermes Agent</a> is a "self-improving" agent, developed by <b>Nous Research</b>. I have not tested it out yet (though I have thought about throwing it on a raspberry pi 5 and playing with it). It features a built-in learning loop, which lets it refine its skills over time while still maintaining cross-session memory. Like OpenClaw, it can be hosted locally and interfaced with through chat applications such as telegram.</li>
+		</ul>
+		<p>These are some of the main ones I have been hearing about lately, and while I have only really used OpenCode, I have plans to deploy Hermes Agent and test it out for the fun of it. I have a spare raspberry pi 5 with a good amount of memory, so it might be fun to test it out and see how it goes.</p>
+		<p>This might be something new for some of my readers to find out I'm not completely against AI. My issues with AI are mainly privacy-related, and I think that if everyone was able to run their own local AI models, that issue would be alleviated. I don't trust OpenAI or most of these other AI companies, to be sure, but I do trust things running on my own machine, just like with normal software applications. Thankfully, we have plenty of open models, such as Gemma, Qwen, DeepSeek, and more that we can build on top of and modify to suit whatever use-case we are working on.</p>
+		<p>How do you feel about some of these local LLMs? Or if you use LLMs at all, do you simply use the frontier models such as Claude or ChatGPT? I am interested to see what you have to say! Let me know on the fediverse or over email, or hit me up on any of the platforms listed on my <a href="../contact.html">contact</a> page. I know this is a hot topic, and everyone has different opinions on it, so I would love to know how you feel about it!</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<!-- begin social badges (nonindexed version) inline -->
+		<h5 style="color:#ff10f0">me on the internet!</h5>
+		<p><a href="https://neighborli.xyz/@rav3ndust"><img src="../social-badges/fediverse.png" width="32" height="32"></a> <a href="https://nosta.me/rav3ndust@rav3ndust.xyz"><img src="../social-badges/nostr.png" width="32" height="32"></a> <a href="https://bsky.app/profile/rav3ndust.xyz"><img src="../social-badges/bluesky.png" width="32" height="32"></a> <a href="https://x.com/rav3ndust"><img src="../social-badges/x.png" height="32" width="32"></a> <a href="https://rav3ndust.tumblr.com"><img src="../social-badges/tumblr.png" height="32" width="32"></a> <a href="https://youtube.com/@rav3ndust"><img src="../social-badges/youtube.png" height="32" width="32"></a> <a href="https://twitch.tv/rav3ndust"><img src="../social-badges/twitch.png" height="32" width="32"></a> <a href="https://www.tiktok.com/@rav3ndust"><img src="../social-badges/tiktok.png" height="32" width="32"></a> <a href="https://github.com/rav3ndust"><img src="../social-badges/github.png" height="32" width="32"></a></p>
+		<!-- end social badges (nonindex version) inline -->
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a></h6>
+	</footer>
+</html>	
