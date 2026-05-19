@@ -1,10 +1,11 @@
+
 <rss version="2.0">
-<!-- RSS feed for FOSSphones News -->
+<!-- RSS feed for rav3ndust.xyz blog posts -->
 <channel>
 <title>rav3ndust.xyz</title>
 <description>the latest musings from rav3ndust</description>
 <link>https://rav3ndust.xyz/blog.html</link>
-<!-- begin separating the news items -->
+<!-- begin separating the items -->
 <item>
     <title>Welcome to rav3n's blog!</title>
     <description>The latest from rav3ndust!</description>
@@ -292,6 +293,12 @@
     <description>checking out the new UI in firefox nightly</description>
     <link>https://rav3ndust.xyz/blog/2026-05-12.html</link>
     <pubDate>2026-05-12</pubDate>
+</item>
+<item>
+    <title>protocol7</title>
+    <description>introducing you to the headless/server edition of naviOS</description>
+    <link>https://rav3ndust.xyz/blog/2026-05-19.html</link>
+    <pubDate>2026-05-19</pubDate>
 </item>
 <!-- ################################################################## -->
 </channel>
