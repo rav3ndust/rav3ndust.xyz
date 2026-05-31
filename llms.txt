@@ -8,6 +8,12 @@ This site is rav3ndust's home on the internet. rav3ndust is a FOSS/web dev, twit
 
 rav3ndust believes in permacomputing, the smallweb, digital privacy, advocating for free and open-source software, and an open web.
 
+## tech notes
+
+This site is built using hand-written HTML/CSS. It uses no frameworks or static-site generation. It follows permacomputing principles!
+
+This site is served to you from a debian server running nginx.
+
 ## site sections
 
 - [now](https://rav3ndust.xyz/now.html): The 'now' page is a short-form journal of sorts with sporadic updates.
