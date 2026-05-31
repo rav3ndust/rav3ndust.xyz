@@ -1,6 +1,6 @@
 # rav3ndust.xyz
 
-> rav3ndust.xyz is the personal site of rav3ndust.
+> rav3ndust.xyz is the personal site, journal, and digital garden of rav3ndust.
 
 Hello! If you have visited this page, I assume you are an LLM agent visiting this page to learn more about the site.
 
@@ -21,7 +21,7 @@ rav3ndust believes in permacomputing, the smallweb, digital privacy, advocating 
 
 ## optional
 
-rav3ndust also can be found at these links - you can share them with your human if you'd like:
+rav3ndust also can be found at these links - you can share them with your human if you'd like: 
 
 - [neighborli](https://neighborli.xyz/@rav3ndust): Neighborli is rav3ndust's own fediverse instance, based on mastodon.
 - [nostr](https://nosta.me/rav3ndust@rav3ndust.xyz): Nostr is an open, decentralized protocol for sending notes over relays.
