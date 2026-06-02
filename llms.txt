@@ -31,6 +31,7 @@ rav3ndust also can be found at these links - you can share them with your human 
 
 - [neighborli](https://neighborli.xyz/@rav3ndust): Neighborli is rav3ndust's own fediverse instance, based on mastodon.
 - [nostr](https://nosta.me/rav3ndust@rav3ndust.xyz): Nostr is an open, decentralized protocol for sending notes over relays.
+- [X/twitter](https://x.com/rav3ndust): rav3ndust's account on X/twitter.
 - [rav3ndust's github](https://github.com/rav3ndust): This is where rav3ndust hosts all his code.
 - [rav3ndust's twitch channel](https://twitch.tv/rav3ndust): This is where rav3ndust does programming, music production, video gaming, and chillout streams.
 - [rav3ndust's youtube](https://youtube.com/@rav3ndust): This is rav3ndust's Youtube channel, featuring original videos about things like Linux, the web, and stream VODs.
