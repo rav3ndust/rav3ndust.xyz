@@ -142,7 +142,7 @@
 				document.getElementById('price-table').innerHTML = html;
 
 				const now = new Date();
-				document.getElementById('last-updated').textContent = 'last updated: ' + now.toLocaleTimeString();
+				document.getElementById('last-updated').textContent = 'last updated: ' + now.toLocaleTimeString('en-GB');
 			} catch (err) {
 				document.getElementById('price-table').innerHTML = '<p style="color:#FF3131;text-align:center">failed to fetch prices. refreshen the page to try again.</p>';
 			}
