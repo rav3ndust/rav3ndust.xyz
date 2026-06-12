@@ -111,8 +111,8 @@
 
 		function getTrend(id, price) {
 			if (prevPrices[id] === undefined) return '';
-			if (price > prevPrices[id]) return ' <span class="price-up">▲</span>';
-			if (price < prevPrices[id]) return ' <span class="price-down">▼</span>';
+			if (price > prevPrices[id]) return ' <span class="price-up">^</span>';
+			if (price < prevPrices[id]) return ' <span class="price-down">v</span>';
 			return '';
 		}
 
