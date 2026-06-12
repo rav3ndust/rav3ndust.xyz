@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<style>
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;	
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			max-width: 600px;
+			margin: 20px auto;
+		}
+		th, td {
+			border: 1px solid #39ff14;
+			padding: 10px;
+			text-align: left;
+		}
+		th {
+			color: #FF10F0;
+			font-size: 18px;
+		}
+		td {
+			font-size: 16px;
+		}
+		.price-up { color: #39ff14; }
+		.price-down { color: #FF3131; }
+		.loading {
+			color: #00ffff;
+			text-align: center;
+		}
+		.last-updated {
+			color: #888;
+			text-align: center;
+			font-size: 14px;
+		}
+	</style>
+	<head>
+		<link rel="shortcut icon" type="image/jpg" href="img/rav3n.jpeg">
+		<meta name="description" content="Live cryptocurrency prices for BTC, XMR, ETH, DOGE, ETC, and BAT.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>crypto prices</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">crypto prices</h1>
+		<p style="text-align:center"><b><a href="now.html">now</a> | <a href="blog.html">blog</a> | <a href="wiki/wiki.html">wiki</a> | <a href="recipes.html">recipes</a> | <a href="bookmarks.html">bookmarks</a> | <a href="contact.html">contact</a> | <a href="about.html">about</a> | <a href="donate.html">donate</a></b></p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<p style="color:#FF10F0">* * * <a href="index.html">back home</a> * * *</p>
+		<p>Some coins I like. Here are their current prices, live updating!</p>
+		<blockquote style="text-align:center"><b style="color:#39ff14">~</b> live prices from <a href="https://www.coingecko.com">CoinGecko</a></blockquote>
+		<div id="price-table">
+			<p class="loading">fetching prices...</p>
+		</div>
+		<p class="last-updated" id="last-updated"></p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<p style="color: #FF10F0">~ ~ <a href="index.html">rav3ndust.xyz</a> ~ ~</p>
+		<h5 style="color:#ff10f0">me on the internet!</h5>
+		<p><a href="https://neighborli.xyz/@rav3ndust"><img src="social-badges/fediverse.png" width="32" height="32"></a> <a href="https://nosta.me/rav3ndust@rav3ndust.xyz"><img src="social-badges/nostr.png" width="32" height="32"></a> <a href="https://bsky.app/profile/rav3ndust.xyz"><img src="social-badges/bluesky.png" width="32" height="32"></a> <a href="https://x.com/rav3ndust"><img src="social-badges/x.png" height="32" width="32"></a> <a href="https://rav3ndust.tumblr.com"><img src="social-badges/tumblr.png" height="32" width="32"></a> <a href="https://youtube.com/@rav3ndust"><img src="social-badges/youtube.png" height="32" width="32"></a> <a href="https://twitch.tv/rav3ndust"><img src="social-badges/twitch.png" height="32" width="32"></a> <a href="https://www.tiktok.com/@rav3ndust"><img src="social-badges/tiktok.png" height="32" width="32"></a> <a href="https://github.com/rav3ndust"><img src="social-badges/github.png" height="32" width="32"></a></p>
+		<a href="https://512kb.club"><img src="img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a> - | - <a href="llms.txt">for LLM agents</a></h6>
+	</footer>
+	<script>
+		const coins = [
+			{ id: 'bitcoin',              name: 'Bitcoin',          ticker: 'BTC' },
+			{ id: 'monero',               name: 'Monero',           ticker: 'XMR' },
+			{ id: 'ethereum',             name: 'Ethereum',         ticker: 'ETH' },
+			{ id: 'dogecoin',             name: 'Dogecoin',         ticker: 'DOGE' },
+			{ id: 'ethereum-classic',     name: 'Ethereum Classic', ticker: 'ETC' },
+			{ id: 'basic-attention-token', name: 'Basic Attention Token', ticker: 'BAT' }
+		];
+
+		let prevPrices = {};
+
+		function formatPrice(price) {
+			if (price >= 1) {
+				return '$' + price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+			} else {
+				return '$' + price.toFixed(6);
+			}
+		}
+
+		function getTrend(id, price) {
+			if (prevPrices[id] === undefined) return '';
+			if (price > prevPrices[id]) return ' <span class="price-up">▲</span>';
+			if (price < prevPrices[id]) return ' <span class="price-down">▼</span>';
+			return '';
+		}
+
+		async function fetchPrices() {
+			const ids = coins.map(c => c.id).join(',');
+			const url = `https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd`;
+
+			try {
+				const resp = await fetch(url);
+				const data = await resp.json();
+
+				let html = `<table>
+					<tr><th>Coin</th><th>Price (USD)</th></tr>`;
+
+				for (const coin of coins) {
+					const price = data[coin.id]?.usd;
+					if (price !== undefined) {
+						const trend = getTrend(coin.id, price);
+						html += `<tr><td><b>${coin.name}</b> (${coin.ticker})</td><td>${formatPrice(price)}${trend}</td></tr>`;
+						prevPrices[coin.id] = price;
+					} else {
+						html += `<tr><td><b>${coin.name}</b> (${coin.ticker})</td><td>N/A</td></tr>`;
+					}
+				}
+
+				html += `</table>`;
+				document.getElementById('price-table').innerHTML = html;
+
+				const now = new Date();
+				document.getElementById('last-updated').textContent = 'last updated: ' + now.toLocaleTimeString();
+			} catch (err) {
+				document.getElementById('price-table').innerHTML = '<p style="color:#FF3131;text-align:center">failed to fetch prices. refreshen the page to try again.</p>';
+			}
+		}
+
+		fetchPrices();
+		setInterval(fetchPrices, 60000);
+	</script>
+</html>
