@@ -1,4 +1,3 @@
-
 <rss version="2.0">
 <!-- RSS feed for rav3ndust.xyz blog posts -->
 <channel>
@@ -10,295 +9,351 @@
     <title>Welcome to rav3n's blog!</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-09-20.html</link>
-    <pubDate>2020-09-20</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-09-20.html</guid>
+    <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>Why I think GNU/Linux is important for mobile devices.</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-09-27.html</link>
-    <pubDate>2020-09-27.html</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-09-27.html</guid>
+    <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>if you need android, run privacy-respecting aosp distros</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-10-04.html</link>
-    <pubDate>2020-10-04</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-10-04.html</guid>
+    <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>some of the best terminal apps I use every day</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-10-11.html</link>
-    <pubDate>2020-10-11</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-10-11.html</guid>
+    <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>why you should delete facebook from your life</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-10-18.html</link>
-    <pubDate>2020-10-18</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-10-18.html</guid>
+    <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>politics and family gatherings</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-10-25.html</link>
-    <pubDate>2020-10-25</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-10-25.html</guid>
+    <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>my solar panel setup</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-11-01.html</link>
-    <pubDate>2020-11-01</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-11-01.html</guid>
+    <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>why you should build your own website</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-11-08.html</link>
-    <pubDate>2020-11-08</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-11-08.html</guid>
+    <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>terminal browsers: they're still kinda cool</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-12-06.html</link>
-    <pubDate>2020-12-06</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-12-06.html</guid>
+    <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>ringing in the new year with free software</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2020-12-27.html</link>
-    <pubDate>2020-12-27</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2020-12-27.html</guid>
+    <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>what do I have planned for this year</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2021-01-31.html</link>
-    <pubDate>2021-01-31</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2021-01-31.html</guid>
+    <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>what have I been up to</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2021-05-13.html</link>
-    <pubDate>2021-05-13</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2021-05-13.html</guid>
+    <pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>on politics and religion</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2021-06-29.html</link>
-    <pubDate>2021-06-29</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2021-06-29.html</guid>
+    <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>adblocking is not unethical</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2021-08-03.html</link>
-    <pubDate>2021-08-03</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2021-08-03.html</guid>
+    <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>vim over vscode? ok, boomer!</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2022-05-10.html</link>
-    <pubDate>2022-05-10</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2022-05-10.html</guid>
+    <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>chromium vs firefox - why the flamewars?</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2022-07-07.html</link>
-    <pubDate>2022-07-07</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2022-07-07.html</guid>
+    <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>ring doorbells send cops user data without consent</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2022-07-25.html</link>
-    <pubDate>2022-07-05</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2022-07-25.html</guid>
+    <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>status update</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2022-10-26.html</link>
-    <pubDate>2022-10-26</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2022-10-26.html</guid>
+    <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>chatGPT - all hype?</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2023-01-19.html</link>
-    <pubDate>2023-01-19</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2023-01-19.html</guid>
+    <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>notes on nostr</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2023-02-06.html</link>
-    <pubDate>2023-02-06</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2023-02-06.html</guid>
+    <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>the cynical trap</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2023-04-17.html</link>
-    <pubDate>2023-04-17</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2023-04-17.html</guid>
+    <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>bluesky domain verification</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2023-10-12.html</link>
-    <pubDate>2023-10-12</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2023-10-12.html</guid>
+    <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>healthier habits</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2024-05-08.html</link>
-    <pubDate>2024-05-08</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2024-05-08.html</guid>
+    <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>liberate your android</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2024-09-19.html</link>
-    <pubDate>2024-09-19</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2024-09-19.html</guid>
+    <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>from sudo to doas</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2024-09-20.html</link>
-    <pubDate>2024-09-20</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2024-09-20.html</guid>
+    <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>social stuff</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2024-10-30.html</link>
-    <pubDate>2024-10-30</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2024-10-30.html</guid>
+    <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>search engines kinda suck these days</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-05-27.html</link>
-	<pubDate>2025-05-27</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2025-05-27.html</guid>
+    	<pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>olauncher - a sleeker, more minimal launcher for android</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-08-08.html</link>
-	<pubDate>2025-08-08</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2025-08-08.html</guid>
+    	<pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>"think of the children" is a spook</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-08-13.html</link>
-	<pubDate>2025-08-13</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2025-08-13.html</guid>
+    	<pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>trying out some new browsers</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-10-11.html</link>
-	<pubDate>2025-10-11</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2025-10-11.html</guid>
+    	<pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>open platforms and the "small web"</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-10-15.html</link>
-	<pubDate>2025-10-15</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2025-10-15.html</guid>
+    	<pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>single points of failure</title>
 	<description>aws outage reminds us that decentralization matters most</description>
 	<link>https://rav3ndust.xyz/blog/2025-10-20.html</link>
-	<pubDate>2025-10-20</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2025-10-20.html</guid>
+    	<pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>bring your "old" computers to the free side</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-11-04.html</link>
-	<pubDate>2025-11-04</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2025-11-04.html</guid>
+    	<pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>happy 2026!</title>
 	<description>a look forward into a great new year, and catching up</description>
 	<link>https://rav3ndust.xyz/blog/2026-02-06.html</link>
-	<pubDate>2026-02-06</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2026-02-06.html</guid>
+    	<pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>papers please: age verification online is not the answer</title>
 	<description>a look at discord's awful new policies and the broader landscape</description>
 	<link>https://rav3ndust.xyz/blog/2026-02-11.html</link>
-	<pubDate>2026-02-11</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2026-02-11.html</guid>
+    	<pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>catching up on the last couple of months</title>
     <description>the last couple of months have flown by - here is a quick update</description>
     <link>https://rav3ndust.xyz/blog/2026-04-06.html</link>
-    <pubDate>2026-04-06</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-04-06.html</guid>
+    <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>pokemon champions is fun</title>
     <description>taking a look at Pokemon Champions!</description>
     <link>https://rav3ndust.xyz/blog/2026-04-09.html</link>
-    <pubDate>2026-04-09</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-04-09.html</guid>
+    <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>taking a look at brave origin</title>
 	<description>a stripped down version of the privacy-friendly browser</description>
 	<link>https://rav3ndust.xyz/blog/2026-04-10.html</link>
-	<pubDate>2026-04-10</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2026-04-10.html</guid>
+    	<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>sailing on the ship of harkinian</title>
     <description>aking a peek at the Ship of Harkinian, a native source port of Zelda: Ocarina of Time!</description>
     <link>https://rav3ndust.xyz/blog/2026-04-17.html</link>
-    <pubDate>2026-04-17</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-04-17.html</guid>
+    <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>streaming more often</title>
 	<description>trying to spend some more time streaming</description>
 	<link>https://rav3ndust.xyz/blog/2026-04-18.html</link>
-	<pubDate>2026-04-18</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2026-04-18.html</guid>
+    	<pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>the slopphone</title>
 	<description>do you have your approved device to make this transaction, sir?</description>
 	<link>https://rav3ndust.xyz/blog/2026-04-19.html</link>
-	<pubDate>2026-04-19</pubDate>
+	<guid>https://rav3ndust.xyz/blog/2026-04-19.html</guid>
+    	<pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>agentic</title>
     <description>looking at agentic programming tools</description>
     <link>https://rav3ndust.xyz/blog/2026-04-21.html</link>
-    <pubDate>2026-04-21</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-04-21.html</guid>
+    <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>rainy day wrap-up</title>
     <description>heading out of town tomorrow and enjoying a pipe and some coffee this morn</description>
     <link>https://rav3ndust.xyz/blog/2026-04-28.html</link>
-    <pubDate>2026-04-28</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-04-28.html</guid>
+    <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>tiling window management in gnome</title>
     <description>did you know you can turn gnome into a tiling window manager?</description>
     <link>https://rav3ndust.xyz/blog/2026-04-29.html</link>
-    <pubDate>2026-04-29</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-04-29.html</guid>
+    <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>cohesion</title>
     <description>a unified vision and a beautiful product</description>
     <link>https://rav3ndust.xyz/blog/2026-05-05.html</link>
-    <pubDate>2026-05-05</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-05-05.html</guid>
+    <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>blackpilling is bunk</title>
     <description>the perpetual trap of pessimism</description>
     <link>https://rav3ndust.xyz/blog/2026-05-06.html</link>
-    <pubDate>2026-05-06</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-05-06.html</guid>
+    <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>finding common ground</title>
     <description>could this be where ravinia ends up?</description>
     <link>https://rav3ndust.xyz/blog/2026-05-07.html</link>
-    <pubDate>2026-05-07</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-05-07.html</guid>
+    <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>a look at firefox 'nova' redesign</title>
     <description>checking out the new UI in firefox nightly</description>
     <link>https://rav3ndust.xyz/blog/2026-05-12.html</link>
-    <pubDate>2026-05-12</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-05-12.html</guid>
+    <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>protocol7</title>
     <description>introducing you to the headless/server edition of naviOS</description>
     <link>https://rav3ndust.xyz/blog/2026-05-19.html</link>
-    <pubDate>2026-05-19</pubDate>
+    <guid>https://rav3ndust.xyz/blog/2026-05-19.html</guid>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>the smallweb resurgence</title>
+	<description>seeing little pockets of independence flourishing</description>
+	<link>https://rav3ndust.xyz/blog/2026-06-14.html</link>
+	<guid>https://rav3ndust.xyz/blog/2026-06-14.html</guid>
+	<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
 </item>
 <!-- ################################################################## -->
 </channel>
