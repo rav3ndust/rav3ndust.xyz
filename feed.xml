@@ -1,3 +1,4 @@
+
 <rss version="2.0">
 <!-- RSS feed for rav3ndust.xyz blog posts -->
 <channel>
@@ -97,13 +98,6 @@
     <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
 </item>
 <item>
-    <title>adblocking is not unethical</title>
-    <description>The latest from rav3ndust!</description>
-    <link>https://rav3ndust.xyz/blog/2021-08-03.html</link>
-    <guid>https://rav3ndust.xyz/blog/2021-08-03.html</guid>
-    <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
-</item>
-<item>
     <title>vim over vscode? ok, boomer!</title>
     <description>The latest from rav3ndust!</description>
     <link>https://rav3ndust.xyz/blog/2022-05-10.html</link>
@@ -123,6 +117,13 @@
     <link>https://rav3ndust.xyz/blog/2022-07-25.html</link>
     <guid>https://rav3ndust.xyz/blog/2022-07-25.html</guid>
     <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+</item>
+<item>
+    <title>adblocking is not unethical</title>
+    <description>The latest from rav3ndust!</description>
+    <link>https://rav3ndust.xyz/blog/2022-08-03.html</link>
+    <guid>https://rav3ndust.xyz/blog/2022-08-03.html</guid>
+    <pubDate>Tue, 03 Aug 2022 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>status update</title>
@@ -192,63 +193,63 @@
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-05-27.html</link>
 	<guid>https://rav3ndust.xyz/blog/2025-05-27.html</guid>
-    	<pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
+    <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>olauncher - a sleeker, more minimal launcher for android</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-08-08.html</link>
 	<guid>https://rav3ndust.xyz/blog/2025-08-08.html</guid>
-    	<pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>"think of the children" is a spook</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-08-13.html</link>
 	<guid>https://rav3ndust.xyz/blog/2025-08-13.html</guid>
-    	<pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>trying out some new browsers</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-10-11.html</link>
 	<guid>https://rav3ndust.xyz/blog/2025-10-11.html</guid>
-    	<pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
+    <pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>open platforms and the "small web"</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-10-15.html</link>
 	<guid>https://rav3ndust.xyz/blog/2025-10-15.html</guid>
-    	<pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>single points of failure</title>
 	<description>aws outage reminds us that decentralization matters most</description>
 	<link>https://rav3ndust.xyz/blog/2025-10-20.html</link>
 	<guid>https://rav3ndust.xyz/blog/2025-10-20.html</guid>
-    	<pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+    <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>bring your "old" computers to the free side</title>
 	<description>The latest from rav3ndust!</description>
 	<link>https://rav3ndust.xyz/blog/2025-11-04.html</link>
 	<guid>https://rav3ndust.xyz/blog/2025-11-04.html</guid>
-    	<pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
+    <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>happy 2026!</title>
 	<description>a look forward into a great new year, and catching up</description>
 	<link>https://rav3ndust.xyz/blog/2026-02-06.html</link>
 	<guid>https://rav3ndust.xyz/blog/2026-02-06.html</guid>
-    	<pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
 	<title>papers please: age verification online is not the answer</title>
 	<description>a look at discord's awful new policies and the broader landscape</description>
 	<link>https://rav3ndust.xyz/blog/2026-02-11.html</link>
 	<guid>https://rav3ndust.xyz/blog/2026-02-11.html</guid>
-    	<pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+    <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>catching up on the last couple of months</title>
@@ -269,11 +270,11 @@
 	<description>a stripped down version of the privacy-friendly browser</description>
 	<link>https://rav3ndust.xyz/blog/2026-04-10.html</link>
 	<guid>https://rav3ndust.xyz/blog/2026-04-10.html</guid>
-    	<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+    <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
 </item>
 <item>
     <title>sailing on the ship of harkinian</title>
-    <description>aking a peek at the Ship of Harkinian, a native source port of Zelda: Ocarina of Time!</description>
+    <description>taking a peek at the Ship of Harkinian, a native source port of Zelda: Ocarina of Time!</description>
     <link>https://rav3ndust.xyz/blog/2026-04-17.html</link>
     <guid>https://rav3ndust.xyz/blog/2026-04-17.html</guid>
     <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
