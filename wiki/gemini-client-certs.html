@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<meta charset="utf-8">
+		<meta name="description" content="Gemini client certs are how we authenticate with capsules on Gemini.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>gemini client certificates</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">digital garden</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2 style="color:#FF10F0">gemini client certificates</h2>
+		<p><i>authenticating with capsules on gemini</i></p>
+		<p>Many folks would think that the Gemini protocol is for static capsules only, and largely, they'd be right, but there are a few capsules on the protocol where you can do interactive stuff, such as chat with folks, make posts, and more.</p>
+		<p>Since this isn't the normal Web, we don't have an easy way to create accounts (usernames/passwords). Instead, we rely on certificates that we generate on our own local machines and manage ourselves.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">generating and using your client cert</h3>
+		<p>On Gemini, to handle authentication, we use client certificates and then tell our Gemini browser how to handle them.</p>
+		<p>Generating and using your client certificate is quite simple. In this example, I am going to be showing you how to do it in the <code>amfora</code> Gemini browser, since this is the main one I use and have experience with.</p>
+		<p>Generating your cert is easy. Simply run this command (remember to replace <code>username</code> with whatever you want your name to be):</p>
+		<code>openssl req -new -subj "/CN=username" -x509 -newkey ec -pkeyopt ec_paramgen_curve:prime256v1 -days 1825 -nodes -out cert.pem -keyout key.pem</code>
+		<p>You should now have two new files: <code>cert.pem</code> and <code>key.pem</code>. Now, we need to put these files where Amfora can see them:</p>
+		<code>mv cert.pem key.pem ~/.local/share/amfora</code>
+		<p>We now have our certs! We can configure Amfora to use them on different domains by telling Amfora to apply them to these domains in its configuration file (which can be found at <code>~/.config/amfora/config.toml</code>. Here's an example, using the <b>Station</b> social capsule as the domain we're authenticating with:</p>
+		<p><code>[auth.certs]</code></p>
+		<p><code># Client certificates</code></p>
+		<p><code># Set URL equal to path to client cert file</code></p>
+		<p><code>"station.martinrue.com" = "~/.local/share/amfora/cert.pem"</code></p>
+		<p><code>[auth.keys]</code></p>
+		<p><code># Client certificate keys</code></p>
+		<p><code># Same as [auth.certs] but the path is to the client key file.</code></p>
+		<p><code>"station.martinrue.com" = "~/.local/share/amfora/key.pem"</code></p>
+		<p>You can configure as many domains as needed in this way using the same cert/key pair!</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">managing your certificates</h3>
+		<p>After you've generated your certificate and key pair, the files are right there on your machine. You can move them from machine to machine if you want, put them on your own server, however you want to manage them, and use them to authenticate with your favorite Gemini capsules as you would on the machine you originally generated them on. Just make sure you keep them safe and don't put them on the public internet so other people can use them and masquerade as you!</p>
+		<p>I recommend keeping them on an external hard drive or flash drive that only you control, and move them between machines you plan on using for interacting with your favorite capsules. Put them on your machine, copy your Amfora config, make sure they're all in the right locations as we discussed above, and you're good to go!</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+	<footer>
+		<!--nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<!-- begin social links -->
+		<h5 style="color:#ff10f0">me on the internet!</h5>
+		<p>
+  		<a href="https://neighborli.xyz/@rav3ndust">fediverse</a> •
+  		<a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> •
+  		<a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> •
+  		<a href="https://rav3ndust.moments.im/">moments</a> •
+  		<a href="https://loops.video/@rav3ndust">loops</a> •
+		<a href="https://twitch.tv/rav3ndust">twitch</a> •
+  		<a href="https://youtube.com/@rav3ndust">youtube</a> •
+  		<a href="https://github.com/rav3ndust">github</a>
+		</p>
+		<!-- end social links -->
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="../feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a> - | - <a href="../llms.txt">for LLM agents</a></h6>
+	</footer>
+</html>
