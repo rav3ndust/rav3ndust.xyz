@@ -60,7 +60,7 @@
 		<code>openssl req -new -subj "/CN=username" -x509 -newkey ec -pkeyopt ec_paramgen_curve:prime256v1 -days 1825 -nodes -out cert.pem -keyout key.pem</code>
 		<p>You should now have two new files: <code>cert.pem</code> and <code>key.pem</code>. Now, we need to put these files where Amfora can see them:</p>
 		<code>mv cert.pem key.pem ~/.local/share/amfora</code>
-		<p>We now have our certs! We can configure Amfora to use them on different domains by telling Amfora to apply them to these domains in its configuration file (which can be found at <code>~/.config/amfora/config.toml</code>). Here's an example, using the <b>Station</b> social capsule as the domain we're authenticating with:</p>
+		<p>We now have our certs! We can configure Amfora to use them on different domains by telling Amfora to apply them to these domains in its configuration file (which can be found at <code>~/.config/amfora/config.toml</code>), and telling it where to look for the cert/key files. Here's an example, using the <b>Station</b> social capsule as the domain we're authenticating with:</p>
 		<p><code>[auth.certs]</code></p>
 		<p><code># Client certificates</code></p>
 		<p><code># Set URL equal to path to client cert file</code></p>
