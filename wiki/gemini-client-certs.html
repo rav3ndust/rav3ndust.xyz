@@ -56,7 +56,7 @@
 		<h3 style="color:#ff10f0">generating and using your client cert</h3>
 		<p>On Gemini, to handle authentication, we use client certificates and then tell our Gemini browser how to handle them.</p>
 		<p>Generating and using your client certificate is quite simple. In this example, I am going to be showing you how to do it in the <code>amfora</code> Gemini browser, since this is the main one I use and have experience with.</p>
-		<p>Generating your cert is easy. Simply run this command (remember to replace <code>username</code> with whatever you want your name to be):</p>
+		<p>To get started, simply run this command (remember to replace <code>username</code> with whatever you want your name to be):</p>
 		<code>openssl req -new -subj "/CN=username" -x509 -newkey ec -pkeyopt ec_paramgen_curve:prime256v1 -days 1825 -nodes -out cert.pem -keyout key.pem</code>
 		<p>You should now have two new files: <code>cert.pem</code> and <code>key.pem</code>. Now, we need to put these files where Amfora can see them:</p>
 		<code>mv cert.pem key.pem ~/.local/share/amfora</code>
