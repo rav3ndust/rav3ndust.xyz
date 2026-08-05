@@ -1,5 +1,5 @@
 # rav3ndust.xyz
-
+```
 +-----------------------------------+                                            
 |~~~~~~~~~~~..      . .~~~~~~~~~~~~~|                                            
 |~~~~~~~~                  .~~~~~~~~|                                            
@@ -18,7 +18,7 @@
 |                                 .~|                                            
 |                                  ~|                                            
 +-----------------------------------+  
-
+```
 [rav3ndust.xyz](https://rav3ndust.xyz) is my personal website, journal, and wiki.
 
 everything i've ever learned and continue to learn, i aim to document here.
