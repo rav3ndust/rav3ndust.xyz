@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<!-- meta information -->
+		<meta charset="utf-8">
+		<meta name="description" content="navi is the linux distro from your friends at xvoidsx.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2026-10-20</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>introducing navi</h2>
+		<p><i>a tiling-first, aesthetic linux distribution</i></p>
+		<p><b style="color:#FF10F0">2026-10-20</b></p>
+		<img src="blog-img/navi-blank.png" title="navi 1.7 mika" height="400">
+		<h6 style="color:#39FF14">navi 1.7 "mika" - the latest release</h6>
+		<p>I've been writing about it here for quite awhile, but last month, we finally began shipping images. What I'm referring to is <a href="https://navi.xvoidsx.org">navi</a>, our very own linux distribution.</p>
+		<p><b>navi</b> aims to celebrate the spirit of the "Wired", a <i>Serial Experiments Lain</i> reference that means the blending of the line between the internet and real life. You'll find <i>Lain</i> references all over the distro, as it is one of the things that influenced this whole adventure - me wanting to build my own "Navi computer" like that found in the anime. <b>navi</b> is your window to the smallweb, and your home for your agents, if you choose to use them.</p>
+		<p>A long time ago, I had a thought - what could linux look like if it were stripped all the way back to my favorite way of working, using tiling window managers, removing as much GTK/Qt as possible to avoid those aesthetics mixups that are so common, build up a <a href="../wiki/nightshadeNeon.html">design language</a> for cohesion, base it on top of my favorite rock-solid foundation (Debian), and use web technologies in the place of standard linux toolkits to keep everything accessible and consistent?</p>
+		<p>We finally have the answer, and I am super proud to say that <b>navi</b> ships today and is available to download for everyone. It has technically been out for over a month publicly, but I have not had the time to sit down and finally write up a blog post about it. This is probably going to get a little lengthy, as I've been meaning to write it up forever now, but I'm going to try to keep from rambling too much about it and show you some of the main things I'm especially proud of.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">look and feel</h3>
+		<p><b>navi</b> is meant to be beautiful and aesthetic, while being the most functional desktop you ever used. You can use our keybindings to absolutely fly across the system, and enjoy how your desktop looks while doing it. You don't have to worry about dragging windows around with the mouse - navi rejects the old, traditional desktop paradigm of floating windows and a taskbar with icons all over it. We prefer the tiling, keyboard-centric approach to managing our desktop.</p>
+		<p>navi's desktop is called 'Wired'. The Wired shell consists of heavy modifications of several things, the Sway tiling window manager, the Waybar panel, Rofi and dmenu as run launchers, and Conky for displaying system information. All of this is of course styled in our nightshadeNeon theme, and the desktop shell is meant to feel alive. We have subtle little animations in several of our Waybar themes, for example, and we also support animated wallpapers using <code>gifpaperslain</code>, our own tool built around <code>mpvpaper</code> to render animated wallpapers. If you prefer static wallpapers, you can select one using <code>naviWalls</code>.</p>
+		<p>You don't have to worry about randomly discovering keybinds, either, because you can easily access the helpful navi manual to teach you how to use it. You can either access the manual by opening it up locally using the <code>learn</code> command, or you can visit the <a href="https://navi.xvoidsx.org/manual/manual.html">online manual</a> to see it in your browser.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">navi's feature set</h3>
+		<p><b>navi</b> has a lot of things that give it its identity.</p>
+		<p>The first and most obvious thing is the "nightshadeNeon" design language. It is used across all of our stuff here at <a href="https://xvoidsx.org">xvoidsx</a> - from our websites (like the very one you are reading right now), our social instances, our desktop applications, our TUIs, and everything. Designed by my wife and I, nightshadeNeon is the cohesive core that blends all of our interfaces together, and it shapes how <b>navi</b> itself looks. Neon colors and consistent dark themes guide the way to give it a bit of a cyberpunk feel.</p>
+		<h4 style="color:#ff10f0">navi software</h4>
+		<p>We also have a suite of navi software that ships with the distro. These come in the forms of <b>navi mods</b>, webapps, and desktop apps, which are written on <a href="https://www.electronjs.org/">Electron</a> to allow us to shape as much as possible with web technologies.</p> 
+		<p>As you can imagine, all of our homegrown or forked navi software is written in nightshadeNeon, keeping everything cohesive and beautiful.</p>
+		<h4 style="color:#ff10f0">navi electron software</h4>	
+		<p>"<i>Why Electron?</i>", I can hear some folks asking, and the answer is quite simple. Electron, being web tech at the core, allows for us and anyone who works with us to be able to easily contribute. More people know web technologies and their associated languages (HTML/CSS/JS) than any other language, so the barrier of entry to writing and contributing to navi apps is negligible. Agents are also very good at web stuff, and agents are welcome, as you will see shortly, in navi.</p>
+		<p>Our current Electron app stack:</p>
+		<ul>
+			<li><b style="color:#ff10f0">navi radio</b>: A beautiful local music and online radio player.</li>
+			<li><b style="color:#ff10f0">sumi</b>: A simple writing app for Markdown. Easy to jot down anything.</li>
+			<li><b style="color:#ff10f0">FOSSfit</b>: One of our oldest apps which finally ships by default. Open-source health and meditation tracking.</li>
+			<li><b style="color:#ff10f0">copland</b>: Our experimental terminal. It has pane splitting, and the active pane glows in an ambient neon pink to show you where you're working. It is rendered using <b>xterm.js</b> and <b>webGL</b>.</li>
+		</ul>
+		<h4 style="color:#ff10f0">navi mods</h4>
+		<p>The <b>navi mods</b> I mentioned are TUI applets, many of which live directly in navi's panel, which is a heavily configured <b>waybar</b>. navi mods are written in Go, using <a href="https://github.com/charmbracelet/bubbletea">Bubble Tea</a> and <a href="https://pkg.go.dev/github.com/charmbracelet/lipgloss">Lip Gloss</a>. There are many navi mods that ship with the distro, and I won't name them all here as some are strictly for system configuration, but the main ones are:</p>
+		<ul>
+			<li><b style="color:#ff10f0">navi calendar</b>: A calendar applet that allows you to add and remove events.</li>
+			<li><b style="color:#ff10f0">navi reminders</b>: A simple reminders applet that allows you to set reminders which fire off as notifications when the scheduled time arrives.</li>
+			<li><b style="color:#ff10f0">navi weather</b>: A weather applet which lets you set locations to see the forecast for, as well as current severe alerts. You can also spawn a radar from the applet which shows you the radar in your area. If you don't set a custom area, the applet will use geolocation to display the current weather.</li>
+			<li><b style="color:#ff10f0">navi audio</b>: Shows current playback streams, recording streams, connected audio devices, and a now-playing section where you can control media from one center.</li>
+			<li><b style="color:#ff10f0">navi networks</b>: Allows you to connect to/disconnect from wifi, set custom DNS, do a network speedtest, and share your network connection with friends/guests using a QR code so you don't have to hand the password out.</li>
+			<li><b style="color:#ff10f0">navi bluetooth</b>: Allows you to connect to wireless Bluetooth devices.</li>
+			<li><b style="color:#ff10f0">navi tailscale</b>: A native tailscale applet that allows you to connect to your tailnet, see peers on the tailnet, use taildrop to send files to connected peers, SSH into peers, and more.</li>
+			<li><b style="color:#ff10f0">navi agent center</b>: Manage AI agents from one place. You can see the status of active agents, jump directly into their <code>herdr</code> panes for conversations, see if they need your attention, connect API keys if you choose to use cloud agents, set levels of agent autonomy, and more.</li>
+			<li><b style="color:#ff10f0">navi notifications</b>: See your recent notifications and clear them out if you wish.</li>
+			<li><b style="color:#ff10f0">navi-get</b>: Search through our curated software selection and install or remove apps from your operating system.</li>
+			<li><b style="color:#ff10f0">navi-browser</b>: Set your default browser, and decide if you want it to double as your webapp runtime.</li>
+		</ul>
+		<h4 style="color:#ff10f0">navi webapps</h4>
+		<p>Like Electron desktop apps, webapps are first-class citizens on navi. We use Chromium as a webapp runtime, allowing us to use its <code>--app</code> mode to render webapps as beautiful, chromeless windows that look native. We ship a few of our own webapps, as well as loads of other webapps - a few by default, loads more which you can install yourself.</p>
+		<p>Here are a few of our own webapps that ship with navi:</p>
+		<ul>
+			<li><b style="color:#ff10f0">naviApps</b>: This is a locally-hosted page inside of navi itself that shows you our curated software selection. You can browse between apps from xvoidsx, native software, agents, and webapps. You will see instructions on how to install the software, or you can hand it off to <code>navi-get</code> to handle installations automatically.</li>
+			<li><b style="color:#ff10f0">neighborli</b>: Our <a href="https://en.wikipedia.org/wiki/Fediverse">fediverse</a> instance, built on top of Mastodon. We strongly believe in decentralized social media, and we welcome everyone to come over to neighborli and join the conversation.</li>
+			<li><b style="color:#ff10f0">glyyph</b>: Our own <a href="https://nostr.com/">nostr</a> client built from scratch. Nostr is another decentralized social protocol with all kinds of apps built on top of it. Glyyph aims to be beautiful and easy to use whether you're brand new to the nostr protocol or a seasoned vet.</li>
+		</ul>
+		<h4 style="color:#ff10f0">navi forks</h4>
+		<p>Sometimes, there is something we want to achieve that an existing piece of software is already doing well, and we want to extend on top of it. Here are a few of the apps that ship out of the box with navi that originated as forks of other, great software.</p>
+		<ul>
+			<li><b style="color:#ff10f0">cyberia</b>: Cyberia is our own Matrix client that runs in the terminal. Originally forked from <a href="https://github.com/pkulak/matui">matui</a>, we have added in a beautiful ambient mode with raining katakana and glitch effects, the ability to paste images from the clipboard, and the ability to render images directly in the terminal chat interface. We also removed the issue in <b>matui</b> where getting a notification in one Matrix room would focus its attention on that room when you might want to keep your attention in the room you have opened.</li>
+			<li><b style="color:#ff10f0">wisp</b>: Our fork of <a href="https://opencode.ai/">OpenCode</a>. We removed a lot of providers that don't line up with the navi vision, and added in trusted ones, such as Ollama Cloud and Cloudflare Workers AI, as well as others. Wisp is meant to be used first with local models, as is the rest of navi, but you can of course bring your own key for cloud providers, too!</li>
+		</ul>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">other stuff that ships</h3>
+		<p><b>navi</b> is a little opinionated in the things we ship, as the goal is to provide a beautiful and usable tiling system right out of the box, so you can get it installed and jump right into the Wired.</p>
+		<p>navi relies on Chromium for the webapp runtime, and so we ship a couple of Chromium-based browsers out of the box so you can choose which one you want to use, or install another right from <code>navi-get</code>. Chromium's wonderful <code>--app</code> flag makes our webapp story possible, and I've loved the Chromium platform for a long time anyway, so it feels completely natural anyway.</p>
+		<ul>
+			<li><a href="https://brave.com">Brave</a> ships out of the box as the default browser. Brave is serious about privacy, and has loads of great features built in, such as Brave Shields for blocking ads and trackers, Leo AI for privately conversing with different models or connecting your own Ollama models, Brave Wallet for handling web3/crypto, Brave Talk for having private conference calls, and private Tor windows. On navi, Brave ships with compact mode turned on, ultra-dark theme turned on, and a wide address bar.</li>
+			<li><a href="https://chromium.org">Chromium</a> is another option we ship, if you prefer vanilla Chromium. navi's Chromium ships with <a href="https://chromewebstore.google.com/detail/blackice/nncobpmjfngafidkngebojkabaabbkhm">blackice</a>, our fork of <b>Ublock Origin Lite</b> for blocking ads and trackers. We include Brave's filtering as well, so you get standard Ublock filters  plus Brave filters. You also get the nightshadeNeon theme baked right in.</li>
+			<li><a href="https://qutebrowser.org/">qutebrowser</a>is also available out of the box, using our "kirie" configuration. It's standard qutebrowser with a lot of our modifications baked into the config file, such as adblocking out of the box, nightshadeNeon theme, a beautiful new tab page, and always masquerades as the current stable version of Chrome, such that it won't get blocked by websites. If you're unaware, qutebrowser is a minimalist web browser built around QtWebEngine, which is a stripped-down Chromium, allowing you to easily navigate the web using vim keybinds.</li>
+		</ul>
+		<p>For anyone who doesn't prefer to use a Chromium-based browser, <a href="https://firefox.com">Firefox</a> is available as well! We want everyone to be able to access the web however they prefer. At the moment, the Chromium runtime is the only story for webapps, as Firefox's webapp support is not complete and there is no support for chromeless windows.</p>
+		<p><b>Alacritty</b> is currently navi's default terminal, until we deem Copland to be stable enough to take over that job. We also ship a few GTK tools, including <b>Nemo</b> as the file manager and <b>Filezilla</b> so you can interact with remote servers if you run any. Filezilla is a huge part of my day-to-day operations, and having it in by default on new installations of navi is great without having to remember to go back and install it later. For GTK stuff we ship, to ensure everything is cohesive, we also have our own nightshadeNeon GTK theme so that any GTK app that gets installed on the system looks right at home.</p>
+		<p>For smallweb browsing, we ship my favorite Gemini browser, <b>Amfora</b>. It runs in the terminal and makes it very easy for you to jump into your favorite Gemini capsules right out of the box.</p>
+		<p>When it comes to getting work done, we also ship with <b>naviVim</b>, our own custom distribution of NeoVim, and <b>naviCode</b>, our own distribution of VS Codium. nightshadeNeon theme and customizations are right there so you can jump right into text editing, working with agents, whatever you want.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">agents</h3>
+		<p>If you want to work with AI agents, you will have all kinds of options at your disposal. As mentioned before, we ship with Wisp, which is our OpenCode fork, and you also have access to vanilla OpenCode, OMP (Oh My Pi), Pi Agent, Goose, and loads more. The <a href="https://ollama.com">Ollama</a> runtime is shipped out of the box to handle running local models, and if you prefer to use cloud models, you can grab things like Codex and other stuff from <code>navi-get</code>!</p>
+		<p>We also ship our own config on top of <a href="https://hermes-agent.nousresearch.com/">Hermes Agent</a> called <b>Lain</b>. Lain is pre-configured to know how to access important navi documentation and the manual, so if you want to ask your agent how to work with navi or configure it to your own liking, just ask Lain!</p>
+		<p>If you want to make your computer do things using your voice, you can also run <b>"Hey Lain!"</b>, which is our experimental voice agent. Right now, it can do things like check the weather, check the news, handle window management (say something like "Open Chromium" and it will do just that). Please note that "Hey Lain!" is not a finished thing yet, and might not work as you expect all the time. We are working on it!</p>
+		<p>We also ship a modified version of <code>herdr</code> which is similar to <code>tmux</code>, a terminal multiplexer that is agent-aware. We've made it aware of Goose agent, which natively doesn't have support for awareness of Goose, as well as given it our own custom navi-like keybinds to manage panes, and a beautiful nightshadeNeon color scheme. Herdr sessions are reported in the panel, where you can see a little robot face that displays when agents are working, idle, or need your attention. You can click into it and jump right into any agent session with ease.</p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">release channels</h3>
+		<p>You have two ways you can choose to run navi. You can run it on our stable channel, or on our rolling channel. We have an easy way built right in for you to swap channels without having to install a new image.</p>
+		<p>If you want to stick with our stable, tested, versioned releases, the <b>mika</b> channel is for you. Every image on the mika channel goes through our testing bench on real hardware and virtual machines to ensure that it is good to go. This is probably the way for most users.</p>
+		<p>If you want to live on the bleeding edge and grab every new navi feature as it comes along, you might want to ride the <b>eiri</b> channel. The rolling channel updates every time we push new code to the <a href="https://github.com/xvoidsx/navi/tree/eiri">eiri branch</a> of navi's repo. We've never had anything breaking happen yet, but keep in mind that it is a rolling channel, and could see breakage.</p>
+		<p><b>mika</b> releases are versioned (current is <b>1.7 mika</b>), and will see at least six major versions per year. <b>eiri</b> releases are dated, not versioned, and come out at least once a week. If want to switch channels, and you're on a <b>mika</b> release, you can simply run the following command to switch to the rolling branch:</p>
+		<p><code>navi-update --channel eiri</code></p>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">community</h3>
+		<p>navi is a distro for everyone. We welcome all folks who want to have fun with their machines in a new way, a lot different than most other Linux distros, and everyone is able to show up in our channels, ask questions, file bugs, suggest ideas, send pull requests, and just shoot the breeze! Here are a few ways you can get involved with navi development or just come join the conversation:</p>
+		<ul>
+			<li><a href="https://discord.gg/Xtjjp55ymk">join the navi discord</a></li>
+			<li><a href="https://github.com/xvoidsx/navi">navi's github</a></li>
+			<li><a href="https://neighborli.xyz">join us on neighborli</a></li>
+		</ul>
+		<div class="breakHelper">
+			<br>
+		</div>
+		<h3 style="color:#ff10f0">relevant links</h3>
+		<ul>
+			<li><a href="https://navi.xvoidsx.org">navi's website</a>: read about navi, watch the video tours, and grab the ISO here!</li>
+			<li><a href="https://xvoidsx.org">xvoidsx</a>: the hub of <b>xvoidsx</b>, our small collective</li>
+		</ul>
+		<div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<!-- begin social links -->
+		<h5 style="color:#ff10f0">me on the internet!</h5>
+		<p>
+  		<a href="https://neighborli.xyz/@rav3ndust">fediverse</a> •
+  		<a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> •
+  		<a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> •
+  		<a href="https://rav3ndust.moments.im/">moments</a> •
+  		<a href="https://loops.video/@rav3ndust">loops</a> •
+		<a href="https://twitch.tv/rav3ndust">twitch</a> •
+  		<a href="https://youtube.com/@rav3ndust">youtube</a> •
+  		<a href="https://github.com/rav3ndust">github</a>
+		</p>
+		<!-- end social links -->
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a> - | - <a href="../llms.txt">for LLM agents</a></h6>
+	</footer>
+</html>	
