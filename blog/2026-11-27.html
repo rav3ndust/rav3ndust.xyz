@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	<style>
+		/* do some basic styling */
+		a:link {color: #FF3131;}
+		a:visited {color: #39FF14;}
+		pre{color: #39ff14;}
+		h1{color: red;}
+		h2{color:red;}
+		code{color: #39ff14; font-size: 14px}
+		blockquote{color: #FF10F0;}
+	    .breakHelper {
+			border: 0;
+			height: 6px;
+			background: linear-gradient(to right, #FF10F0, #00ffff, #39ff14, #ff3131);
+		}
+		head {
+    		background-color: black;
+    		color: white;
+		}
+		body {
+    		background-color: black;
+    		color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<!--link in the favicon (nonindex version)-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/rav3n.jpeg">
+		<!-- meta information -->
+		<meta charset="utf-8">
+		<meta name="description" content="Taking a look at Ladybird, a new independent web browser.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2026-11-27</title>
+	</head>
+	<body>
+		<h1 style="text-align:center">blog</h1>
+		<!--begin 'navbar: nonindex version' -->
+		<p style="text-align:center"><b><a href="../now.html">now</a> | <a href="../blog.html">blog</a> | <a href="../wiki/wiki.html">wiki</a> | <a href="../recipes.html">recipes</a> | <a href="../bookmarks.html">bookmarks</a> | <a href="../contact.html">contact</a> | <a href="../about.html">about</a> | <a href="../donate.html">donate</a></b></p>
+		<!--end 'navbar: nonindex version'-->
+		<div class="breakHelper">
+			<br>
+		</div>
+		<!--' << back home ' (nonindex version) button for each page that isn't index.html -->
+		<p style="color:#FF10F0">* * * <a href="../index.html">back home</a> * * *</p>
+		<h2>ladybird: a new independent web browser</h2>
+		<p><i>a fourth engine enters the race</i></p>
+		<p><b style="color:#FF10F0">2026-11-27</b></p>
+    <img src="blog-img/lb1.png" title="Ladybird Alpha running on navi" height="400">
+    <h6 style="color:#ff10f0">ladybird alpha running on navi</h6>
+    <p>There has been a web browser project I have been following with great interest for a long time, and just a few days ago on November 23, <a href="https://ladybird.org">Ladybird</a> finally launched its first alpha.</p>
+    <p>I have been using it quite a bit over the last few days since the alpha launched, and thought I would do a short writeup about it, how I've been finding it so far, and the future of this exciting project - finally, a new independent entry into the browser engine space, separate from Chromium, Gecko, and Webkit.</p>
+    <div class="breakHelper">
+      <br>
+    </div>
+    <h3 style="color:#ff10f0">a look at ladybird alpha</h3>
+    <img src="blog-img/lb3.png" title="Ladybird's appearance settings" height="400">
+    <h6 style="color:#ff10f0">ladybird's appearance settings</h6>
+    <p>Ladybird is developed independently by Andreas Kling and the Ladybird team, and while sponsorships from anyone are accepted, these are seen as no-strings-attached donations that give the sponsors no steering power over the future direction of the browser. The <a href="https://ladybird.org/organization/">Ladybird Browser Initiative</a> is a US 501(c)(3) non-profit that is dedicated to the development and promotion of Ladybird, and its stated mission is to "create an independent, fast, and secure browser that respects user privacy and fosters an open web." This is a mission that I highly respect, and now, we have the first alpha to have a play with.</p>
+    <p>On first launch, you will be greeted with a screen offering you to set up how you want your browser to look and function, such as horizontal or vertical tabs, or everything on the side, what color theme you'd like to use, and your default search engine. There are a host of search engines to choose from, and "None" is selected by default, empowering you to decide your search provider of choice. Currently, you can select between:</p>
+    <ul>
+      <li>Bing</li>
+      <li>Brave</li>
+      <li>DuckDuckGo</li>
+      <li>Ecosia</li>
+      <li>Google</li>
+      <li>Kagi</li>
+      <li>Mojeek</li>
+      <li>Qwant</li>
+      <li>Startpage</li>
+      <li>Yahoo</li>
+      <li>Yandex</li>
+    </ul>
+    <p>Pretty decent list to choose from, and you can also select <b>Custom search engines...</b> to add more providers of your own.</p>
+    <img src="blog-img/lb2.png" title="Ladybird's content blocking settings" height="400">
+    <h6 style="color:#ff10f0">ladybird's content blocking settings</h6>
+    <p>Ladybird also ships with a content blocker built-in to the settings, with <code>adblock-rust</code> integrated into LibWeb. You can select from several different filter lists, as well as add custom Adblock-compatible rulesets in <b>Custom filters</b> if you choose.</p>
+    <p>In testing general browsing, I have yet to encounter major breakage on any sites I've checked. YouTube plays fine, scrolling and posting on neighborli and X were fine, working inside of GitHub handled well, and I loaded into my ProtonMail without a hitch. The only issue I've encountered in general browsing in Ladybird thus far is scrolling on some sites are a little janky, but this will get fixed in due time I'm sure. Since  first installing Ladybird, I've already received at least one update, and you can easily check for updates by clicking the <b>Ladybird Menu - Help - Check for Updates</b>. You can also simply update it through your package manager if you installed the <code>.deb</code> like I did, with:</p>
+    <code>doas apt update; doas apt install --upgrade -y ladybird</code><br><br>
+    <img src="blog-img/lb4.png" title="working in GitHub with Ladybird" height="400">
+    <h6 style="color:#ff10f0">working in github with ladybird</h6>
+    <p>For an alpha version of the browser, Ladybird has far exceeded my expectations, and I find myself reaching for it quite a bit the last few days for general browsing. It is light, simple, and aiming to be nothing more than a browser that complies to web standards. I look forward to extension support in the future so I use my other favorite tools inside of it, like <a href="https://proton.me/pass">Proton Pass</a> and other stuff I use in my other favorite browsers.</p>
+    <div class="breakHelper">
+      <br>
+    </div>
+    <h3 style="color:#ff10f0">why ladybird is important</h3>
+    <p>Ladybird is an important project because it is the only browser engine around that is not a fork of an existing browser engine. <a href="https://www.chromium.org/blink/">Blink</a>, the dominant browser engine that powers Chromium and everything based on it (Chrome, Edge, Brave, Vivaldi, Helium, Yandex, and many more), makes up the majority of web traffic. I love Chromium as a FOSS platform for building so many important things on top of (such as <a href="https://electronjs.org">Electron</a>!), but a monoculture is never a good thing, and competition is important for a healthy web and web standards.</p>
+    <p>Blink itself is a fork of <a href="https://webkit.org">Webkit</a>, the engine powering Safari and every single browser on iOS. Webkit itself is also open-source, but is mostly controlled by Apple. The only other real competition to Webkit and Blink is <a href="https://firefox-source-docs.mozilla.org/overview/gecko.html">Gecko</a>, which powers Firefox and its forks (Librewolf, Tor Browser, Mullvad Browser, Waterfox, etc).</p>
+    <p>Ladybird is powered by <a href="http://docs.libweb.io/en/latest/">LibWeb</a>, its own from-scratch engine. We are even seeing other projects (such as <a href="https://www.elarisbrowser.com">elaris</a>) beginning to be built on top of this base already. It will be very interesting to see what new projects are built on top of the LibWeb/Ladybird base, making a real alternative for people who would rather use something other than Chromium or Firefox forks!</p>
+    <p>The public release of the Ladybird alpha marks something important: it is the first time a truly new web engine has entered the space in over two decades. Blink itself was not built from scratch as it is a fork of Webkit, and Webkit was a fork of <a href="https://en.wikipedia.org/wiki/KHTML">KHTML</a>, originally built by the KDE project.</p>
+    <p>Ladybird is also free of being a direct product of or majorly funded by ad-tech. Chromium is of course built and mostly funded by Google, Webkit is corporate-backed and Safari itself also has a major deal with Google ($20 billion per year) to be included as the default search engine in the browser, and of course, Firefox is majorly funded by Google as well, to the tune of <a href="https://news.ycombinator.com/item?id=43304555">~$500 million per year</a> to be the default search engine.</p>
+    <div class="breakHelper">
+      <br>
+    </div>
+    <h3 style="color:#ff10f0">helping ladybird</h3>
+    <p>If you want to help Ladybird, there are a few things you can do. You can give it a download and use it, and report bugs on the <a href="https://github.com/LadybirdBrowser/ladybird/issues">issue tracker</a>. If you want to financially support Ladybird, you can also become a sponsor or give a one-time donation on the <a href="https://ladybird.org/#contribute">contribute</a> page of the Ladybird website.</p> 
+    <div class="breakHelper">
+      <br>
+    </div>
+    <h3 style="color:#ff10f0">trying out ladybird for yourself</h3>
+    <p>If you want to try out Ladybird on your own machine, you easily can get the alpha up and running on Linux distributions and macOS. Windows support is planned in the future, and I believe a mobile version is also planned when the desktop version is stable, so there is a lot to look forward to for the future of Ladybird. Head to the link below and give it a try - if you're on Linux, you can either grab the Flatpak, the <code>.deb</code> or <code>.rpm</code> packages, or the AppImage, whatever you're most comfortable with. If you're on macOS, just grab the <code>.dmg</code> package, install it, and off you go.</p>
+    <p><a href="https://ladybird.org/download/">download ladybird!</a></p>
+    <div class="breakHelper">
+			<br>
+		</div>
+	</body>
+	<footer>
+		<!--(nonindex version)-->
+		<p style="color: #FF10F0">~ ~ <a href="../index.html">rav3ndust.xyz</a> ~ ~</p>
+		<!-- begin social links -->
+		<h5 style="color:#ff10f0">me on the internet!</h5>
+		<p>
+  		<a href="https://neighborli.xyz/@rav3ndust">fediverse</a> •
+  		<a href="https://nosta.me/rav3ndust@rav3ndust.xyz">nostr</a> •
+  		<a href="https://bsky.app/profile/rav3ndust.xyz">bluesky</a> •
+  		<a href="https://rav3ndust.moments.im/">moments</a> •
+  		<a href="https://loops.video/@rav3ndust">loops</a> •
+		  <a href="https://twitch.tv/rav3ndust">twitch</a> •
+  		<a href="https://youtube.com/@rav3ndust">youtube</a> •
+  		<a href="https://github.com/rav3ndust">github</a>
+		</p>
+		<!-- end social links -->
+		<a href="https://512kb.club"><img src="../img/green-team.svg" title="512kb club, green team"></a>
+		<p style="color: #FF10F0">Hi! I'm an <a href="feed.xml">RSS feed</a>.</p>
+		<p style="color: #FF10F0">Please consider helping people in censored countries <a href="snowflake.html">access Tor</a>.</p>
+		<p><a href="https://github.com/rav3ndust/rav3ndust.xyz">source code to this site</a></p>
+		<h6>source code: <a href="https://opensource.org/license/mit">MIT License</a> - | - site content: <a href="https://creativecommons.org/public-domain/cc0/">CC0 License</a> - | - <a href="../llms.txt">for LLM agents</a></h6>
+	</footer>
+</html>	
+
